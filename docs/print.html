@@ -1,0 +1,5228 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>OrionUO Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">var path_to_root = "";</script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li><a href="launcher/launcher.html"><strong aria-hidden="true">1.</strong> Launcher</a></li><li><ol class="section"><li><a href="launcher/tab-server.html"><strong aria-hidden="true">1.1.</strong> Server Tab</a></li><li><a href="launcher/tab-proxy.html"><strong aria-hidden="true">1.2.</strong> Proxy Tab</a></li><li><a href="launcher/tab-updates.html"><strong aria-hidden="true">1.3.</strong> Update Tab</a></li><li><a href="launcher/tab-oa-features.html"><strong aria-hidden="true">1.4.</strong> OA Features Tab</a></li></ol></li><li><a href="launcher/configuration-editor.html"><strong aria-hidden="true">2.</strong> UO Configuration Editor</a></li><li><a href="client/client.html"><strong aria-hidden="true">3.</strong> Client</a></li><li><ol class="section"><li><a href="client/options-orion-configuration.html"><strong aria-hidden="true">3.1.</strong> Tab 2: Configuration</a></li><li><a href="client/options-interface.html"><strong aria-hidden="true">3.2.</strong> Tab 6: Interface</a></li><li><a href="client/options-display.html"><strong aria-hidden="true">3.3.</strong> Tab 7: Display</a></li></ol></li><li><a href="assistant/assistant.html"><strong aria-hidden="true">4.</strong> Assistant Tabs</a></li><li><ol class="section"><li><a href="assistant/main-tab.html"><strong aria-hidden="true">4.1.</strong> Main</a></li><li><a href="assistant/display.html"><strong aria-hidden="true">4.2.</strong> Display</a></li><li><ol class="section"><li><a href="assistant/display-configuration-tab.html"><strong aria-hidden="true">4.2.1.</strong> Configuration</a></li><li><a href="assistant/display-items-editor-tab.html"><strong aria-hidden="true">4.2.2.</strong> Items Editor</a></li><li><a href="assistant/display-group-editor-tab.html"><strong aria-hidden="true">4.2.3.</strong> Group Editor</a></li></ol></li><li><a href="assistant/lists.html"><strong aria-hidden="true">4.3.</strong> Lists</a></li><li><ol class="section"><li><a href="assistant/lists-types-tab.html"><strong aria-hidden="true">4.3.1.</strong> Types</a></li><li><a href="assistant/lists-objects-tab.html"><strong aria-hidden="true">4.3.2.</strong> Objects</a></li><li><a href="assistant/lists-find-tab.html"><strong aria-hidden="true">4.3.3.</strong> Find</a></li><li><a href="assistant/lists-ignore-tab.html"><strong aria-hidden="true">4.3.4.</strong> Ignore</a></li><li><a href="assistant/lists-friends-tab.html"><strong aria-hidden="true">4.3.5.</strong> Friends</a></li><li><a href="assistant/lists-enemies-tab.html"><strong aria-hidden="true">4.3.6.</strong> Enemies</a></li></ol></li><li><a href="assistant/scripts-hotkeys-tab.html"><strong aria-hidden="true">4.4.</strong> Hotkeys</a></li><li><a href="assistant/scripts-scripts-tab.html"><strong aria-hidden="true">4.5.</strong> Scripts</a></li><li><a href="assistant/agents.html"><strong aria-hidden="true">4.6.</strong> Agents</a></li><li><ol class="section"><li><a href="assistant/agents-dress-tab.html"><strong aria-hidden="true">4.6.1.</strong> Dress</a></li><li><a href="assistant/agents-party-tab.html"><strong aria-hidden="true">4.6.2.</strong> Party</a></li><li><a href="assistant/agents-shop-tab.html"><strong aria-hidden="true">4.6.3.</strong> Shop</a></li></ol></li><li><a href="assistant/skills-tab.html"><strong aria-hidden="true">4.7.</strong> Skills</a></li><li><a href="assistant/filters.html"><strong aria-hidden="true">4.8.</strong> Filters</a></li><li><ol class="section"><li><a href="assistant/filters-speech-tab.html"><strong aria-hidden="true">4.8.1.</strong> Speech</a></li><li><a href="assistant/filters-replaces-tab.html"><strong aria-hidden="true">4.8.2.</strong> Replaces</a></li><li><a href="assistant/filters-sound-tab.html"><strong aria-hidden="true">4.8.3.</strong> Sound</a></li></ol></li><li><a href="assistant/shop-list-editor-dialog.html"><strong aria-hidden="true">4.9.</strong> List Editor</a></li><li><a href="assistant/shop-progress-bar-dialog.html"><strong aria-hidden="true">4.10.</strong> Progress Bar</a></li><li><a href="assistant/ship-control-dialog.html"><strong aria-hidden="true">4.11.</strong> Ship Control</a></li></ol></li><li><a href="scripting/scripting.html"><strong aria-hidden="true">5.</strong> Scripting</a></li><li><ol class="section"><li><a href="scripting/objects-searching-orion-assistant.html"><strong aria-hidden="true">5.1.</strong> Object Searching</a></li><li><a href="scripting/collections-orion-assistant.html"><strong aria-hidden="true">5.2.</strong> Collections</a></li><li><a href="scripting/objects-orion-assistant.html"><strong aria-hidden="true">5.3.</strong> Objects</a></li><li><a href="scripting/equipment-orion-assistant.html"><strong aria-hidden="true">5.4.</strong> Equipment</a></li><li><a href="scripting/character-movement-orion-assistant.html"><strong aria-hidden="true">5.5.</strong> Character Movement</a></li><li><a href="scripting/targeting-orion-assistant.html"><strong aria-hidden="true">5.6.</strong> Targeting</a></li><li><a href="scripting/new-targeting-system-commands.html"><strong aria-hidden="true">5.7.</strong> New Targeting System</a></li><li><a href="scripting/journal-orion-assistant.html"><strong aria-hidden="true">5.8.</strong> Journal</a></li><li><a href="scripting/menu-orion-assistant.html"><strong aria-hidden="true">5.9.</strong> Menu Orion</a></li><li><a href="scripting/gumps-orion-assistant.html"><strong aria-hidden="true">5.10.</strong> Gumps</a></li><li><a href="scripting/interactions-with-other-scripts-orion-assistant.html"><strong aria-hidden="true">5.11.</strong> Iteractions With Other Scripts</a></li><li><a href="scripting/interactions-with-files-orion-assistant.html"><strong aria-hidden="true">5.12.</strong> Iteractions With Files</a></li><li><a href="scripting/text-window-orion-assistant.html"><strong aria-hidden="true">5.13.</strong> Text Window</a></li><li><a href="scripting/shop-commands.html"><strong aria-hidden="true">5.14.</strong> Shop</a></li><li><a href="scripting/trade-window-orion-assistant.html"><strong aria-hidden="true">5.15.</strong> Trade Window</a></li><li><a href="scripting/client-options-orion-assistant.html"><strong aria-hidden="true">5.16.</strong> Client Options</a></li><li><a href="scripting/prompt-commands.html"><strong aria-hidden="true">5.17.</strong> Prompt</a></li><li><a href="scripting/context-menu-commands.html"><strong aria-hidden="true">5.18.</strong> Context Menu</a></li><li><a href="scripting/timer-commands.html"><strong aria-hidden="true">5.19.</strong> Timers</a></li><li><a href="scripting/speech-commands.html"><strong aria-hidden="true">5.20.</strong> Speech</a></li><li><a href="scripting/map-commands.html"><strong aria-hidden="true">5.21.</strong> Map</a></li><li><a href="scripting/non-categorized-commands-orion-assistant.html"><strong aria-hidden="true">5.22.</strong> Non Categorized</a></li></ol></li><li><a href="scripting/classes.html"><strong aria-hidden="true">6.</strong> Classes</a></li><li><ol class="section"><li><a href="scripting/game-object-class-orion-assistant.html"><strong aria-hidden="true">6.1.</strong> Game Object</a></li><li><a href="scripting/player-character-class-orion-assistant.html"><strong aria-hidden="true">6.2.</strong> Player Character</a></li><li><a href="scripting/journal-message-class-orion-assistant.html"><strong aria-hidden="true">6.3.</strong> Journal Message</a></li><li><a href="scripting/menu-object-class-orion-assistant.html"><strong aria-hidden="true">6.4.</strong> Menu</a></li><li><a href="scripting/object-coordinates-class-orion-assistant.html"><strong aria-hidden="true">6.5.</strong> Object Coordinates</a></li><li><a href="scripting/gump-object-class-orion-assistant.html"><strong aria-hidden="true">6.6.</strong> Gump</a></li><li><a href="scripting/gump-hook-object-class-orion-assistant.html"><strong aria-hidden="true">6.7.</strong> Gump Hook</a></li><li><a href="scripting/selected-tile-object-class.html"><strong aria-hidden="true">6.8.</strong> Selected Tile Object</a></li><li><a href="scripting/client-macro-object-class.html"><strong aria-hidden="true">6.9.</strong> Client Macro</a></li><li class="spacer"></li></ol></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">OrionUO Documentation</h1> 
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#launcher" id="launcher"><h1>Launcher</h1></a>
+<ul>
+<li><a href="tab-server.html">Server Tab</a></li>
+<li><a href="tab-proxy.html">Proxy Tab</a></li>
+<li><a href="tab-updates.html">Update Tab</a></li>
+<li><a href="tab-oa-features.html">OA Features Tab</a></li>
+</ul>
+<a class="header" href="#server" id="server"><h1>Server</h1></a>
+<p><img src="http://www.imageup.ru/img130/2765964/tab_server.png" alt="server" /></p>
+<ol>
+<li>
+<p>Server List.</p>
+</li>
+<li>
+<p>Orion path - Path to Orion folder (UO files). When changing/defining path to Orion, update check is invoked therefore if updates are available, launcher transfers to the Updates tab.</p>
+</li>
+<li>
+<p>Define path to Orion-UO files folder.</p>
+</li>
+<li>
+<p><a href="configuration-editor.html">Configure client version</a> - Orion client configuration settings (ConfigurationEditor.exe file must be in the UO folder). If the Client.cuo file is absent - text of button will be red.</p>
+</li>
+<li>
+<p>Check updates - Automatic check for updates for the files from the selected UO folder.</p>
+</li>
+<li>
+<p>Command line - Additional commands for client start.</p>
+</li>
+<li>
+<p>Auto login - Auto login option is enabled.</p>
+</li>
+<li>
+<p>Save password - Save password option is enabled.</p>
+</li>
+<li>
+<p>Save aero (for assistant) - Aero is enabled.</p>
+</li>
+<li>
+<p>Run UOAM - Run UO Auto Map in conjunction with the client. The map must be in the folder with the UO files. File path: <UODir>/Map/EnhancedMap.exe.</p>
+</li>
+<li>
+<p>Fast login - Automatically enter the game when the client starts.</p>
+</li>
+<li>
+<p>Launch - Launch the client with selected parameters.</p>
+</li>
+<li>
+<p>Close after launch - Close the launcher after the client starts.</p>
+</li>
+<li>
+<p>Name - Name of server configuration</p>
+</li>
+<li>
+<p>Address - Server IP address. Entered in the format: IP,Port; example: uo.yourserver.com,2593</p>
+</li>
+<li>
+<p>Account - Your account.</p>
+</li>
+<li>
+<p>Password - Your password.</p>
+</li>
+<li>
+<p>Encrypt password - Enable account / password encryption (temporarily not working).</p>
+</li>
+<li>
+<p>Use proxy - Use a proxy server when connecting.</p>
+</li>
+<li>
+<p>Show password - display your password while enabled.</p>
+</li>
+<li>
+<p>List of saved proxy servers.</p>
+</li>
+<li>
+<p>Add new - Add a new configuration with the entered data.</p>
+</li>
+<li>
+<p>Save selected - Save selected configuration.</p>
+</li>
+<li>
+<p>Remove selected - Delete selected configuration.</p>
+</li>
+</ol>
+<a class="header" href="#proxy" id="proxy"><h1>Proxy</h1></a>
+<p><img src="http://www.imageup.ru/img130/2765966/tab_proxy.png" alt="proxy" /></p>
+<ol>
+<li>
+<p>Proxy-servers list.</p>
+</li>
+<li>
+<p>Name - Name of proxy server.</p>
+</li>
+<li>
+<p>Address - IP-address of proxy server.</p>
+</li>
+<li>
+<p>Port - Port of proxy server.</p>
+</li>
+<li>
+<p>SOCKS5 - Use SOCKS5 proxy (with authorization).</p>
+</li>
+<li>
+<p>Account - Account for authorization on the proxy server.</p>
+</li>
+<li>
+<p>Password - Password for authorization on the proxy server.</p>
+</li>
+<li>
+<p>Encrypt password - Enable account / password encryption (temporarily not working).</p>
+</li>
+<li>
+<p>Show password - display your password while enabled.</p>
+</li>
+<li>
+<p>Add new - Add a new proxy server with the entered data.</p>
+</li>
+<li>
+<p>Save selected - Save selected proxy server.</p>
+</li>
+<li>
+<p>Remove selected - Delete selected proxy server.</p>
+</li>
+</ol>
+<a class="header" href="#updates" id="updates"><h1>Updates</h1></a>
+<p><img src="http://www.imageup.ru/img130/2765967/tab_updates.png" alt="updates" /></p>
+<ol>
+<li>
+<p>List of files available for updating.</p>
+</li>
+<li>
+<p>Progress of downloading and installing updates.</p>
+</li>
+<li>
+<p>Check updates - Request information about updates.</p>
+</li>
+<li>
+<p>Apply updates - Apply updates if they are available.</p>
+</li>
+<li>
+<p>Download Orion Assistant with libraries - Download and install the latest version of the assistant along with all the necessary libraries.</p>
+</li>
+<li>
+<p>Download Orion Launcher with libraries - Download and install the latest version of the launcher along with all the necessary libraries.</p>
+</li>
+</ol>
+<a class="header" href="#oa-features" id="oa-features"><h1>OA Features</h1></a>
+<p><img src="http://www.imageup.ru/img130/2765968/tab_oafeatures.png" alt="oafeatures" /></p>
+<ol>
+<li>
+<p>List of adjustable options:</p>
+<p><code>Corpses autoopen</code> Automatically opens new nearby corpse.</p>
+<p><code>Stealth steps counter</code> Counts steps while in stealth.</p>
+<p><code>Sound filter</code> Filter of sounds.</p>
+<p><code>Light filter</code> Filter of day and night.</p>
+<p><code>Weather filter</code> Filter of weather changes.</p>
+<p><code>Season filter</code> Disable season effects.</p>
+<p><code>No death screen</code> Disables black screen on death (your screen will still become gray when you're a ghost).</p>
+<p><code>Auto open doors</code> Automatically opens closed doors.</p>
+<p><code>Tracker</code> Displays quest arrow after death. It'll show you direction to your corpse.</p>
+<p><code>Reserved</code></p>
+<p><code>Reserved</code></p>
+<p><code>Fast rotation</code> Accelerates a rotation of the character.</p>
+<p><code>Recurse search</code> Container search is recursive by default (search in packages).</p>
+<p><code>Autostart</code> Invoke Autostart function (from scripts) when entering the game.</p>
+<p><code>Ignore staminacheck</code> Ignoring the client stamina check when passing through the characters.</p>
+<p><code>Party agent</code> Use of party agent.</p>
+<p><code>Shop agent</code> Use of shop agent.</p>
+<p><code>Tray icon</code> Minimize the assistant window in system tray.</p>
+</li>
+</ol>
+<p></br></p>
+<ol start="2">
+<li>
+<p>List of adjustable groups of script commands:</p>
+<p><code>Information</code> Info/InfoTile/InfoMenu commands.</p>
+<p><code>Text window</code> Text box commands.</p>
+<p><code>Containers search</code> Searching objects in the containers, FindType/FindList commands.</p>
+<p><code>Ground search</code> Searching objects on the ground, FindType/FindList commands.</p>
+<p><code>Moving</code> Character's move commands in the world.</p>
+<p><code>Resend</code> Server Synchronisation Command.</p>
+<p><code>Journal</code> Use of journal commands.</p>
+<p><code>Rename mounts</code> RenameMount command.</p>
+<p><code>Buy</code> Auto-buy commands.</p>
+<p><code>Sell</code> Auto-sell commands.</p>
+<p><code>Hide</code> Command to hide objects from the screen, Hide command.</p>
+<p><code>Move items</code> Commands for moving items, MoveItem/Drop/DropHere.</p>
+<p><code>Morph</code> Transformation into a creature, Morph command.</p>
+<p><code>Emote actions</code> Emotion reproduction, EmoteAction command.</p>
+<p><code>Find/Ignore types</code> Ability to use FindType search commands and Ignore / IgnoreReset object ignoring commands.</p>
+<p><code>Find arrays</code> Use of search list, FindList command.</p>
+<p><code>Client options</code> Commands for obtaining and setting client options.</p>
+<p><code>Corpse search</code> Use of corpse objects search, FindType/FindList commands.</p>
+<p><code>Extended menu</code> Advanced commands for working with the menu.</p>
+<p><code>Buffs</code> Use of Buffs commands.</p>
+<p><code>Trading</code> Use of Trade window commands.</p>
+<p><code>Friend list</code> Use of friend list commands.</p>
+<p><code>Enemy list</code> Use of enemy list commands.</p>
+<p><code>Font color</code> Commands for changing the font color.</p>
+<p><code>Extended target tile</code> Commands for auto-detecting the type of tiles when using targets.</p>
+</li>
+</ol>
+<p></br></p>
+<ol start="3">
+<li>Output code for emulator - For which emulator to generate the code. The code is generated when the type is switched.</li>
+</ol>
+<p></br></p>
+<ol start="4">
+<li>The generated code for adjusting the options and commands of the assistant.</li>
+</ol>
+<a class="header" href="#how-to-for-creating-a-proper-config-file-clientcuo-with-configurationeditorexe" id="how-to-for-creating-a-proper-config-file-clientcuo-with-configurationeditorexe"><h1>&quot;How-to&quot; for creating a proper config file (Client.cuo) with ConfigurationEditor.exe</h1></a>
+<a class="header" href="#main" id="main"><h1>Main</h1></a>
+<p><img src="http://www.imageup.ru/img206/2570280/ce1.png" alt="main" /></p>
+<ol>
+<li>
+<p>Client version which'll be sent to your server. When you're typing a version number, configurator searches for matches and picks right encryption keys, stadart map sizes and verdata usage flag when there's a match. After you've entered your desirable client version, you can edit those values manually.</p>
+</li>
+<li>
+<p>Client's encryption type.</p>
+</li>
+</ol>
+<p>No Crypt - No encryption.</p>
+<p>Old Blowfish - For truly ancient client versions only.</p>
+<p>Blowfish (1.25.36 client) - This version only encryption.</p>
+<p>Blowfish - For client up to 2.0.0 versions (with the exception of the above one).</p>
+<p>Blowfish + Twofish (2.0.3) - For 2.0.0 - 2.0.3 clients.</p>
+<p>Twofish - For clients above 2.0.3</p>
+<ol start="3">
+<li>Version of clients protocol. This toggles on/off different packet changes which EA's made over the years. This should correlate with client version.</li>
+</ol>
+<p>For example:</p>
+<p>If your client version is 2.0.3 - protocol version should be &gt;= 2.0.0</p>
+<p>Client version 4.0.3b - client protocol version &gt;= 4.0.0b (because client version is lower than 4.0.5a)</p>
+<p>Client version 6.0.14.1 - client protocol version &gt;= 6.0.6.0 (minor's patch version lacked 1 to make 6.0.14.2 viable)</p>
+<p>Client version 6.0.14.2 or 6.0.14.3 - client protocol version &gt;= 6.0.14.2</p>
+<p>Client version 7.0.29.2 - client protocol version &gt;= 7.0.24.0</p>
+<ol start="4">
+<li>
+<p>Manual crypto key input. Use  this only if you have changed encryption keys on your server and you know what you're doing.</p>
+</li>
+<li>
+<p>Text input for crypto keys.</p>
+</li>
+<li>
+<p>Map size.</p>
+</li>
+<li>
+<p>Client type. At this moment this is only being sent the server when creating a character.</p>
+</li>
+<li>
+<p>Toggle to make OrionUO read (Verdata.mul) and *.mul files only. If you're willing to use latest client versions which contain *.uop files, you need to toggle this off.</p>
+</li>
+<li>
+<p>Create file with current config. It will be created in the same directory with this exe.</p>
+</li>
+<li>
+<p>Load config file.</p>
+</li>
+</ol>
+<a class="header" href="#plugin" id="plugin"><h2>Plugin</h2></a>
+<p><img src="http://www.imageup.ru/img204/2562847/ce2.png" alt="plugin" /></p>
+<ol>
+<li>
+<p>List of enabled plug-ins.</p>
+</li>
+<li>
+<p>Plug-in file name.</p>
+</li>
+<li>
+<p>Main function from the dll to trigger the install.</p>
+</li>
+<li>
+<p>Available functions for data transfer between client and server.</p>
+</li>
+<li>
+<p>Create plug-in with current config.</p>
+</li>
+<li>
+<p>Refresh selected plug-ins config.</p>
+</li>
+<li>
+<p>Delete selected plug-in.</p>
+</li>
+</ol>
+<a class="header" href="#client" id="client"><h1>Client</h1></a>
+<ul>
+<li><a href="options-orion-configuration.html">Tab 2: Configuration</a></li>
+<li><a href="options-interface.html">Tab 6: Interface</a></li>
+<li><a href="options-display.html">Tab 7: Display</a></li>
+</ul>
+<a class="header" href="#options-tab-2" id="options-tab-2"><h1>Options tab 2</h1></a>
+<p><img src="http://www.imageup.ru/img130/2766109/optionstab2.jpg" alt="options2" /></p>
+<ol>
+<li>
+<p>Debug options - output debugging information to the window;</p>
+<ul>
+<li>
+<p>No debug - do not display information about debugging</p>
+</li>
+<li>
+<p>FPS only - Отображать только количество FPS;</p>
+</li>
+<li>
+<p>Debugging - Show debugging information (fps count, scale , loaded object amount e.t.c).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>FPS rate - Desired fps count (Actual may differ from the one indicated here under heavy loads and / or at a slow video card).</p>
+</li>
+<li>
+<p>Reduce FPS when UO window is unactive - Урезать ФПС если окно неактивно.</p>
+</li>
+<li>
+<p>Standard characters animation delay - Standard delay between changing frames of living being animations.</p>
+</li>
+<li>
+<p>Standard items animation delay - The standard delay between changing frames of inanimated objects.</p>
+</li>
+<li>
+<p>Use scaling in game window - use scaling of game window (test version).</p>
+</li>
+<li>
+<p>Remove object's text with alpha-blending - text deleting with alpha blending (smooth text removal).</p>
+</li>
+<li>
+<p>Draw characters status mode - show character status in the world:</p>
+<ul>
+<li>
+<p>No draw - do not show;</p>
+</li>
+<li>
+<p>Above character (Text) - Show above character (displayed with text);</p>
+</li>
+<li>
+<p>Under character (Line) - Show under character (gump with hp line).</p>
+</li>
+</ul>
+<p>Draw characters status condition - conditions for character status display:</p>
+<ul>
+<li>
+<p>Always - always display;</p>
+</li>
+<li>
+<p>HP &lt;&gt; MaxHP - Display only if hp is not equal to max.(more or less);</p>
+</li>
+<li>
+<p>HP lower % - hp is lower of displayed % of max.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Change trees to stumps - trees will be replaced with stumps;</p>
+</li>
+<li>
+<p>Marking cave tiles - caved tiles;</p>
+</li>
+<li>
+<p>Hide vegetation - hide vegetation;</p>
+</li>
+<li>
+<p>No fields animation - inanimate fields;</p>
+</li>
+<li>
+<p>Lock gumps moving - Ability to block accidental closing or moving of certain types of gump. When the option is on and Ctrl + Alt is pressed, locks appear on the available gumps. Green - gump not locked, red - blocked;</p>
+</li>
+<li>
+<p>Chat need press 'Enter' to activate it - For chat activation press enter;</p>
+</li>
+<li>
+<p>Hidden characters display mode - display mode of hidden characters:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Original - without changes;</p>
+</li>
+<li>
+<p>With alpha-blending, alpha - uses alpha-blending, value is configurable;</p>
+</li>
+<li>
+<p>With spectral color - uses spectral color;</p>
+</li>
+<li>
+<p>With special spectral color - uses special spectral color;</p>
+</li>
+</ul>
+<ol start="16">
+<li>
+<p>Change hidden characters mode only for your person - changes hidden characters only for yourself;</p>
+</li>
+<li>
+<p>Transparent spell icons, alpha - use transparency for cast icons. level is configurable;</p>
+</li>
+<li>
+<p>Old style maximized statusbar - in new client maximied statusbar is shown from old client gump;</p>
+</li>
+<li>
+<p>Original party statusbar gump - replace party statusgroup to basic;</p>
+</li>
+<li>
+<p>Colorize characters by state - colorize characters based on state (poisoned, paralyzed);</p>
+</li>
+<li>
+<p>Change animated fields to tiles - change fields to tiles;</p>
+</li>
+<li>
+<p>Add paperdoll slots - add slots to paperdoll for small things;</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Scale images in slots - scale objects on paperdoll (test version);</p>
+</li>
+</ul>
+<ol start="23">
+<li>
+<p>Remove statusbars without objects - remove statusbar,whose objects cannot be seen</p>
+</li>
+<li>
+<p>Show console entry mode under game window - console entry mode under game window;</p>
+</li>
+<li>
+<p>Draw aura under characters mode -draw aura under character:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Never - never show;</p>
+</li>
+<li>
+<p>Only in war mode - show only if war mode is on</p>
+</li>
+<li>
+<p>Always - always show.</p>
+</li>
+</ul>
+<ol start="26">
+<li>
+<p>Draw aura only if Ctrl pressed - draw aura if Ctrl is pressed;</p>
+</li>
+<li>
+<p>Screenshots format - screen format:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>BMP;</p>
+</li>
+<li>
+<p>PNG;</p>
+</li>
+<li>
+<p>TIFF;</p>
+</li>
+<li>
+<p>JPEG (by using this type, there might be crashes).</p>
+</li>
+</ul>
+<ol start="28">
+<li>
+<p>Remove or new draw objects displaying with use blending - smoothly remove/draw world objects/statics with alpha-blending use.</p>
+</li>
+<li>
+<p>Draw helmets on shroud in the world - draw helmet about shroud in the world;</p>
+</li>
+<li>
+<p>Draw world map before all gumps - draw world map for all gumps;</p>
+</li>
+<li>
+<p>No draw roofs - without roof draws.</p>
+</li>
+</ol>
+<a class="header" href="#options-tab-6" id="options-tab-6"><h1>Options tab 6</h1></a>
+<p><img src="http://www.imageup.ru/img130/2766110/optionstab6.jpg" alt="options6" /></p>
+<ol>
+<li>Coordinates of open containers/paperdoll, if option &quot;Offset interface windows rather than perfictly stacking them&quot; is enabled.</li>
+</ol>
+<a class="header" href="#options-tab-7" id="options-tab-7"><h1>Options tab 7</h1></a>
+<p><img src="http://www.imageup.ru/img130/2766111/optionstab7.jpg" alt="options7" /></p>
+<ol>
+<li>
+<p>Game Window size options.</p>
+</li>
+<li>
+<p>Lock game window resizing - Button for window resizing will be blocked (button is changed to the lock sign).</p>
+</li>
+</ol>
+<a class="header" href="#assistant" id="assistant"><h1>Assistant</h1></a>
+<ul>
+<li><a href="main-tab.html">Main</a></li>
+<li><a href="display.html">Display</a>
+<ul>
+<li><a href="display-configuration-tab.html">Configuration</a></li>
+<li><a href="display-items-editor-tab.html">Items Editor</a></li>
+<li><a href="display-group-editor-tab.html">Group Editor</a></li>
+</ul>
+</li>
+<li><a href="lists.html">Lists</a>
+<ul>
+<li><a href="lists-types-tab.html">Types</a></li>
+<li><a href="lists-objects-tab.html">Objects</a></li>
+<li><a href="lists-find-tab.html">Find</a></li>
+<li><a href="lists-ignore-tab.html">Ignore</a></li>
+<li><a href="lists-friends-tab.html">Friends</a></li>
+<li><a href="lists-enemies-tab.html">Enemies</a></li>
+</ul>
+</li>
+<li><a href="scripts-hotkeys-tab.html">Hotkeys</a></li>
+<li><a href="scripts-scripts-tab.html">Scripts</a></li>
+<li><a href="agents.html">Agents</a>
+<ul>
+<li><a href="agents-dress-tab.html">Dress</a></li>
+<li><a href="agents-party-tab.html">Party</a></li>
+<li><a href="agents-shop-tab.html">Shop</a></li>
+</ul>
+</li>
+<li><a href="skills-tab.html">Skills</a></li>
+<li><a href="filters.html">Filters</a>
+<ul>
+<li><a href="filters-speech-tab.html">Speech</a></li>
+<li><a href="filters-replaces-tab.html">Replaces</a></li>
+<li><a href="filters-sound-tab.html">Sound</a></li>
+</ul>
+</li>
+<li><a href="shop-list-editor-dialog.html">List Editor</a></li>
+<li><a href="shop-progress-bar-dialog.html">Progress Bar</a></li>
+<li><a href="ship-control-dialog.html">Ship Control</a></li>
+</ul>
+<a class="header" href="#introduced-in-2080" id="introduced-in-2080"><h2>Introduced in 2.0.8.0</h2></a>
+<p><a href="filters-speech-tab.html">Filters -&gt; Speech tab</a></p>
+<p><a href="filters-replaces-tab.html">Filters -&gt; Replaces tab</a></p>
+<p><a href="filters-sound-tab.html">Filters -&gt; Sound tab</a></p>
+<p><a href="shop-list-editor-dialog.html">Shop List Editor Dialog</a></p>
+<p><a href="shop-progress-bar-dialog.html">Shop Progress Bar Dialog</a></p>
+<p><a href="ship-control-dialog.html">Ship Control Dialog</a></p>
+<a class="header" href="#main-1" id="main-1"><h1>Main</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713050/tab_main.png" alt="main" /></p>
+<ol>
+<li>List of options:</li>
+</ol>
+<p>Corpses autoopen - automatically opens new nearby corpse.</p>
+<p>Stealth steps counter - Counts steps while in stealth.</p>
+<p>Bards/Animal sound filter - Disables play music/animal sounds ( not working yet ).</p>
+<p>Always light - Disable change of day and night.</p>
+<p>Filter weather - Disable weather effects.</p>
+<p>Filter season - Disable season effects.</p>
+<p>No death screen - Disables black screen on death (your screen will still become gray when you're a ghost).</p>
+<p>Open doors - Automatically opens closed doors ( not working yet ).</p>
+<p>Corpse tracker - Displays quest arrow after death. It'll show you direction to your corpse.</p>
+<p>Stay on top - Assistant window will always stay on top.</p>
+<p>Fast rotation - accelerates a rotation of the character.</p>
+<p>Recurse containers search - container search is recursive by default (search in packages).</p>
+<p>Minimize to tray - minimise the assistant window in system tray.</p>
+<ol start="2">
+<li>
+<p>Assistant messages show: - What kind of assistant messages should be displayed on the screen:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Minimum - Errors only.</p>
+</li>
+<li>
+<p>Medium - Errors and warnings.</p>
+</li>
+<li>
+<p>Show all - Errors, warnings and functional messages.</p>
+</li>
+</ul>
+<ol start="3">
+<li>
+<p>Search objects distance - Distance for object search on the ground.</p>
+</li>
+<li>
+<p>Use objects distance - Distance to use object on the ground.</p>
+</li>
+<li>
+<p>Open corpses distance - Distance for corpse openings.</p>
+</li>
+<li>
+<p>keep delay (ms) - Amount of time new corpse IDs wll stay in memory queue(for corpse opening).</p>
+</li>
+<li>
+<p>Wait targets delay - Default wait target delay in ms.</p>
+</li>
+<li>
+<p>Move items delay - Default items movement delay in ms.</p>
+</li>
+<li>
+<p>Use items delay - Default items usage delay in ms.</p>
+</li>
+<li>
+<p>Assist window opacity - Sets opacity for assistant and it's sub-windows.</p>
+</li>
+<li>
+<p>Save configuration - save the current configuration.</p>
+</li>
+</ol>
+<a class="header" href="#display" id="display"><h1>Display</h1></a>
+<a class="header" href="#display---configuration" id="display---configuration"><h1>Display -&gt; Configuration.</h1></a>
+<p><img src="http://www.imageup.ru/img198/2606234/2.png" alt="main" /></p>
+<ol>
+<li>
+<p>Display data on title - Display data in clients title.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Disabled.</p>
+</li>
+<li>
+<p>Textual - As text.</p>
+</li>
+<li>
+<p>Colored textual - As coloured text.</p>
+</li>
+<li>
+<p>Colored graphical - As coloured text with possible images.</p>
+</li>
+</ul>
+<ol start="2">
+<li>
+<p>Double image if item can be stacked.</p>
+</li>
+<li>
+<p>Hight font - Enlarge the font when Color mode enabled.</p>
+</li>
+<li>
+<p>Apply notoriety color on player name - Consider the character's wickedness when Color mode enabled.</p>
+</li>
+<li>
+<p>Text color - The color of the text delimiters.</p>
+</li>
+<li>
+<p>Background color - Background color, if color is 0 - the standard system window color is used. For black color use - 000001.</p>
+</li>
+<li>
+<p>Insert command - Insert a command from the list.</p>
+</li>
+<li>
+<p>Set title from group - Replace the content of &quot;Title data&quot; with the template entered in the selected group.</p>
+</li>
+<li>
+<p>Title data - Content to display in the header.</p>
+</li>
+</ol>
+<p>Elements of the header can be changed in the text, using the attributes:</p>
+<p>&quot;text&quot;, &quot;id&quot;, &quot;hue&quot;, &quot;mincolor&quot;, &quot;midcolor&quot;, &quot;color&quot;, &quot;background&quot;, &quot;bgmincolor&quot;, &quot;bgmidcolor&quot;, &quot;bgcolor&quot;, &quot;minval&quot;, &quot;midval&quot;, &quot;%&quot;</p>
+<p>For instance:</p>
+<p>Output to the header (when Colored graphical is on) &quot;Armor: 'picture' 'value'&quot;.</p>
+<p>#Display -&gt; Items editor</p>
+<p><img src="http://www.imageup.ru/img198/2606235/3.png" alt="main" /></p>
+<p>Display objects that are used to reduce the amount of visible text in the title.</p>
+<p>All display items - are common to all the characters.</p>
+<ol>
+<li>
+<p>The list of items to display.</p>
+</li>
+<li>
+<p>Name - The name of the display object.</p>
+</li>
+<li>
+<p>Add item - Add a new object using the entered data.</p>
+</li>
+<li>
+<p>Edit the selected item - Save the changes to the selected object.</p>
+</li>
+<li>
+<p>Delete element - delete the object.</p>
+</li>
+<li>
+<p>Type - The type of object to recognize it in the assistant.</p>
+</li>
+<li>
+<p>The text - the text to display in front of the object (not displayed when using the graphics).</p>
+</li>
+<li>
+<p>ID - Pictures Index of Art.mul static block.</p>
+</li>
+<li>
+<p>Tint - Color palette of Hues.mul.</p>
+</li>
+<li>
+<p>ID &amp; Hue from the target - the specified object to the client from which you want to read information in the field of ID and Hue.</p>
+</li>
+<li>
+<p>with the background - there is a background behind the object.</p>
+</li>
+<li>
+<p>The calculation of color in the percentage  - Value calculation is made in % of the maximum value (Hits: MaxHits / Mana / Stam / weight).</p>
+</li>
+<li>
+<p>Value - The value at which color applies to the text and background.</p>
+</li>
+<li>
+<p>The color of the text - color text.</p>
+</li>
+<li>
+<p>Background Color - background color, if you specify a 0 - the background will not be used.</p>
+</li>
+</ol>
+<a class="header" href="#aЗакладка-display---group-editor" id="aЗакладка-display---group-editor"><h1>Закладка Display -&gt; Group editor</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713056/tab_display_groupeditor.png" alt="display_group_editor" /></p>
+<p>Group editor tab can be used to quickly change the title or to include certain groups of objects (For instance: reagents, scrolls, bottles) in any of the groups. Can be useful if you do not want to write these objects over and over again - just specify the group {group name} that you want to display.</p>
+<p>All groups, which are created, can be applied to all characters.</p>
+<ol>
+<li>
+<p>List of saved groups.</p>
+</li>
+<li>
+<p>Name - the name of the group.</p>
+</li>
+<li>
+<p>Add Group - to add a new group with the entered data.</p>
+</li>
+<li>
+<p>Edit selected group - to save changes to the selected group.</p>
+</li>
+<li>
+<p>Remove group</p>
+</li>
+<li>
+<p>Title data - the content of the group.</p>
+</li>
+</ol>
+<a class="header" href="#lists" id="lists"><h1>Lists</h1></a>
+<a class="header" href="#lists---types" id="lists---types"><h1>Lists -&gt; Types</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713058/tab_lists_types.png" alt="lists_types" /></p>
+<p>Types, for use in scripts / headers.</p>
+<ol>
+<li>
+<p>List of types.</p>
+</li>
+<li>
+<p>Name - a name of the type.</p>
+</li>
+<li>
+<p>Add type - to add a new object with the entered data.</p>
+</li>
+<li>
+<p>Edit selected type - to save changes to the selected object.</p>
+</li>
+<li>
+<p>Remove type</p>
+</li>
+<li>
+<p>Type - the type in the format 0x0000.</p>
+</li>
+<li>
+<p>Type from target - to specify the object by using a target in the client from which you want to read the type information.</p>
+</li>
+</ol>
+<a class="header" href="#lists---objects" id="lists---objects"><h1>Lists -&gt; Objects</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713059/tab_lists_objects.png" alt="lists_objects" /></p>
+<p>Objects that can be applied in scripts.</p>
+<ol>
+<li>
+<p>List of the objects.</p>
+</li>
+<li>
+<p>Name - a name of the object.</p>
+</li>
+<li>
+<p>Add object - to add a new object with the entered data.</p>
+</li>
+<li>
+<p>Edit selected object - to save changes to the selected object.</p>
+</li>
+<li>
+<p>Remove object</p>
+</li>
+<li>
+<p>Serial - serial of the object in the format 0x00000000.</p>
+</li>
+<li>
+<p>Serial from target - to specify the object by using a target in the client from which you want to read the information about the serial.</p>
+</li>
+<li>
+<p>Set a dress bag - to set the selected object as the dress bag.</p>
+</li>
+<li>
+<p>Dress bag from target - to specify the object by using a target in the client, which should be taken as a container for clothing.</p>
+</li>
+<li>
+<p>Unset dress bag - to remove the current dress bag.</p>
+</li>
+</ol>
+<a class="header" href="#lists---find" id="lists---find"><h1>Lists -&gt; Find</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713062/tab_lists_find.png" alt="lists_find" /></p>
+<p>Find lists that can be applied in scripts.</p>
+<ol>
+<li>
+<p>List of created find lists.</p>
+</li>
+<li>
+<p>List of items in the find list.</p>
+</li>
+<li>
+<p>Name - name of the find list.</p>
+</li>
+<li>
+<p>Add list - to add a new list.</p>
+</li>
+<li>
+<p>Edit selected list - to save changes to the selected list.</p>
+</li>
+<li>
+<p>Remove list</p>
+</li>
+<li>
+<p>Graphic - Graphic of the object in the format 0x0000.</p>
+</li>
+<li>
+<p>Color - Color of the object in the format 0x0000.</p>
+</li>
+<li>
+<p>Comment - a comment to the object (optional).</p>
+</li>
+<li>
+<p>Add item - to add a new item to the selected list.</p>
+</li>
+<li>
+<p>Edit selected item - to save changes to the selected item in the selected list.</p>
+</li>
+<li>
+<p>Remove item - to remove the item from the selected list.</p>
+</li>
+<li>
+<p>Item from target - to specify the object by using a target in the client from which you want to read the information.</p>
+</li>
+</ol>
+<hr />
+<p>&quot;Graphic&quot; and &quot;Color&quot; can be specified in the form of enumerations with delimiters | ;</p>
+<p>Additionally, you can specify some filters for them:</p>
+<ul>
+<li>&quot;!value&quot; - not equal to the value</li>
+<li>&quot;&lt;value&quot; - less than the value</li>
+<li>&quot;&gt;value&quot; - more than the value</li>
+</ul>
+<p>For instance:</p>
+<p>Graphic: 0x0023
+Color: &gt;0x0010|!0x0021|!0x0032</p>
+<p>Searching will be implemented for objects with the type 0x0023 of all colors starting from 0x0011 excluding 0x0021 and 0x0032.</p>
+<p>Graphic: 0x042F
+Color: !0</p>
+<p>Searching will be implemented for objects with the type 0x042F only if they have a color.</p>
+<a class="header" href="#lists---ignore" id="lists---ignore"><h1>Lists -&gt; Ignore</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713066/tab_lists_ignore.png" alt="lists_ignore" /></p>
+<p>Ignore lists that can be applied in scripts.</p>
+<ol>
+<li>
+<p>List of created ignore lists.</p>
+</li>
+<li>
+<p>List of items in the ignore list.</p>
+</li>
+<li>
+<p>Name - name of the ignore list.</p>
+</li>
+<li>
+<p>Add list - to add a new list.</p>
+</li>
+<li>
+<p>Edit selected list - to save changes to the selected list.</p>
+</li>
+<li>
+<p>Remove list</p>
+</li>
+<li>
+<p>Graphic - Graphic of the object in the format 0x0000.</p>
+</li>
+<li>
+<p>Color - Color of the object in the format 0x0000.</p>
+</li>
+<li>
+<p>Comment - a comment to the object (optional).</p>
+</li>
+<li>
+<p>Add item - to add a new item to the selected list.</p>
+</li>
+<li>
+<p>Edit selected item - to save changes to the selected item in the selected list.</p>
+</li>
+<li>
+<p>Remove item - to remove the item from the selected list.</p>
+</li>
+<li>
+<p>Item from target - to specify the object by using a target in the client from which you want to read the information.</p>
+</li>
+</ol>
+<hr />
+<p>&quot;Graphic&quot; and &quot;Color&quot; can be specified in the form of enumerations with delimiters | ;</p>
+<p>Additionally, you can specify some filters for them:</p>
+<ul>
+<li>&quot;!value&quot; - not equal to the value</li>
+<li>&quot;&lt;value&quot; - less than the value</li>
+<li>&quot;&gt;value&quot; - more than the value</li>
+</ul>
+<p>For instance:</p>
+<p>Graphic: 0x0023
+Color: &gt;0x0010|!0x0021|!0x0032</p>
+<p>Will ignore objects with the type 0x0023 of all colors starting from 0x0011 excluding 0x0021 and 0x0032.</p>
+<p>Graphic: 0x042F
+Color: !0</p>
+<p>Will ignore objects with the type 0x042F only if they have a color.</p>
+<a class="header" href="#lists---friends" id="lists---friends"><h1>Lists -&gt; Friends</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713068/tab_lists_friends.png" alt="lists_friends" /></p>
+<p>Friends list for use in various systems and scripts.</p>
+<ol>
+<li>
+<p>List of the friends.</p>
+</li>
+<li>
+<p>Name - a name of the friend.</p>
+</li>
+<li>
+<p>Add friend - to add a new friend with the entered data.</p>
+</li>
+<li>
+<p>Edit selected friend - to save changes to the selected friend.</p>
+</li>
+<li>
+<p>Remove friend</p>
+</li>
+<li>
+<p>Serial - Serial of the &quot;friend&quot; character in the format 0x00000000.</p>
+</li>
+<li>
+<p>Serial from target - to specify the object by using a target in the client from which you want to read the information about the serial.</p>
+</li>
+</ol>
+<a class="header" href="#lists---enemies" id="lists---enemies"><h1>Lists -&gt; Enemies</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713069/tab_lists_enemies.png" alt="lists_enemies" /></p>
+<p>Enemies list for use in various systems and scripts.</p>
+<ol>
+<li>
+<p>List of the enemies.</p>
+</li>
+<li>
+<p>Name - a name of the enemy.</p>
+</li>
+<li>
+<p>Add friend - to add a new enemy with the entered data.</p>
+</li>
+<li>
+<p>Edit selected friend - to save changes to the selected enemy.</p>
+</li>
+<li>
+<p>Remove enemy.</p>
+</li>
+<li>
+<p>Serial - Serial of the &quot;enemy&quot; character in the format 0x00000000.</p>
+</li>
+<li>
+<p>Serial from target - to specify the object by using a target in the client from which you want to read the information about the serial.</p>
+</li>
+</ol>
+<a class="header" href="#scripts---hotkeys" id="scripts---hotkeys"><h1>Scripts -&gt; Hotkeys</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713072/tab_scripts_hotkeys.png" alt="scripts_hotkeys" /></p>
+<ol>
+<li>
+<p>List of used hotkeys.</p>
+</li>
+<li>
+<p>Command prefix - in-game prefix for commands, maximum 5 characters.</p>
+</li>
+<li>
+<p>Pass keys to the UO client.</p>
+</li>
+<li>
+<p>On/Off hotkeys - to enable / disable the use of all hotkeys.</p>
+</li>
+<li>
+<p>On/Off hotkey - hotkey that can be used to switch On / Off mode.</p>
+</li>
+<li>
+<p>Hotkey</p>
+</li>
+<li>
+<p>Script - the name of the script from the list for use by pressing the hotkey.</p>
+</li>
+<li>
+<p>Add hotkey - to add a new hotkey with the entered data.</p>
+</li>
+<li>
+<p>Edit selected hotkey - to save changes to the selected hotkey.</p>
+</li>
+<li>
+<p>Remove hotkey</p>
+</li>
+<li>
+<p>Run one script - to prevent scripts from restarting. Only one script can be started at a time.</p>
+</li>
+<li>
+<p>Short script body - small editor for short scripts, to avoid creation of the small functions . Editor fully supports the functionality of the loaded script file.</p>
+</li>
+</ol>
+<a class="header" href="#scripts---scripts" id="scripts---scripts"><h1>Scripts -&gt; Scripts</h1></a>
+<p><img src="http://www.imageup.ru/img203/2777291/tab_scripts_scripts.png" alt="scripts_scripts" /></p>
+<ol>
+<li>
+<p>Running scripts list - list of the running scripts.</p>
+</li>
+<li>
+<p>Existing scripts list - list of the existing scripts.</p>
+</li>
+</ol>
+<hr />
+<p>// - comments.</p>
+<p>//--#text - can be used to make a visible comment (highlighted in gray) in the list of scripts and hotkeys.</p>
+<hr />
+<ol start="3">
+<li>
+<p>Start - to start the selected script.</p>
+</li>
+<li>
+<p>Pause - set the execution of the selected script (Running scripts list) to pause.</p>
+</li>
+<li>
+<p>Stop - to stop the selected script (Running scripts list).</p>
+</li>
+<li>
+<p>Script file path - the path to the currently loaded script file.</p>
+</li>
+<li>
+<p>Load the script (select in the dialog).</p>
+</li>
+<li>
+<p>Open script editor.</p>
+</li>
+<li>
+<p>Script example - link to &quot;Scripts&quot; section. (forum)</p>
+</li>
+<li>
+<p>Record script - clicking record will record your actions in game and converted to a script. (in developing)</p>
+</li>
+<li>
+<p>Reload script - Reload current script file (using file path from №6). All unsaved changes in current file will be lost!</p>
+</li>
+</ol>
+<a class="header" href="#agents" id="agents"><h1>Agents</h1></a>
+<a class="header" href="#agents---dress" id="agents---dress"><h1>Agents -&gt; Dress</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713077/tab_agents_dress.png" alt="agents_dress" /></p>
+<ol>
+<li>
+<p>List of the saved sets.</p>
+</li>
+<li>
+<p>Items in set - the list of the items in the selected set.</p>
+</li>
+<li>
+<p>Name - a name of the set.</p>
+</li>
+<li>
+<p>Add dress set - to add a new set with the entered data.</p>
+</li>
+<li>
+<p>Edit selected dress set - to save changes in the selected set.</p>
+</li>
+<li>
+<p>Remove dress set</p>
+</li>
+<li>
+<p>Undress before dressing - undress items at the current layer before dressing new clothes.</p>
+</li>
+<li>
+<p>Dress selected set - dress the current set.</p>
+</li>
+<li>
+<p>Undress (completely)</p>
+</li>
+<li>
+<p>Apply current equipment to set - to save the current equipment that is dressed on the character.</p>
+</li>
+<li>
+<p>Apply weapon and shield to set - to save weapon and shield that is dressed on the character.</p>
+</li>
+<li>
+<p>Apply armor to set - to save the armor that is dressed on the character (without shield).</p>
+</li>
+<li>
+<p>Clear set items - to clear the item list of the selected set.</p>
+</li>
+<li>
+<p>Item from target - to specify the object by using a target in the client from which you want to read the information about the item.</p>
+</li>
+</ol>
+<a class="header" href="#agents---party" id="agents---party"><h1>Agents -&gt; Party</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713079/tab_agents_party.png" alt="agents_party" /></p>
+<ol>
+<li>
+<p>List of player serials from which you will automatically accept invitations to the group.</p>
+</li>
+<li>
+<p>List of player serials from which you will automatically decline invitations to the group.</p>
+</li>
+<li>
+<p>Add player to accept list - to add a new player to the list of auto acceptance.</p>
+</li>
+<li>
+<p>Edit selected player in accept list - to save changes to the selected character in the auto acceptance list.</p>
+</li>
+<li>
+<p>Remove selected player from accept list - to remove the selected character from the auto acceptance list.</p>
+</li>
+<li>
+<p>Add player to decline list - to add a new player to the list of auto decline.</p>
+</li>
+<li>
+<p>Edit selected player in decline list - to save changes to the selected character in the auto decline list.</p>
+</li>
+<li>
+<p>Remove selected player from decline list - to remove the selected character from the auto decline list.</p>
+</li>
+<li>
+<p>Serial - serial number of the character.</p>
+</li>
+<li>
+<p>Name - a name of the player (to distinguish serial numbers visually)</p>
+</li>
+<li>
+<p>Select object from target - to specify the object by using a target in the client.</p>
+</li>
+<li>
+<p>Auto accept all invites - automatically accept all invitations.</p>
+</li>
+<li>
+<p>Auto accept invites from friends - automatically accept invitations from the players in the friends list.</p>
+</li>
+<li>
+<p>Auto decline all invites - automatically decline all invitations.</p>
+</li>
+<li>
+<p>Auto decline invites from enemies - automatically decline invitations from the players in the list of enemies.</p>
+</li>
+</ol>
+<a class="header" href="#agents---shop-tab" id="agents---shop-tab"><h1>Agents -&gt; Shop tab</h1></a>
+<p><img src="http://www.imageup.ru/img94/2900770/tab_agents_shop.png" alt="agents_shop" /></p>
+<ol>
+<li>
+<p>Created buying/selling goods lists.</p>
+</li>
+<li>
+<p>Goods list name.</p>
+</li>
+<li>
+<p>Add new shop list.</p>
+</li>
+<li>
+<p>Edit selected shop list.</p>
+</li>
+<li>
+<p>Remove selected shop list.</p>
+</li>
+<li>
+<p>Edit shop list items.</p>
+</li>
+<li>
+<p>Auto buy - will automatically buy goods from selected list on shop buy gump opening.</p>
+</li>
+<li>
+<p>Buy - sends &quot;VendorName buy&quot; speech and buys everything from selected list.</p>
+</li>
+<li>
+<p>Auto sell - will automatically sell goods from selected list on shop sell gump opening.</p>
+</li>
+<li>
+<p>Sell - sends  &quot;VendorName sell&quot; speech and sells everything from selected list.</p>
+</li>
+<li>
+<p>Vendor name - if not defined, buy/sell operations will be applied to any vendor in range.</p>
+</li>
+<li>
+<p>Show shopping progress bar.</p>
+</li>
+<li>
+<p>Max shop stacks - maximum amount of goods when selling/buying.</p>
+</li>
+<li>
+<p>Max total sell price.</p>
+</li>
+<li>
+<p>Shop delay for 1 stack in list.</p>
+</li>
+<li>
+<p>Timeout if shop not recv. - time-out (in seconds), which will remove buy/sell shop gump hook.</p>
+</li>
+</ol>
+<a class="header" href="#skills" id="skills"><h1>Skills</h1></a>
+<p><img src="http://www.imageup.ru/img290/2713084/tab_skills.png" alt="skills" /></p>
+<ol>
+<li>
+<p>List of the skills.</p>
+</li>
+<li>
+<p>Reset skills delta - to reset changes in skills for the current session.</p>
+</li>
+<li>
+<p>Copy all to clipboard - to copy information about all skills to the clipboard.</p>
+</li>
+<li>
+<p>Copy selected to clipboard - to copy information about about the selected skill to the clipboard.</p>
+</li>
+<li>
+<p>Characteristics of the character.</p>
+</li>
+<li>
+<p>Skills and characteristics summary</p>
+</li>
+</ol>
+<a class="header" href="#filters" id="filters"><h1>Filters</h1></a>
+<p>#Filters -&gt; Speech tab</p>
+<p><img src="http://www.imageup.ru/img203/2777292/tab_filters_speech.png" alt="filters_speech" /></p>
+<p>List of text strings which should be filtered out and not displayed in the client.</p>
+<ol>
+<li>
+<p>List of strings.</p>
+</li>
+<li>
+<p>Text that will be filtered ( case sensitive ).</p>
+</li>
+<li>
+<p>Color to filter by. empty, -1 or 0xFFFF - will disable color filtering.</p>
+</li>
+<li>
+<p>Exact matching of a string or as a part of a larger string.</p>
+</li>
+<li>
+<p>Add text</p>
+</li>
+<li>
+<p>Edit text</p>
+</li>
+<li>
+<p>Remove text</p>
+</li>
+</ol>
+<a class="header" href="#filters---replaces-tab" id="filters---replaces-tab"><h1>Filters -&gt; Replaces tab</h1></a>
+<p><img src="http://www.imageup.ru/img203/2777294/tab_filters_replaces.png" alt="filters_replaces" /></p>
+<p>List of text for replacing.</p>
+<ol>
+<li>
+<p>List of replaces.</p>
+</li>
+<li>
+<p>Original text ( case sensitive )</p>
+</li>
+<li>
+<p>Replace text</p>
+</li>
+<li>
+<p>Original color, empty, -1 or 0xFFFF - will disable color matching.</p>
+</li>
+<li>
+<p>Replace color - empty, -1 or 0xFFFF - will use original color.</p>
+</li>
+<li>
+<p>Type of message.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>All</p>
+</li>
+<li>
+<p>ASCII</p>
+</li>
+<li>
+<p>Unicode</p>
+</li>
+</ul>
+<ol start="7">
+<li>
+<p>Mode - modes for object groups.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>All</p>
+</li>
+<li>
+<p>Friends&amp;You</p>
+</li>
+<li>
+<p>Enemies</p>
+</li>
+<li>
+<p>Others - Everyone except for you, friends &amp; enemies.</p>
+</li>
+</ul>
+<ol start="8">
+<li>
+<p>Add text</p>
+</li>
+<li>
+<p>Edit tex</p>
+</li>
+<li>
+<p>Remove text</p>
+</li>
+</ol>
+<a class="header" href="#filters---sound-tab" id="filters---sound-tab"><h1>Filters -&gt; Sound tab</h1></a>
+<p><img src="http://www.imageup.ru/img203/2777295/tab_filters_sound.png" alt="filters_sound" /></p>
+<p>A list of sound indices which should be ignored by the client and never played.</p>
+<ol>
+<li>
+<p>Sound indices.</p>
+</li>
+<li>
+<p>Index of a sound to ignore.</p>
+</li>
+<li>
+<p>Name  - comment/name of this ignore item.</p>
+</li>
+<li>
+<p>Add sound</p>
+</li>
+<li>
+<p>Edit sound</p>
+</li>
+<li>
+<p>Remove sound</p>
+</li>
+</ol>
+<a class="header" href="#shop-list-editor" id="shop-list-editor"><h1>Shop List Editor</h1></a>
+<p><img src="http://www.imageup.ru/img94/2900767/shop_list_editor.png" alt="shop_list_editor" /></p>
+<ol>
+<li>
+<p>Goods for buy/sell list.</p>
+</li>
+<li>
+<p>List with vendors goods.</p>
+</li>
+<li>
+<p>&lt;&lt; - Copy selected item from vendors list.</p>
+</li>
+<li>
+<p>Graphic - Item type. If equals -1 or 0xFFFF - it will be ignored when goods list will be analyzed to buy/sell.</p>
+</li>
+<li>
+<p>Color - Item color. If equals -1 or 0xFFFF - it will be ignored when goods list will be analyzed to buy/sell.</p>
+</li>
+<li>
+<p>Price - Maximum item price to pay when buying or minimum price when selling. If equals 0, limits won't apply.</p>
+</li>
+<li>
+<p>Count - Amount of items to buy from a stack. If equals 0, the entire stack will be bought.</p>
+</li>
+<li>
+<p>Name - Item name, if empty, this item won't be considered.</p>
+</li>
+<li>
+<p>Comment</p>
+</li>
+<li>
+<p>Add shop item</p>
+</li>
+<li>
+<p>Remove shop item</p>
+</li>
+<li>
+<p>Save changes</p>
+</li>
+<li>
+<p>Exit</p>
+</li>
+</ol>
+<a class="header" href="#shop-progress-bar" id="shop-progress-bar"><h1>Shop Progress Bar</h1></a>
+<p><img src="http://www.imageup.ru/img94/2900769/shop_progress_bar.jpg" alt="shop_progress_bar" /></p>
+<ol>
+<li>
+<p>Progress indicator.</p>
+</li>
+<li>
+<p>Cancel current operation.</p>
+</li>
+</ol>
+<a class="header" href="#ship-control" id="ship-control"><h1>Ship Control</h1></a>
+<p><img src="http://www.imageup.ru/img94/2900766/ship_control.png" alt="ship_control" /></p>
+<ol>
+<li>Movement types.</li>
+</ol>
+<p>Normal mode</p>
+<p>One - move by 1 tile.</p>
+<p>Slow - slowly move in chosen direction.</p>
+<p>Round button in the middle - stop command.</p>
+<a class="header" href="#scripting" id="scripting"><h1>Scripting</h1></a>
+<p>This page will provide you with information about scripting for OrionUO Assistant.</p>
+<a class="header" href="#functions" id="functions"><h3>Functions</h3></a>
+<ul>
+<li><a href="objects-searching-orion-assistant.html">Object Searching</a></li>
+<li><a href="collections-orion-assistant.html">Collections</a></li>
+<li><a href="objects-orion-assistant.html">Objects</a></li>
+<li><a href="equipment-orion-assistant.html">Equipment</a></li>
+<li><a href="character-movement-orion-assistant.html">Character Movement</a></li>
+<li><a href="targeting-orion-assistant.html">Targeting</a></li>
+<li><a href="new-targeting-system-commands.html">New Targeting System</a></li>
+<li><a href="journal-orion-assistant.html">Journal</a></li>
+<li><a href="menu-orion-assistant.html">Menu Orion</a></li>
+<li><a href="gumps-orion-assistant.html">Gumps</a></li>
+<li><a href="interactions-with-other-scripts-orion-assistant.html">Iteractions With Other Scripts</a></li>
+<li><a href="interactions-with-files-orion-assistant.html">Iteractions With Files</a></li>
+<li><a href="text-window-orion-assistant.html">Text Window</a></li>
+<li><a href="shop-commands.html">Shop</a></li>
+<li><a href="trade-window-orion-assistant.html">Trade Window</a></li>
+<li><a href="client-options-orion-assistant.html">Client Options</a></li>
+<li><a href="prompt-commands.html">Prompt</a></li>
+<li><a href="context-menu-commands.html">Context Menu</a></li>
+<li><a href="timer-commands.html">Timers</a></li>
+<li><a href="speech-commands.html">Speech</a></li>
+<li><a href="map-commands.html">Map</a></li>
+<li><a href="non-categorized-commands-orion-assistant.html">Non Categorized</a></li>
+<li><a href="classes.html">Classes</a></li>
+</ul>
+<a class="header" href="#classes" id="classes"><h3>Classes</h3></a>
+<ul>
+<li><a href="game-object-class-orion-assistant.html">Game Object</a></li>
+<li><a href="player-character-class-orion-assistant.html">Player Character</a></li>
+<li><a href="journal-message-class-orion-assistant.html">Journal Message</a></li>
+<li><a href="menu-object-class-orion-assistant.html">Menu</a></li>
+<li><a href="object-coordinates-class-orion-assistant.html">Object Coordinates</a></li>
+<li><a href="gump-object-class-orion-assistant.html">Gump</a></li>
+<li><a href="gump-hook-object-class-orion-assistant.html">Gump Hook</a></li>
+<li><a href="selected-tile-object-class.html">Selected Tile Object</a></li>
+<li><a href="client-macro-object-class.html">Client Macro</a></li>
+</ul>
+<a class="header" href="#objects-searching" id="objects-searching"><h1>Objects Searching</h1></a>
+<a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<p>flags - search filters:</p>
+<ul>
+<li>
+<p>fast - the search stops on the first found object;</p>
+</li>
+<li>
+<p>near - search for the nearest object to the character;</p>
+</li>
+<li>
+<p>mobile - search only for alive creatures;</p>
+</li>
+<li>
+<p>item - search only inanimate objects;</p>
+</li>
+<li>
+<p>human - search only for humanoid creatures, types: 0x0190-0x0193, 0x03DB, 0x03DF and 0x03E2;</p>
+</li>
+<li>
+<p>live - search only for living creatures;</p>
+</li>
+<li>
+<p>dead - search only for dead creatures, types: 0x0192 and 0x0193.</p>
+</li>
+<li>
+<p>injured - Searching for a friend with lowest HP (works only for FindFriend/FindEnemy).</p>
+</li>
+<li>
+<p>next - Searching for next object (works only for FindFriend/FindEnemy).</p>
+</li>
+<li>
+<p>ignorefriends - ignores friends(Introduced in OA 2.0.8.0).</p>
+</li>
+<li>
+<p>ignoreenemies - ignores enemies (Introduced in OA 2.0.8.0).</p>
+</li>
+</ul>
+<p>_When using human, live или dead - mobile flag is set automatically.</p>
+<p>_When using next - fast flag is set automatically.</p>
+<hr />
+<p>notoriety - Wickedness of the desired character.</p>
+<ul>
+<li>
+<p>innocent/blue</p>
+</li>
+<li>
+<p>friendly/green</p>
+</li>
+<li>
+<p>gray</p>
+</li>
+<li>
+<p>criminal</p>
+</li>
+<li>
+<p>enemy/orange</p>
+</li>
+<li>
+<p>murderer/red</p>
+</li>
+<li>
+<p>invulnerable/yellow</p>
+</li>
+</ul>
+<hr />
+<p>distance - The search distance.</p>
+<p>In addition to numerical values, it can take string constants: finddistance, usedistance, opencorpsedistance.</p>
+<hr />
+<ul>
+<li>void Orion.UseType('graphic', ['color'=0xFFFF], ['container'=self], [recurse=true]);</li>
+</ul>
+<p>Search for an object by type and color in the container.</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - The color or list of colors. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - The container in which the search is performed.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive search for sub-containers.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.UseFromGround('graphic', ['color'=0xFFFF], ['distance'=useObjectsDistance], ['flags']);</li>
+</ul>
+<p>Search for an object by type and color on the ground.</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - The color or list of colors. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - The search distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Search filter flags.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>bool Orion.UseTypeList('listName', ['container'=self], [recurse=true]);</li>
+</ul>
+<p>Search for an object from the find list in the container.</p>
+<ul>
+<li>
+<ul>
+<li>listName - The name of the find list.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - The container in which the search is performed.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive search for sub-containers.</li>
+</ul>
+</li>
+</ul>
+<p>Result: true if the object was found and used.</p>
+<hr />
+<ul>
+<li>bool Orion.UseFromGroundList('listName', ['distance'=useObjectsDistance], ['flags']);</li>
+</ul>
+<p>Search for an object on the find list on the ground.</p>
+<ul>
+<li>
+<ul>
+<li>listName - The name of the find list.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - The search distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Search filter flags.</li>
+</ul>
+</li>
+</ul>
+<p>Result: true if the object was found and used.</p>
+<hr />
+<ul>
+<li>StringList Orion.FindType('graphic', ['color'=0xFFFF], ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);</li>
+</ul>
+<p>Search for an object by type and color.</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - The color or list of colors. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - The container in which the search is performed.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Search filter flags.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - The search distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>notoriety - Wickedness of the desired character.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive search for sub-containers.</li>
+</ul>
+</li>
+</ul>
+<p>Result: List of found serials.</p>
+<hr />
+<ul>
+<li>void Orion.Ignore('serial', [state=true]);</li>
+</ul>
+<p>Set / remove the ignore flag on the serial object.</p>
+<hr />
+<ul>
+<li>void Orion.IgnoreReset();</li>
+</ul>
+<p>Remove the ignore flag from all objects.</p>
+<hr />
+<ul>
+<li>GameObject Orion.FindObject('serial');</li>
+</ul>
+<p>Result: an object of type GameObject or null.</p>
+<hr />
+<ul>
+<li>int Orion.Count('graphic', ['color'=0xFFFF], ['container'=self], ['distance'=searchObjectsDistance], [recurse]);</li>
+</ul>
+<p>Returns the total number of items (the number of items, not the number of objects found).</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - The color or list of colors. 0xFFFF is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - The container in which the search is performed.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - The search distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive search for sub-containers.</li>
+</ul>
+</li>
+</ul>
+<p>Result: the amount of items.</p>
+<hr />
+<ul>
+<li>void Orion.ResetIgnoreList();</li>
+</ul>
+<p>Reset the use of the ignore list.</p>
+<hr />
+<ul>
+<li>void Orion.UseIgnoreList('listName');</li>
+</ul>
+<p>Use ignore list listName.</p>
+<hr />
+<ul>
+<li>StringList Orion.FindList('listName', ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);</li>
+</ul>
+<p>Search for an object in the find list.</p>
+<ul>
+<li>
+<ul>
+<li>listName - The name of the find list.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - The container in which the search is performed.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Search filter flags.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - The search distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>notoriety - Wickedness of the desired character.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive search for sub-containers.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>GameObject Orion.ObjAtLayer('layerName', ['serial'=self]);</li>
+</ul>
+<p>Result: an object of type GameObject in the specified layer of the object 'serial' or null.</p>
+<hr />
+<ul>
+<li>String Orion.FindFriend(['flags'=fast], ['distance'=searchObjectsDistance]);</li>
+</ul>
+<p>Searching for a friend serial from friends list.</p>
+<ul>
+<li>
+<ul>
+<li>flags - Searching filter flags.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - Searching distance.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>String Orion.FindEnemy(['flags'=fast], ['distance'=searchObjectsDistance]);</li>
+</ul>
+<p>Searching for an enemy serial from enemies list.</p>
+<ul>
+<li>
+<ul>
+<li>flags - Searching filter flags.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - Searching distance.</li>
+</ul>
+</li>
+</ul>
+<a class="header" href="#collections" id="collections"><h1>Collections</h1></a>
+<a class="header" href="#command-format-1" id="command-format-1"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.AddType('typeName', ['typeValue'=targetRequest]);</li>
+</ul>
+<p>Add type or select type (if typeValue isn't suggested).</p>
+<hr />
+<ul>
+<li>void Orion.RemoveType('typeName');</li>
+</ul>
+<p>Delete type.</p>
+<hr />
+<ul>
+<li>void Orion.AddObject('objectName', ['objectValue'=targetRequest]);</li>
+</ul>
+<p>Add object or select object (if objectValue isn't suggested)</p>
+<hr />
+<ul>
+<li>void Orion.RemoveObject('objectName');</li>
+</ul>
+<p>Delete object.</p>
+<hr />
+<ul>
+<li>void Orion.AddFindList(['listName'=targetRequest], ['graphic', 'color'], ['comment']);</li>
+</ul>
+<p>Add object properties or select to add object properties to Find list.</p>
+<ul>
+<li>
+<ul>
+<li>listName - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>graphic - object type.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color- object color.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>comment - a comment, which will be displayed in the list.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.ClearFindList('listName');</li>
+</ul>
+<p>Delete search list with all it's content.</p>
+<ul>
+<li>
+<ul>
+<li>listName - list name.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.AddIgnoreListObject(['listName'=targetRequest], ['serial'], ['comment']);</li>
+</ul>
+<p>Add object to ignore list.</p>
+<ul>
+<li>
+<ul>
+<li>listName - list name.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>serial - serial of the object..</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>comment - a comment, which will be displayed in the list.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.AddIgnoreList(['listName'=targetRequest], ['graphic', 'color'], ['comment']);</li>
+</ul>
+<p>Add object properties or target selection appears to add object properties to the ignore list.</p>
+<ul>
+<li>
+<ul>
+<li>listName - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>graphic - Тип объекта.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color- object color.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>comment - a comment, which will be displayed in the list.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.ClearIgnoreList('listName');</li>
+</ul>
+<p>Delete search list with all it's content.</p>
+<ul>
+<li>
+<ul>
+<li>listName - list name.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>StringList Orion.GetFriendList();</li>
+</ul>
+<p>Return string list with friends id's.</p>
+<hr />
+<ul>
+<li>StringList Orion.GetEnemyList();</li>
+</ul>
+<p>Return string list with enemies id's.</p>
+<hr />
+<ul>
+<li>void Orion.AddFriend('friendName', ['serial'=targetRequest]);</li>
+</ul>
+<p>Add a friend or select one to add by a target if there's no 'serial' argument.</p>
+<hr />
+<ul>
+<li>void Orion.RemoveFriend('friendName');</li>
+</ul>
+<p>Remove a friend from friends list.</p>
+<hr />
+<ul>
+<li>void Orion.ClearFriendList();</li>
+</ul>
+<p>Clear friends list.</p>
+<hr />
+<ul>
+<li>void Orion.AddEnemy('enemyName', ['serial'=targetRequest]);</li>
+</ul>
+<p>Add an enemy or select one to add by a target if there's no 'serial' argument.</p>
+<hr />
+<ul>
+<li>void Orion.RemoveEnemy('enemyName');</li>
+</ul>
+<p>Remove an enemy from enemies list.</p>
+<hr />
+<ul>
+<li>void Orion.ClearEnemyList();</li>
+</ul>
+<p>Clear enemies list.</p>
+<hr />
+<ul>
+<li>void Orion.SetGlobal(name, value);</li>
+</ul>
+<p>Set a global variable. Value data type is always a string.</p>
+<hr />
+<ul>
+<li>String Orion.GetGlobal(name);</li>
+</ul>
+<p>Retrieve value ( string data type ) of a global variable</p>
+<p>Returns value of the variable or an empty string is no variable is found with such name.</p>
+<hr />
+<ul>
+<li>void Orion.ClearGlobals();</li>
+</ul>
+<p>Clear global variables list.</p>
+<a class="header" href="#objects" id="objects"><h1>Objects</h1></a>
+<a class="header" href="#command-format-2" id="command-format-2"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.Info(['serial'=targetRequest]);</li>
+</ul>
+<p>Display information about the object &quot;serial&quot; in a text box.</p>
+<p>Request target to be aimed at the desired object, if parameters were not specified.</p>
+<hr />
+<ul>
+<li>void Orion.InfoTile(['lasttile'=targetRequest]);</li>
+</ul>
+<p>Display information about 'lasttile' (tile, on which target was selected last time ) in the text box.</p>
+<p>Request target to be aimed at the desired tile, if parameters were not specified.</p>
+<hr />
+<ul>
+<li>String Orion.GetSerial('serial');</li>
+</ul>
+<p>Returns real value of the serial.</p>
+<p>For instance: Orion.GetSerial(self) or Orion.GetSerial(lastcontainer) - will return the serial of the player 0x12345678</p>
+<hr />
+<ul>
+<li>String Orion.GetGraphic('graphic');</li>
+</ul>
+<p>Return real value of &quot;graphic&quot;.</p>
+<p>For instance: Orion.GetGraphic('bm') - will return type of blood moss, stated in Lists/Types</p>
+<hr />
+<ul>
+<li>String Orion.GetContainer('serial');</li>
+</ul>
+<p>Return serial of the object, in which an object with &quot;serial&quot; is located.</p>
+<p>Orion.GetContainer(self) will return 0xFFFFFFFF (worlds serial) or Orion.GetContainer(backpack) - will return serial of the player 0x12345678, since backpack container is the player, who's owning it.</p>
+<hr />
+<ul>
+<li>void Orion.Click(['serial'=self]);</li>
+</ul>
+<p>Request click for the object serial.</p>
+<hr />
+<ul>
+<li>void Orion.UseObject(['serial'=self]);</li>
+</ul>
+<p>Request to use (doubleclick) the object serial.</p>
+<hr />
+<ul>
+<li>void Orion.GetStatus(['serial'=self]);</li>
+</ul>
+<p>Request for the object serial status.</p>
+<hr />
+<ul>
+<li>void Orion.Attack('serial');</li>
+</ul>
+<p>Request to attack the object serial.</p>
+<hr />
+<ul>
+<li>void Orion.Hide(['serial'=targetRequest]);</li>
+</ul>
+<p>Hide the object serial.</p>
+<p>Request target selection for the object indication, if parameters were not specified.</p>
+<hr />
+<ul>
+<li>void Orion.RenameMount('serial', 'new name');</li>
+</ul>
+<p>Rename your mount &quot;serial&quot;.</p>
+<hr />
+<ul>
+<li>void Orion.Drop(['serial'=targetRequest], [count=0(all)], [x=-1, y=-1, z=0]);</li>
+</ul>
+<p>Drop the item 'serial' with amount 'count' into coordinates x, y, z ; Use target if parameters were not specified.</p>
+<hr />
+<ul>
+<li>void Orion.DropHere(['serial'=targetRequest], [count=0(all)]);</li>
+</ul>
+<p>Drop the item 'serial' under the character with amount 'count'. Request target to be aimed at the desired object, if parameters were not specified.</p>
+<hr />
+<ul>
+<li>void Orion.MoveItem(['serial'=targetRequest], [count=0(all)], ['container'=backpack], [x=-1, y=-1], [z=0]);</li>
+</ul>
+<p>Move the object 'serial' with amount 'count' to the container 'container' into coordinates x, y, z (z when throwing on the ground), use target if parameters were not specified.</p>
+<hr />
+<ul>
+<li>int Orion.GetDistance('serial');</li>
+</ul>
+<p>Return distance to the object.</p>
+<hr />
+<ul>
+<li>int Orion.GetDistance(x, y);</li>
+</ul>
+<p>Return distance to the coordinates.</p>
+<hr />
+<ul>
+<li>void Orion.BandageSelf();</li>
+</ul>
+<p>Bandageself.</p>
+<hr />
+<ul>
+<li>String ClientLastTarget();</li>
+</ul>
+<p>Get the state of the global client variable LastTarget.</p>
+<p>Result: The string with the serial.</p>
+<hr />
+<ul>
+<li>void ClientLastTarget(serial);</li>
+</ul>
+<p>Set the state of the client global variable LastTarget to the serial.</p>
+<hr />
+<ul>
+<li>String ClientLastAttack();</li>
+</ul>
+<p>Get the state of the global client variable LastAttack</p>
+<p>Result: The string with the serial.</p>
+<hr />
+<ul>
+<li>void ClientLastAttack(serial);</li>
+</ul>
+<p>Set the state of the global client variable LastAttack to the serial.</p>
+<hr />
+<ul>
+<li>String TargetSystemSerial();</li>
+</ul>
+<p>Get the state of the global client variable TargetSystemSerial (from new target system).</p>
+<p>Result: The string with the serial.</p>
+<hr />
+<ul>
+<li>void TargetSystemSerial(serial);</li>
+</ul>
+<p>Set the state of the global client variable TargetSystemSerial (from new target system) to the serial.</p>
+<hr />
+<ul>
+<li>void Orion.GetFriendsStatus();</li>
+</ul>
+<p>Retrieves statuses of all friends in update range ( required to get updates about their hp etc. ).</p>
+<hr />
+<ul>
+<li>void Orion.GetEnemiesStatus();</li>
+</ul>
+<p>Retrieves statuses of all enemies in update range ( required to get updates about their hp etc. ).</p>
+<hr />
+<a class="header" href="#introduced-in-2070" id="introduced-in-2070"><h2>Introduced in 2.0.7.0</h2></a>
+<ul>
+<li>PositionObject Orion.GetLastTargetPosition();</li>
+</ul>
+<p>Retrieves latest coordinates of LastTarget, if object has disappeared - it will retrieve last known coordinates.</p>
+<p>Returns: a PositionObject data type.</p>
+<hr />
+<ul>
+<li>PositionObject Orion.GetLastAttackPosition();</li>
+</ul>
+<p>Retrieves latest coordinates of LastAttack, if object has disappeared - it will retrieve last known coordinates.</p>
+<p>Returns: a PositionObject data type.</p>
+<hr />
+<a class="header" href="#introduced-in-2080-1" id="introduced-in-2080-1"><h2>Introduced in 2.0.8.0</h2></a>
+<ul>
+<li>bool Orion.OpenContainer('serial', ['delay'=600], ['errorTextPattern']);</li>
+</ul>
+<p>Open container.</p>
+<ul>
+<li>
+<p>serial - serial of the container we're opening.</p>
+</li>
+<li>
+<p>delay - Maximum delay for container opening action.</p>
+</li>
+<li>
+<p>errorTextPattern - Error text. Default: 'reach that|too away'.</p>
+</li>
+</ul>
+<p>Returns: true if container was opened successfully.</p>
+<hr />
+<ul>
+<li>bool Orion.ObjectExists('serial');</li>
+</ul>
+<p>Returns: true if object with 'serial' is present in OA memory.</p>
+<hr />
+<ul>
+<li>String Orion.RequestName('serial', ['delay'=200]);</li>
+</ul>
+<p>Requests objects name. If the name is already present, it will return immediately. Otherwise name will be requested from the server.</p>
+<ul>
+<li>
+<p>serial - serial of the object we're requesting name from.</p>
+</li>
+<li>
+<p>delay - Max delay for name requesting.</p>
+</li>
+</ul>
+<p>Returns: Objects name or an empty string if failed.</p>
+<hr />
+<a class="header" href="#introduced-in-20120" id="introduced-in-20120"><h2>Introduced in 2.0.12.0</h2></a>
+<ul>
+<li>bool Orion.GetProfile('serial', ['delay'=300], ['errorTextPattern']);</li>
+</ul>
+<p>Retrieves characters profile.</p>
+<ul>
+<li>
+<p>serial - characters serial.</p>
+</li>
+<li>
+<p>delay - maximum wait time for profile retrievement.</p>
+</li>
+<li>
+<p>errorTextPattern - error pattern, default: 'reach that|too away'.</p>
+</li>
+</ul>
+<p>Returns true if a profile was retrieved.</p>
+<hr />
+<a class="header" href="#introduced-in-20130" id="introduced-in-20130"><h2>Introduced in 2.0.13.0</h2></a>
+<ul>
+<li>void Orion.ShowStatusbar('serial', x, y, [minimized=true]);</li>
+</ul>
+<p>Show/Move status bar gump in client screen.</p>
+<p>serial - character serial.</p>
+<p>x - screen X coordinate.</p>
+<p>y - screen Y coordinate.</p>
+<p>minimized - only for your character. true will show minimized status bar, false will show expanded one.</p>
+<hr />
+<ul>
+<li>void Orion.CloseStatusbar('serial');</li>
+</ul>
+<p>Close status bar which belongs to serial.</p>
+<a class="header" href="#equipment" id="equipment"><h1>Equipment</h1></a>
+<p>A group of commands to work with clothes and dress/undress.</p>
+<p>List of layers:</p>
+<p>1 - RightHand</p>
+<p>2 - LeftHand</p>
+<p>3 - Shoes</p>
+<p>4 - Pants</p>
+<p>5 - Shirt</p>
+<p>6 - Helmet</p>
+<p>7 - Gloves</p>
+<p>8 - Ring</p>
+<p>9 - Talisman</p>
+<p>10 - Necklace</p>
+<p>11 - Hair</p>
+<p>12 - Waist</p>
+<p>13 - InnerTorso</p>
+<p>14 - Bracelet</p>
+<p>15 - Face</p>
+<p>16 - Beard</p>
+<p>17 - MidTorso</p>
+<p>18 - Earrings</p>
+<p>19 - Arms</p>
+<p>20 - Cloak</p>
+<p>21 - Backpack</p>
+<p>22 - Robe</p>
+<p>23 - Eggs</p>
+<p>24 - Legs</p>
+<p>25 - Mount</p>
+<p>26 - Buy</p>
+<p>27 - Resale</p>
+<p>28 - Sell</p>
+<p>29 - Bank</p>
+<a class="header" href="#command-format-3" id="command-format-3"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.SetDressBag(['serial'=targetRequest]);</li>
+</ul>
+<p>Change the serial of bag for clothes on &quot;serial&quot;.</p>
+<p>Request target to be aimed at the desired object, if parameters were not specified.</p>
+<hr />
+<ul>
+<li>void Orion.UnsetDressBag();</li>
+</ul>
+<p>Reset the serial of bag.</p>
+<hr />
+<ul>
+<li>void Orion.SetArm ('setName');</li>
+</ul>
+<p>Set the weapon/shield.</p>
+<hr />
+<ul>
+<li>void Orion.UnsetArm ('setName');</li>
+</ul>
+<p>Clear setName.</p>
+<hr />
+<ul>
+<li>void Orion.SetDress ('setName');</li>
+</ul>
+<p>Set the clothes in the 'setName' (except weapons and shields).</p>
+<hr />
+<ul>
+<li>void Orion.UnsetDress ('setName');</li>
+</ul>
+<p>Clear setName.</p>
+<hr />
+<ul>
+<li>void Orion.Arm('setName');</li>
+</ul>
+<p>Dress setName.</p>
+<p>Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.</p>
+<hr />
+<ul>
+<li>void Orion.Disarm();</li>
+</ul>
+<p>Disarm your weapon/shield.</p>
+<hr />
+<ul>
+<li>void Orion.Dress('setName');</li>
+</ul>
+<p>Dress setName.</p>
+<p>Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.</p>
+<hr />
+<ul>
+<li>void Orion.Undress();</li>
+</ul>
+<p>Take off all but the weapons and shields.</p>
+<hr />
+<ul>
+<li>void Orion.Unequip ('layerName');</li>
+</ul>
+<p>Remove the object from the specified layer.</p>
+<hr />
+<ul>
+<li>void Orion.Equip ('serial');</li>
+</ul>
+<p>Dress the specified item.</p>
+<hr />
+<ul>
+<li>void Orion.EquipT('graphic', ['color'=0xFFFF]);</li>
+</ul>
+<p>Find the item in the character backpack/sub-packs and bags with the type &quot;graphic&quot; and &quot;color&quot; (if required) and dress them.</p>
+<a class="header" href="#character-movement" id="character-movement"><h1>Character Movement</h1></a>
+<a class="header" href="#command-format-4" id="command-format-4"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.BlockMoving(state);</li>
+</ul>
+<p>Blocks character movement.</p>
+<hr />
+<ul>
+<li>bool Orion.CanWalk(direction, x, y, z);</li>
+</ul>
+<p>Check for the ability to take a step.</p>
+<p>Result: true if you can step from the current coordinates (the turn is considered as a step).</p>
+<hr />
+<ul>
+<li>bool Orion.Step(direction, [run=false]);</li>
+</ul>
+<p>Request to move a character with the ability to run.</p>
+<p>Result: true if the step was successfully made (the turn is considered as a step).</p>
+<hr />
+<ul>
+<li>bool Orion.WalkTo(x, y, z, [distance=1]);</li>
+</ul>
+<p>Path search to the specified coordinates until the specified distance is reached. Can be used within one screen.</p>
+<p>Result: true if the destination or specified distance is reached.</p>
+<hr />
+<ul>
+<li>void Orion.StopWalking();</li>
+</ul>
+<p>Cancel the path search.</p>
+<hr />
+<ul>
+<li>bool Orion.IsWalking();</li>
+</ul>
+<p>Check: whether the character is currently moving (automatic movement).</p>
+<p>Result: true if auto-movement is on.</p>
+<a class="header" href="#targeting" id="targeting"><h1>Targeting</h1></a>
+<a class="header" href="#command-format-5" id="command-format-5"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<p>graphicOrFlags - searching filter:</p>
+<ul>
+<li>
+<p>mine - searching for cave tiles;</p>
+</li>
+<li>
+<p>tree - searching for trees;</p>
+</li>
+<li>
+<p>water - searching for water tiles;</p>
+</li>
+<li>
+<p>land - searching for only land tiles;</p>
+</li>
+<li>
+<p>any - searching of any type of tile (static tiles have higher priority over landscape).</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>bool Orion.HaveTarget();</li>
+</ul>
+<p>Have a target.</p>
+<p>Resul: true if target is on.</p>
+<hr />
+<ul>
+<li>void Orion.WaitTargetObject('serial');</li>
+</ul>
+<p>Set the target trap for object(s) serial.</p>
+<hr />
+<ul>
+<li>void Orion.WaitTargetType('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);</li>
+</ul>
+<p>Set the target trap for object, found by searching container.</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - Searched Container.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive Search in subcontainers.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.WaitTargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);</li>
+</ul>
+<p>Set the target trap for object found by search on the ground.</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - Search Distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.WaitTargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);</li>
+</ul>
+<p>Set the target trap for object, found by searching container.</p>
+<ul>
+<li>
+<ul>
+<li>findListName - Search list name.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - Container being searched.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive Search in subcontainers.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.WaitTargetGroundList('findListName', ['distance'=searchObjectsDistance], ['flags']);</li>
+</ul>
+<p>Set the target trap for object found by searching the ground.</p>
+<ul>
+<li>
+<ul>
+<li>findListName - Search list name.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - Search Distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.WaitTargetTile('graphic', [x, y, z]);</li>
+</ul>
+<p>Set the target trap on the ground.</p>
+<p>graphic - type of the tile, might be lasttile</p>
+<p>x - World X coordinate</p>
+<p>y - World Y coordinate</p>
+<p>z - World Z coordinate</p>
+<hr />
+<ul>
+<li>void Orion.WaitTargetTileRelative('graphic', [x, y, z]);</li>
+</ul>
+<p>Set the target trap on the ground, against Character.</p>
+<p>graphic - type of the tile, might be lasttile</p>
+<p>x - X coordinate bias in the world</p>
+<p>y - Y coordinate bias in the world</p>
+<p>z - Z coordinate bias in the world</p>
+<hr />
+<ul>
+<li>void Orion.CancelWaitTarget();</li>
+</ul>
+<p>Cancel of the current wait of the target.</p>
+<hr />
+<ul>
+<li>void Orion.TargetObject('serial');</li>
+</ul>
+<p>Point the target on a serial object.</p>
+<hr />
+<ul>
+<li>void Orion.TargetType('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);</li>
+</ul>
+<p>Point the target on the object found by searching container.</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - Searched Container.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive Search in subcontainers.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.TargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);</li>
+</ul>
+<p>Point the target on the object found by searching the ground.</p>
+<ul>
+<li>
+<ul>
+<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - Search Distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.TargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);</li>
+</ul>
+<p>Point the target on the object found by serching container.</p>
+<ul>
+<li>
+<ul>
+<li>findListName - Search list name.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>container - Container being searched.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>recurse - Recursive Search in subcontainers.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.TargetGroundList('findListName', ['distance'=searchObjectsDistance], ['flags']);</li>
+</ul>
+<p>Point the target on the object found by searching the ground.</p>
+<ul>
+<li>
+<ul>
+<li>findListName - Search list name.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>distance - Search Distance.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - Flag Search Filters.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.TargetTile('graphic', [x, y, z]);</li>
+</ul>
+<p>Point target on a ground.</p>
+<p>graphic - type of the tile, might be lasttile</p>
+<p>x - World X coordinate</p>
+<p>y - World Y coordinate</p>
+<p>z - World Z coordinate</p>
+<hr />
+<ul>
+<li>void Orion.TargetTileRelative('graphic', [x, y, z]);</li>
+</ul>
+<p>Point target on a ground against Character.</p>
+<p>graphic - type of the tile, might be lasttile</p>
+<p>x - X coordinate bias in the world</p>
+<p>y - Y coordinate bias in the world</p>
+<p>z - Z coordinate bias in the world</p>
+<hr />
+<a class="header" href="#introduced-in-2070-1" id="introduced-in-2070-1"><h2>Introduced in 2.0.7.0</h2></a>
+<ul>
+<li>bool Orion.ValidateTargetTile('graphicOrFlags', x, y);</li>
+</ul>
+<p>This function checks if targeted tile is valid for targeting.</p>
+<ul>
+<li>
+<ul>
+<li>graphicOrFlags - tile type by graphic id or flags.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>x - X coordinate on the map.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>y - Y coordinate on the map.</li>
+</ul>
+</li>
+</ul>
+<p>Returns true if tile is valid for targeting.</p>
+<hr />
+<ul>
+<li>bool Orion.ValidateTargetTileRelative('graphicOrFlags', x, y);</li>
+</ul>
+<p>This function checks if targeted tile( relative to character position on the map ) is valid for targeting.</p>
+<ul>
+<li>
+<ul>
+<li>graphicOrFlags - tile type by graphic id or flags.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>x - X offset on the map.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>y - Y offset on the map.</li>
+</ul>
+</li>
+</ul>
+<p>Returns true if tile is valid for targeting.</p>
+<hr />
+<a class="header" href="#introduced-in-20130-1" id="introduced-in-20130-1"><h2>Introduced in 2.0.13.0</h2></a>
+<ul>
+<li>void Orion.CancalTarget();</li>
+</ul>
+<p>Cancels current target ( if present in client ).</p>
+<hr />
+<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>bool Orion.WaitForTarget([delay=1000]);</li>
+</ul>
+<p>Awaits ( blocks execution ) for a target for 'delay' amount of time.</p>
+<p>If client had a target already, immediately returns true.</p>
+<hr />
+<ul>
+<li>int Orion.GetTargetType();</li>
+</ul>
+<p>Get type of target.</p>
+<p>Returns: 0 if there's no target, 1 - neutral, 2 - harmful, 3 - helpful.</p>
+<a class="header" href="#new-targeting-system" id="new-targeting-system"><h1>New Targeting System</h1></a>
+<p>Targeting this way works faster because there's no target awaiting time after any action request. The server receives action to do and target for this action with in a single packet.</p>
+<a class="header" href="#command-format-6" id="command-format-6"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>void Orion.BandageTarget('serial');</li>
+</ul>
+<p>Apply bandage to target by serial.</p>
+<hr />
+<ul>
+<li>void Orion.CastTarget('nameOrIndex', 'serial');</li>
+</ul>
+<p>Cast a spell on target by serial.</p>
+<hr />
+<ul>
+<li>void Orion.UseSkillTarget('nameOrIndex', 'serial');</li>
+</ul>
+<p>Use a skill on target by serial.</p>
+<a class="header" href="#journal" id="journal"><h1>Journal</h1></a>
+<a class="header" href="#command-format-7" id="command-format-7"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.ShowJournal([linesCount=maxLines]);</li>
+</ul>
+<p>Display the journal content in a text box, linesCount - the number of output lines.</p>
+<hr />
+<ul>
+<li>void Orion.ClearJournal(['pattern'], ['flags'], ['serial'=0], ['color'=0xFFFF]);</li>
+</ul>
+<p>Clear the journal.</p>
+<p>Without parameters - clears the whole journal of the assistant; Otherwise it works similarly to InJournal but including deletion.</p>
+<hr />
+<ul>
+<li>void Orion.JournalIgnoreCase([state=false]);</li>
+</ul>
+<p>Enable / disable ignoring the register for searching text in the journal.</p>
+<hr />
+<ul>
+<li>JournalMessage Orion.InJournal('pattern', ['flags'], ['serial'=0], ['color'=0xFFFF], [startTime=0, endTime=0]);</li>
+</ul>
+<p>Search for data in the journal.</p>
+<ul>
+<li>
+<ul>
+<li>pattern - required string, which can consist of several lines separated via |</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - search flags in the journal: my/self - search for messages with player's serial; Sys/system - search for messages in the system chat. Can be combined with: 'my|sys'.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>serial - search for messages from the object with the specified serial. 0 ignores the filter by serial.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - search for messages with the specified color. 0xFFFF ignores the filter by color.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>startTime - initial time of search. 0 the initial time is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>endTime - the end time of the search. 0 the end time is ignored</li>
+</ul>
+</li>
+</ul>
+<p>Result: object of the type JournalMessage or null if nothing was found.</p>
+<hr />
+<ul>
+<li>JournalMessage Orion.WaitJournal('pattern', startTime, endTime, [flags], ['serial'=0], ['color'=0xFFFF]);</li>
+</ul>
+<p>Waiting for the appearance of data in the journal.</p>
+<ul>
+<li>
+<ul>
+<li>pattern - required string, which can consist of several lines separated via |</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>startTime - initial time of search. 0 the initial time is ignored.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>endTime - the end time of the search. 0 the end time is ignored</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>flags - search flags in the journal: my/self - search for messages with player's serial; Sys/system - search for messages in the system chat. Can be combined with: 'my|sys'.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>serial - search for messages from the object with the specified serial. 0 ignores the filter by serial.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>color - search for messages with the specified color. 0xFFFF ignores the filter by color.</li>
+</ul>
+</li>
+</ul>
+<p>Result: object of the type JournalMessage or null if nothing was found.</p>
+<hr />
+<a class="header" href="#introduced-in-2070-2" id="introduced-in-2070-2"><h2>Introduced in 2.0.7.0</h2></a>
+<ul>
+<li>JournalMessage Orion.LastJournalMessage();</li>
+</ul>
+<p>Retrieve last message from Orion Assistant journal.</p>
+<p>Result: object of the type JournalMessage or null if nothing was found.</p>
+<hr />
+<a class="header" href="#introduced-in-2080-2" id="introduced-in-2080-2"><h2>Introduced in 2.0.8.0</h2></a>
+<ul>
+<li>int Orion.JournalCount();</li>
+</ul>
+<p>Returns: Amount of messages in journal.</p>
+<hr />
+<ul>
+<li>JournalMessage Orion.JournalLine(index);</li>
+</ul>
+<p>Returns JournalMessage by index or null of index wasn't found.</p>
+<a class="header" href="#menu" id="menu"><h1>Menu</h1></a>
+<a class="header" href="#command-format-8" id="command-format-8"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.InfoMenu();</li>
+</ul>
+<p>Display information about the content of the last menu in the journal that came from the server.</p>
+<p>(Introduced in OA 2.0.8.0) index - gump index, -1 or lastmenu will display information about last gump ( if it was there ).</p>
+<hr />
+<ul>
+<li>void Orion.WaitMenu('prompt', 'choice');</li>
+</ul>
+<p>Waiting for the menu with the title 'prompt' to select object 'choice'.</p>
+<p>(Introduced in OA 2.0.8.0) Choice can be numeric, it will chose a choice according to its index. You can also use 'random' - to get a random one.</p>
+<hr />
+<ul>
+<li>void Orion.CancelWaitMenu();</li>
+</ul>
+<p>Cancel the menu waiting.</p>
+<hr />
+<ul>
+<li>int Orion.MenuCount();</li>
+</ul>
+<p>Information about the number of open menus.</p>
+<p>Result: the amount of open menus.</p>
+<hr />
+<ul>
+<li>MenuObject Orion.GetMenu('nameOrIndex');</li>
+</ul>
+<p>Get the menu object by name/index.</p>
+<p>Result: the object of type MenuObject or null if the menu with the specified name or index does not exist.</p>
+<hr />
+<ul>
+<li>void Orion.SelectMenu('name', 'itemName');</li>
+</ul>
+<p>Make a choice in the client's open menu - 'name' of the item that named itemName.</p>
+<hr />
+<ul>
+<li>void Orion.CloseMenu('name');</li>
+</ul>
+<p>Close the open menu 'name' in the client.</p>
+<hr />
+<a class="header" href="#introduced-in-20150-1" id="introduced-in-20150-1"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>bool Orion.WaitForMenu([delay=1000]);</li>
+</ul>
+<p>Awaits ( blocks execution ) for a menu for a given 'delay' of time in ms.</p>
+<p>Returns true is a menu was received during the given delay.</p>
+<a class="header" href="#gumps" id="gumps"><h1>Gumps</h1></a>
+<a class="header" href="#command-format-9" id="command-format-9"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.HelpGump();</li>
+</ul>
+<p>Request for the help menu gump of the server.</p>
+<hr />
+<a class="header" href="#introduced-in-2070-3" id="introduced-in-2070-3"><h2>Introduced in 2.0.7.0</h2></a>
+<ul>
+<li>void Orion.InfoGump([index=-1]);</li>
+</ul>
+<p>Outputs data of a gump by its index. If index equals -1, last gump is taken.</p>
+<hr />
+<a class="header" href="#introduced-in-2082" id="introduced-in-2082"><h2>Introduced in 2.0.8.2</h2></a>
+<ul>
+<li>GumpHookObjects Orion.CreateGumpHook('index');</li>
+</ul>
+<p>Creates a gump hook object.</p>
+<p>index - Return-value of gump button or 'cancel' or a 0 when closing a gump with RMB.</p>
+<hr />
+<ul>
+<li>void Orion.WaitGump(hook);</li>
+</ul>
+<p>Enables a gump hook to catch an incomming gump.</p>
+<p>When new hook is enabled by Orion.WaitGump, it will be added to a stack. All previously enabled hooks will be waiting as well.</p>
+<p>hook - an object created by Orion.CreateGumpHook.</p>
+<hr />
+<ul>
+<li>void Orion.CancelWaitGump();</li>
+</ul>
+<p>Removes **all **enabled gump hooks .</p>
+<hr />
+<ul>
+<li>int Orion.GumpCount();</li>
+</ul>
+<p>Returns the amount of opened gumps from OA memory.</p>
+<hr />
+<ul>
+<li>GumpObject Orion.GetLastGump();</li>
+</ul>
+<p>Get last gump sent by server.</p>
+<p>Returns a GumpObject or a null reference.</p>
+<hr />
+<ul>
+<li>GumpObject Orion.GetGump(index);</li>
+</ul>
+<p>Get gump by an index.</p>
+<p>Returns a GumpObject or a null reference.</p>
+<hr />
+<ul>
+<li>GumpObject Orion.GetGump(serial, id);</li>
+</ul>
+<p>Get gump by serial and id.</p>
+<p>Returns a GumpObject or a null reference.</p>
+<hr />
+<a class="header" href="#introduced-in-20150-2" id="introduced-in-20150-2"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>bool Orion.WaitForGump([delay=1000]);</li>
+</ul>
+<p>Enables a gump hook and blocks thread for 'delay' amount of time in ms. Removes gump hook afterwards.</p>
+<p>Returns true if a gump was received during delay period.</p>
+<a class="header" href="#interactions-with-other-scripts" id="interactions-with-other-scripts"><h1>Interactions With Other Scripts</h1></a>
+<a class="header" href="#command-format-10" id="command-format-10"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.Wait('delay');</li>
+</ul>
+<p>Wait delay (milliseconds).</p>
+<p>In addition, the value can take in the parameter string constants: moveitemdelay, waittargetdelay, useitemdelay, keepcorpsedelay.</p>
+<hr />
+<ul>
+<li>int Orion.Now();</li>
+</ul>
+<p>Result: the current time in milliseconds.</p>
+<hr />
+<ul>
+<li>void Orion.LoadScript('filePath');</li>
+</ul>
+<p>Load the script file.</p>
+<hr />
+<ul>
+<li>void Orion.Exec('functionName', [oneScriptRunning=false], [argumentsList]);</li>
+</ul>
+<p>Start the function.</p>
+<ul>
+<li>
+<ul>
+<li>functionName - The name of the function to start.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>oneScriptRunning - Check for a running instance of the function with the same name and prevent re-execution.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>argumentsList - List of function parameters.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.Terminate('functionName', ['functionsSave']);</li>
+</ul>
+<p>Terminate the script. The function name register is important !!!</p>
+<ul>
+<li>
+<ul>
+<li>functionName - The name of the function to be terminated. Ends all functions with that name. If 'all' is specified - exits all functions except those that were specified in functionsSave.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>functionsSave - Functions that do not need to be terminated are indicated by '|' ; For example, Orion.Terminate ('all', 'Heal | Loot | CheckMana') - terminates all working functions except Heal, Loot, CheckMana.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>bool Orion.ScriptRunning('functionName');</li>
+</ul>
+<p>Check if the script is already running.</p>
+<p>Result: true if the script is running.</p>
+<hr />
+<a class="header" href="#introduced-in-2070-4" id="introduced-in-2070-4"><h2>Introduced in 2.0.7.0</h2></a>
+<ul>
+<li>void Orion.Launch('filePath', [arguments]);</li>
+</ul>
+<p>Launching of external program from 'filePath' with optional 'arguments'.</p>
+<hr />
+<ul>
+<li>bool Orion.Contains(text, pattern, [ignoreCase=false]);</li>
+</ul>
+<p>This function will check for a text pattern or a collection of patters ('patternOne|patternTwo|patternThree') within 'text' string.
+Uses same logic as text searching in UO journal.</p>
+<ul>
+<li>
+<ul>
+<li>text - String with text to search within.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>pattern - String with pattern(s) to search for.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>ignoreCase - true - Ignore case is true by default.</li>
+</ul>
+</li>
+</ul>
+<p>Returns true if there's a match.</p>
+<hr />
+<ul>
+<li>StringList Orion.Split(text, [separator=' '], [skipEmptyWord=true]);</li>
+</ul>
+<p>This function will split 'text' string into a list of strings by separator character. Default is space character.</p>
+<ul>
+<li>
+<ul>
+<li>text - string of text to split.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>separator - character used as a separator for text string.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>skipEmptyWord - true - skips empty words by default.</li>
+</ul>
+</li>
+</ul>
+<p>Returns a list of strings.</p>
+<hr />
+<a class="header" href="#introduced-in-2080-3" id="introduced-in-2080-3"><h2>Introduced in 2.0.8.0</h2></a>
+<ul>
+<li>String Orion.OAVersion();</li>
+</ul>
+<p>Returns: Current version number of OA, for example &quot;2.0.8.0&quot;.</p>
+<hr />
+<ul>
+<li>bool Orion.Connected();</li>
+</ul>
+<p>Returns: true if client is connected to a server and character is already in the world.</p>
+<hr />
+<ul>
+<li>String Orion.Time(['format'=hh:mm:ss.zzz]);</li>
+</ul>
+<p>Returns: current time, example &quot;13:27:41.508&quot;.</p>
+<hr />
+<ul>
+<li>String Orion.Date(['format'=dd.MM.yyyy]);</li>
+</ul>
+<p>Returns: current date, example &quot;26.05.2017&quot;.</p>
+<hr />
+<ul>
+<li>int Orion.Random([value=2147483647]);</li>
+</ul>
+<p>Returns: random value starting from 0 and up to value-1.</p>
+<hr />
+<ul>
+<li>int Orion.Random(minValue, maxValue);</li>
+</ul>
+<p>Returns: random value starting from minValue and up to maxValue-1.</p>
+<hr />
+<a class="header" href="#introduced-in-20150-3" id="introduced-in-20150-3"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>void Orion.ActivateClient();</li>
+</ul>
+<p>Activates client window.</p>
+<hr />
+<ul>
+<li>void Orion.ShutdownWindows(['mode']);</li>
+</ul>
+<p>Shuts down your PC :) can add flags as 'mode'.</p>
+<hr />
+<ul>
+<li>bool Orion.OnOffHotkeys();</li>
+</ul>
+<p>Get current state of hotkeys ( enabled/disabled )</p>
+<p>Returns true if hotkeys are enabled, false if disabled.</p>
+<hr />
+<ul>
+<li>void Orion.OnOffHotkeys(state);</li>
+</ul>
+<p>Sets hotkeys state.</p>
+<a class="header" href="#interactions-with-files" id="interactions-with-files"><h1>Interactions With Files</h1></a>
+<a class="header" href="#command-format-11" id="command-format-11"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>FileObject Orion.NewFile();</li>
+</ul>
+<p>Create a file object.</p>
+<hr />
+<ul>
+<li>bool fileObject.Open('filePath');</li>
+</ul>
+<p>An attempt to open a file (or create a new one) by the filePath.</p>
+<p>Result: true if the file is successfully opened.</p>
+<hr />
+<ul>
+<li>bool fileObject.Append('filePath');</li>
+</ul>
+<p>An attempt to open the file by the filePath to the write-in (the pointer to the data is placed at the end of the file).</p>
+<p>Result: true if the file is successfully opened.</p>
+<hr />
+<ul>
+<li>bool fileObject.Opened();</li>
+</ul>
+<p>Verify the validity of the opened file.</p>
+<p>Result: true if the file is open.</p>
+<hr />
+<ul>
+<li>void fileObject.Close();</li>
+</ul>
+<p>Close the file.</p>
+<hr />
+<ul>
+<li>String fileObject.ReadLine();</li>
+</ul>
+<p>Read the line before the line break (\ n).</p>
+<p>Result: The result of reading the data.</p>
+<hr />
+<ul>
+<li>String fileObject.Read();</li>
+</ul>
+<p>Read the word (up to blank-space &quot; &quot;).</p>
+<p>Result: The result of reading the data.</p>
+<hr />
+<ul>
+<li>void fileObject.WriteLine('data');</li>
+</ul>
+<p>Record the data string and move the string (\ n).</p>
+<hr />
+<ul>
+<li>void fileObject.Write('data');</li>
+</ul>
+<p>Write down the data.</p>
+<hr />
+<a class="header" href="#introduced-in-20160" id="introduced-in-20160"><h2>Introduced in 2.0.16.0</h2></a>
+<ul>
+<li>void fileObject.Remove(['filePath']);</li>
+</ul>
+<p>Deletes file at filePath.</p>
+<p>If filePath was an empty string or null reference, it'll close and try delete fileObject.</p>
+<a class="header" href="#text-window" id="text-window"><h1>Text Window</h1></a>
+<p><strong>TextWindow is a static reference just like Orion so you can always get it.</strong></p>
+<hr />
+<a class="header" href="#command-format-12" id="command-format-12"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void TextWindow.Open();</li>
+</ul>
+<p>Open the text box.</p>
+<hr />
+<ul>
+<li>void TextWindow.Close();</li>
+</ul>
+<p>Close the text box.</p>
+<hr />
+<ul>
+<li>void TextWindow.Clear();</li>
+</ul>
+<p>Clear the text box.</p>
+<hr />
+<ul>
+<li>void TextWindow.Print('text');</li>
+</ul>
+<p>Type the text in the text box.</p>
+<hr />
+<a class="header" href="#introduced-in-20130-2" id="introduced-in-20130-2"><h2>Introduced in 2.0.13.0</h2></a>
+<ul>
+<li>void TextWindow.SetPos(x, y);</li>
+</ul>
+<p>Move text windows to x and y screen coordinates.</p>
+<hr />
+<ul>
+<li>void TextWindow.SetSize(width, height);</li>
+</ul>
+<p>Sets text windows size by given width and height.</p>
+<hr />
+<a class="header" href="#introduced-in-20160-1" id="introduced-in-20160-1"><h2>Introduced in 2.0.16.0</h2></a>
+<ul>
+<li>void TextWindow.SaveToFile('filePath');</li>
+</ul>
+<p>Write contents of text windows into a file at filePath.</p>
+<a class="header" href="#shop" id="shop"><h1>Shop</h1></a>
+<a class="header" href="#command-format-13" id="command-format-13"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>void Orion.Buy('shopListName', ['vendorName'], [shopDelay=0]);</li>
+</ul>
+<p>Initiate buying.</p>
+<p>This will block user input untill completed.</p>
+<p>If shops buy list has appeared but there are no matches for buying, this process will end and resume accepting user input.</p>
+<p>If shops buy list doesn't appear, it awaits 'shopDelay' amount of time in ms and blocks user input.</p>
+<ul>
+<li>
+<p>shopListName - name of the shop list with goods to buy.</p>
+</li>
+<li>
+<p>vendorName - name of vendor.</p>
+</li>
+<li>
+<p>shopDelay - buying operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to buy and 'Shop delay for 1 stack' value.</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.Sell('shopListName', ['vendorName'], [shopDelay=0]);</li>
+</ul>
+<p>Initiate selling.</p>
+<p>This will block user input untill completed.</p>
+<p>If shops sell list has appeared but there are no matches for selling, this process will end and resume accepting user input.</p>
+<p>If shops sell list doesn't appear, it awaits 'shopDelay' amount of time in ms and blocks user input.</p>
+<ul>
+<li>
+<p>shopListName - name of the shop list with goods to sell.</p>
+</li>
+<li>
+<p>vendorName - name of vendor.</p>
+</li>
+<li>
+<p>shopDelay - selling operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to sell and 'Shop delay for 1 stack' value.</p>
+</li>
+</ul>
+<hr />
+<a class="header" href="#introduced-in-20150-4" id="introduced-in-20150-4"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>bool Orion.WaitForShop([delay=1000]);</li>
+</ul>
+<p>Await for a shop gump for a given 'delay' amount of time and blocking script execution.</p>
+<p>Returns true if a shop gump was received during this period.</p>
+<a class="header" href="#trade-window" id="trade-window"><h1>Trade Window</h1></a>
+<a class="header" href="#command-format-14" id="command-format-14"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>int Orion.TradeCount();</li>
+</ul>
+<p>Result: the amount of open menus.</p>
+<hr />
+<ul>
+<li>String Orion.TradeContainer('index', 'container');</li>
+</ul>
+<p>Get the container serial of the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
+<p>container - Window identifier, right ('right' or '1') or left ('left' or '0').</p>
+<p>Result: serial of the container.</p>
+<hr />
+<ul>
+<li>String Orion.TradeOpponent('index');</li>
+</ul>
+<p>Get an opponent's serial of the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
+<p>Result: opponent's serial.</p>
+<hr />
+<ul>
+<li>String Orion.TradeName('index');</li>
+</ul>
+<p>Get the opponent's name of the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
+<p>Result: opponent's name.</p>
+<hr />
+<ul>
+<li>bool Orion.TradeCheckState('index', 'container');</li>
+</ul>
+<p>Obtain the status (confirmation) of the transaction in the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using serial number index 0x12345678).</p>
+<p>container - Window identifier, right ('right' or '1') or left ('left' or '0').</p>
+<p>Result: the status of the checkbox is true / false.</p>
+<hr />
+<ul>
+<li>void Orion.TradeCheck('index', state);</li>
+</ul>
+<p>Change the transaction confirmation status in the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using serial number index 0x12345678).</p>
+<p>state - new state, true (tick) or false (uncheck).</p>
+<hr />
+<ul>
+<li>void Orion.TradeClose('index');</li>
+</ul>
+<p>Close the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
+<hr />
+<a class="header" href="#introduced-in-20150-5" id="introduced-in-20150-5"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>bool Orion.WaitForTrade([delay=1000]);</li>
+</ul>
+<p>Await for a trade window for a given 'delay' amount of time and blocking script execution.</p>
+<p>Returns true if a trade window was received during this period.</p>
+<a class="header" href="#client-options" id="client-options"><h1>Client Options</h1></a>
+<a class="header" href="#command-format-15" id="command-format-15"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>bool OptionSound();</li>
+</ul>
+<p>Get status of Sound option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionSound(state);</li>
+</ul>
+<p>Set Sound option status.</p>
+<hr />
+<ul>
+<li>int OptionSoundVolume();</li>
+</ul>
+<p>Get status of Sound Volume option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionSoundVolume(value);</li>
+</ul>
+<p>Set Sound Volume option status.</p>
+<hr />
+<ul>
+<li>bool OptionMusic();</li>
+</ul>
+<p>Get status of Music option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionMusic(state);</li>
+</ul>
+<p>Set Music option status.</p>
+<hr />
+<ul>
+<li>int OptionMusicVolume();</li>
+</ul>
+<p>Get status of Music option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionMusicVolume(value);</li>
+</ul>
+<p>Set Sound Volume option status.</p>
+<hr />
+<ul>
+<li>bool OptionUseTooltips();</li>
+</ul>
+<p>Get status of Use Tooltips option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionUseTooltips(state);</li>
+</ul>
+<p>Set Use Tooltips option status.</p>
+<hr />
+<ul>
+<li>bool OptionAlwaysRun();</li>
+</ul>
+<p>Get status of Always Run option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionAlwaysRun(state);</li>
+</ul>
+<p>Set Always Run option status.</p>
+<hr />
+<ul>
+<li>bool OptionNewTargetSystem();</li>
+</ul>
+<p>Get status of New Target System option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionNewTargetSystem(state);</li>
+</ul>
+<p>Set New Target System option status.</p>
+<hr />
+<ul>
+<li>bool OptionObjectHandles();</li>
+</ul>
+<p>Get status of Object Handles option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionObjectHandles(state);</li>
+</ul>
+<p>Set Object Handles option status.</p>
+<hr />
+<ul>
+<li>bool OptionScaleSpeech();</li>
+</ul>
+<p>Get status of Scale Speech Duration option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionScaleSpeech(state);</li>
+</ul>
+<p>Set Scale Speech Duration option status.</p>
+<hr />
+<ul>
+<li>int OptionScaleSpeechDelay();</li>
+</ul>
+<p>Get status of Scale Speech Delay option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionScaleSpeechDelay(value);</li>
+</ul>
+<p>Set Scale Speech Delay option status.</p>
+<hr />
+<ul>
+<li>bool OptionIgnoreGuildMessages();</li>
+</ul>
+<p>Get status of Ignore Guild Messages option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionIgnoreGuildMessages(state);</li>
+</ul>
+<p>Set Ignore Guild Messages option status.</p>
+<hr />
+<ul>
+<li>bool OptionIgnoreAllianceMessages();</li>
+</ul>
+<p>Get status of Ignore Guild Messages option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionIgnoreAllianceMessages(state);</li>
+</ul>
+<p>Set Ignore Alliance Messages option status.</p>
+<hr />
+<ul>
+<li>bool OptionDarkNights();</li>
+</ul>
+<p>Get status of Dark Nights option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionDarkNights(state);</li>
+</ul>
+<p>Set Dark Nights option status.</p>
+<hr />
+<ul>
+<li>bool OptionColoredLighting();</li>
+</ul>
+<p>Get status of Colored Lighting option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionColoredLighting(state);</li>
+</ul>
+<p>Set Colored Lighting option status.</p>
+<hr />
+<ul>
+<li>bool OptionCriminalActionsQuery();</li>
+</ul>
+<p>Get status of Criminal Actions Query option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionCriminalActionsQuery(state);</li>
+</ul>
+<p>Set Criminal Actions Query option status.</p>
+<hr />
+<ul>
+<li>bool OptionCircleOfTransparency();</li>
+</ul>
+<p>Get status of Circle Of Transparency option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionCircleOfTransparency(state);</li>
+</ul>
+<p>Set Circle Of Transparency option status.</p>
+<hr />
+<ul>
+<li>int OptionCircleOfTransparencyValue();</li>
+</ul>
+<p>Get status of Circle Of Transparency value option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionCircleOfTransparencyValue (value);</li>
+</ul>
+<p>Set the Circle Of Transparency Value option status.</p>
+<hr />
+<ul>
+<li>bool OptionLockResizingGameWindow ();</li>
+</ul>
+<p>Get the status of the Lock Resizing Game Window option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionLockResizingGameWindow (state);</li>
+</ul>
+<p>Set the Lock Resizing Game Window option status.</p>
+<hr />
+<ul>
+<li>int OptionFPSValue ();</li>
+</ul>
+<p>Get the state of the FPS Value option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionFPSValue (value);</li>
+</ul>
+<p>Set the state of the FPS Value option.</p>
+<hr />
+<ul>
+<li>bool OptionUseScalingGameWindow ();</li>
+</ul>
+<p>Get the status of the Use Scaling Game Window option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionUseScalingGameWindow (state);</li>
+</ul>
+<p>Set the Use Scaling Game Window option status.</p>
+<hr />
+<ul>
+<li>int OptionDrawStatusState ();</li>
+</ul>
+<p>Get the status of the Draw Status State option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionDrawStatusState (state);</li>
+</ul>
+<p>Set the Draw Status State option status.</p>
+<hr />
+<ul>
+<li>bool OptionDrawStumps ();</li>
+</ul>
+<p>Get the status of the Draw Stumps option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionDrawStumps (state);</li>
+</ul>
+<p>Set the Draw Stumps option status.</p>
+<hr />
+<ul>
+<li>bool OptionMarkingCaves ();</li>
+</ul>
+<p>Get the status of the Marking Caves option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionMarkingCaves (state);</li>
+</ul>
+<p>Set the Marking Caves option status.</p>
+<hr />
+<ul>
+<li>bool OptionNoVegetation ();</li>
+</ul>
+<p>Get the status of the No Vegetation option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionNoVegetation (state);</li>
+</ul>
+<p>Set the No Vegetation option status.</p>
+<hr />
+<ul>
+<li>bool OptionNoFieldsAnimation ();</li>
+</ul>
+<p>Get the status of the No Fields Animation option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionNoFieldsAnimation (state);</li>
+</ul>
+<p>Set the No Fields Animation option status.</p>
+<hr />
+<ul>
+<li>bool OptionStandardCharactesFrameRate ();</li>
+</ul>
+<p>Get the status of the Standard Charactes FrameRate option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionStandardCharactesFrameRate (state);</li>
+</ul>
+<p>Set the Standard Charactes FrameRate option status.</p>
+<hr />
+<ul>
+<li>bool OptionStandardItemsFrameRate ();</li>
+</ul>
+<p>Get the status of the Standard Items Frame Rate option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionStandardItemsFrameRate (state);</li>
+</ul>
+<p>Set the Standard Items Frame Rate option status.</p>
+<hr />
+<ul>
+<li>bool OptionLockGumpsMoving ();</li>
+</ul>
+<p>Get the status of the Lock Gumps Moving option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionLockGumpsMoving (state);</li>
+</ul>
+<p>Set the Lock Gumps Moving option status.</p>
+<hr />
+<ul>
+<li>bool OptionEnterChat ();</li>
+</ul>
+<p>Get the status of the Enter Chat option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionEnterChat (state);</li>
+</ul>
+<p>Set the Enter Chat option status.</p>
+<hr />
+<ul>
+<li>int OptionHiddenCharacters ();</li>
+</ul>
+<p>Get the status of the Hidden Characters option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionHiddenCharacters (state);</li>
+</ul>
+<p>Set the Hidden Characters option status.</p>
+<hr />
+<ul>
+<li>int OptionHiddenCharactersAlpha ();</li>
+</ul>
+<p>Get the status of the Hidden Characters Alpha option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionHiddenCharactersAlpha (value);</li>
+</ul>
+<p>Set the Hidden Characters Alpha option status.</p>
+<hr />
+<ul>
+<li>bool OptionHiddenCharactersModeOnlyForSelf ();</li>
+</ul>
+<p>Get the status of the Hidden Characters Mode Only For Self option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionHiddenCharactersModeOnlyForSelf (state);</li>
+</ul>
+<p>Set the Hidden Characters Mode Only For Self option status.</p>
+<hr />
+<ul>
+<li>bool OptionTransparentSpellIcons ();</li>
+</ul>
+<p>Get the status of the Transparent Spell Icons option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionTransparentSpellIcons (state);</li>
+</ul>
+<p>Set the Transparent Spell Icons option status.</p>
+<hr />
+<ul>
+<li>int OptionSpellIconsAlpha ();</li>
+</ul>
+<p>Get the status of the Spell Icons Alpha option.</p>
+<p>Result: Integer Value.</p>
+<hr />
+<ul>
+<li>void OptionSpellIconsAlpha (value);</li>
+</ul>
+<p>Set the Spell Icons Alpha option status.</p>
+<hr />
+<ul>
+<li>bool OptionFastRotation ();</li>
+</ul>
+<p>Get the status of the Fast Rotation option.</p>
+<p>Result: true if enabled.</p>
+<hr />
+<ul>
+<li>void OptionFastRotation (state);</li>
+</ul>
+<p>Set the Fast Rotation option status.</p>
+<a class="header" href="#prompt" id="prompt"><h1>Prompt</h1></a>
+<a class="header" href="#command-format-16" id="command-format-16"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>void Orion.WaitPrompt('text', 'serial'=0, 'type'=all);</li>
+</ul>
+<p>Add a prompt hook.</p>
+<ul>
+<li>
+<p>text - input text</p>
+</li>
+<li>
+<p>serial - serial of prompt object. If serial equals 0, serial check will be ignored.</p>
+</li>
+<li>
+<p>type - prompt type. all - all types; ascii - only ASCII prompts; unicode - only UNIDCODE prompts;</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.CancelWaitPrompt();</li>
+</ul>
+<p>Cancel all prompt hooks.</p>
+<hr />
+<a class="header" href="#introduced-in-20140" id="introduced-in-20140"><h2>Introduced in 2.0.14.0</h2></a>
+<ul>
+<li>bool Orion.PrompsExists();</li>
+</ul>
+<p>Returns true if a prompt is active.</p>
+<hr />
+<ul>
+<li>String Orion.PromptSerial();</li>
+</ul>
+<p>Returns prompt serial as string.</p>
+<hr />
+<ul>
+<li>String Orion.PromptID();</li>
+</ul>
+<p>Returns prompt id as string.</p>
+<hr />
+<ul>
+<li>void Orion.SendPrompt('text');</li>
+</ul>
+<p>Send prompt response ( if there's a prompt active ) with text input.</p>
+<a class="header" href="#context-menu" id="context-menu"><h1>Context Menu</h1></a>
+<a class="header" href="#command-format-17" id="command-format-17"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>void Orion.RequestContextMenu('serial');</li>
+</ul>
+<p>Send a context menu request for given serial.</p>
+<hr />
+<ul>
+<li>void Orion.WaitContextMenu('serial', index);</li>
+</ul>
+<p>Add context menu wait hook.</p>
+<ul>
+<li>
+<p>serial - serial of context menu object. If serial equals 0, serial check will be ignored.</p>
+</li>
+<li>
+<p>index - index of context menu choice, starting with 0.</p>
+</li>
+</ul>
+<hr />
+<ul>
+<li>void Orion.CancelContextMenu();</li>
+</ul>
+<p>Cancel all context menu hooks.</p>
+<hr />
+<a class="header" href="#introduced-in-20150-6" id="introduced-in-20150-6"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>bool Orion.WaitForContextMenu([delay=1000]);</li>
+</ul>
+<p>Awaits context menu for 'delay' amount of time in ms.</p>
+<p>Returns true is context menu was received during this period.</p>
+<a class="header" href="#timers" id="timers"><h1>Timers</h1></a>
+<a class="header" href="#command-format-18" id="command-format-18"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>bool Orion.TimerExists('name');</li>
+</ul>
+<p>Check if timer with given name exists.</p>
+<p>Returns true if such timer exists.</p>
+<hr />
+<ul>
+<li>void Orion.SetTimer('name', [delay=0]);</li>
+</ul>
+<p>Create/Change timer with 'delay' as initial value. Default is 0.</p>
+<hr />
+<ul>
+<li>int Orion.Timer('name');</li>
+</ul>
+<p>Get current value of timer by name.</p>
+<p>Returns -1 if such timer doesn't exist .</p>
+<p>Returns time passed from timer initiation in ms.</p>
+<hr />
+<ul>
+<li>void Orion.RemoveTimer('name');</li>
+</ul>
+<p>Removes timer with a given name.</p>
+<hr />
+<ul>
+<li>void Orion.ClearTimers();</li>
+</ul>
+<p>Removes all existing timers.</p>
+<a class="header" href="#speech" id="speech"><h1>Speech</h1></a>
+<a class="header" href="#command-format-19" id="command-format-19"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>void Orion.Print(['color'], 'text');</li>
+</ul>
+<p>Prints 'text' string into system chat.</p>
+<p>If only 'text' string was passed, default color [no color] will be used.</p>
+<p>color - message color.</p>
+<p>text - message text.</p>
+<hr />
+<ul>
+<li>void Orion.CharPrint('serial', 'color', 'text');</li>
+</ul>
+<p>Print a message above character with given serial.</p>
+<p>serial - given character serial.</p>
+<p>color - message color.</p>
+<p>text - message text.</p>
+<hr />
+<ul>
+<li>void Orion.Say('text');</li>
+</ul>
+<p>Display 'text' speech in client.</p>
+<hr />
+<ul>
+<li>void Orion.SetFontColor(state, ['color'=0x02B2]);</li>
+</ul>
+<p>Changes font color of YOUR character to given color argument ( if given ) and disables/enables this feature by state argument.</p>
+<p>state - can be either true or false.</p>
+<p>color - message color.</p>
+<hr />
+<ul>
+<li>bool Orion.GetFontColor();</li>
+</ul>
+<p>Returns state of Orion.SetFontColor() option.</p>
+<hr />
+<ul>
+<li>String Orion.GetFontColorValue();</li>
+</ul>
+<p>Returns color value of Orion.SetFontColor() option.</p>
+<hr />
+<ul>
+<li>void Orion.SetCharactersFontColor(state, ['color'=0x02B2]);</li>
+</ul>
+<p>Changes font color of all characters to a given color argument ( if given ) and disables/enables this feature by state argument.</p>
+<p>state - can be either true or false.</p>
+<p>color - message color.</p>
+<hr />
+<ul>
+<li>bool Orion.GetCharactersFontColor();</li>
+</ul>
+<p>Returns state of Orion.SetCharactersFontColor() option.</p>
+<hr />
+<ul>
+<li>String Orion.GetCharactersFontColorValue();</li>
+</ul>
+<p>Returns color value of Orion.SetCharactersFontColor() option.</p>
+<hr />
+<a class="header" href="#introduced-in-20150-7" id="introduced-in-20150-7"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>void Orion.SayYell('some text');</li>
+</ul>
+<p>Do 'yelling' speech.</p>
+<hr />
+<ul>
+<li>void Orion.SayWhisper('some text');</li>
+</ul>
+<p>Do 'whisper' speech.</p>
+<hr />
+<ul>
+<li>void Orion.SayEmote('some text');</li>
+</ul>
+<p>Do 'emote' speech.</p>
+<hr />
+<ul>
+<li>void Orion.SayBroadcast('some text');</li>
+</ul>
+<p>Do 'broadcast' speech.</p>
+<hr />
+<ul>
+<li>void Orion.SayParty('some text');</li>
+</ul>
+<p>Send 'text' to party chat.</p>
+<hr />
+<ul>
+<li>void Orion.SayGuild('some text');</li>
+</ul>
+<p>Send 'text' to guild chat.</p>
+<hr />
+<ul>
+<li>void Orion.SayAlliance('some text');</li>
+</ul>
+<p>Send 'text' to alliance chat.</p>
+<a class="header" href="#map" id="map"><h1>Map</h1></a>
+<a class="header" href="#command-format-20" id="command-format-20"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>void Orion.OpenOrionMap([x, y]);</li>
+</ul>
+<p>Opens Orion map.</p>
+<p>If x and y were defined, moves map window to given screen coordinates.</p>
+<hr />
+<ul>
+<li>void Orion.MoveOrionMap(x, y);</li>
+</ul>
+<p>Moves map to given screen coordinates.</p>
+<hr />
+<ul>
+<li>void Orion.CloseOrionMap();</li>
+</ul>
+<p>Close Orion map.</p>
+<hr />
+<ul>
+<li>void Orion.OpenEnhancedMap(['filePath']);</li>
+</ul>
+<p>Opens Enchanced Map at 'filePath' (for example &quot;D:\Games\UO\EnhancedMap.exe&quot;).</p>
+<p>If 'filePath' wasn't defined, tries to open from a default location <UORoot>/Map/EnhancedMap.exe'</p>
+<a class="header" href="#non-categorized" id="non-categorized"><h1>Non Categorized</h1></a>
+<a class="header" href="#command-format-21" id="command-format-21"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>void Orion.SaveConfig();</li>
+</ul>
+<p>Save configuration.</p>
+<hr />
+<ul>
+<li>void Orion.SetLight(state, [value=currentLight]);</li>
+</ul>
+<p>Set the light level.</p>
+<p>state - state turn on/turn off.</p>
+<p>value - light level value from 0 to 31.</p>
+<hr />
+<ul>
+<li>void Orion.SetWeather(state, [index=currentWeather], [effectsCount=currentCount], [temperature=currentTemperature]);</li>
+</ul>
+<p>Set weather conditions.</p>
+<p>state - state turn on/turn off.</p>
+<p>index - ordinal number of the weather effect.</p>
+<p>effectsCount - number of effects on screen.</p>
+<p>temperature - not used.</p>
+<hr />
+<ul>
+<li>void Orion.SetSeason(state, [index=currentIndex], [musicIndex=currentMusic]);</li>
+</ul>
+<p>Set season with number.</p>
+<p>state - state turn on/turn off.</p>
+<p>index - ordinal number of season.</p>
+<p>musicIndex - music number for playback.</p>
+<hr />
+<ul>
+<li>void Orion.Track([state=false], [x=-1, y=-1]);</li>
+</ul>
+<p>Hide/show quest arrow to the indicated coordinates. -1 in coordinates indicates current location in the world.</p>
+<p>state - state show/hide.</p>
+<p>x - coordinate X in the world, where the arrow points</p>
+<p>y - coordinate Y в мире, where the arrow points</p>
+<hr />
+<ul>
+<li>bool Orion.SaveHotkeys('fileName');</li>
+</ul>
+<p>Save current hotkey set with file name 'filename' (to the Hotkeys folder at the root of the assistant).</p>
+<p>Result: true on successful file save.</p>
+<hr />
+<ul>
+<li>bool Orion.LoadHotkeys('fileName');</li>
+</ul>
+<p>Load hotkey set with file name 'fileName' (from the Hotkeys folder at the root of the assistant).</p>
+<p>Result: true on successful file load.</p>
+<hr />
+<ul>
+<li>void Orion.Cast(spellIndex/'spellName', ['targetSerial']);</li>
+</ul>
+<p>Cast a spell 'spellName' (You can also refer to the order number in the spellbook).</p>
+<p>If targetSerial is specified - automatically use the target on this object, otherwise - only sends a cast request to the server.</p>
+<hr />
+<ul>
+<li>void Orion.UseSkill(skillIndex/'skillName', ['targetSerial']);</li>
+</ul>
+<p>Use skill 'skillName' (You can also refer to the order number).</p>
+<p>If targetSerial is specified - automatically use the target on this object, otherwise - only sends a request to use skill to the server.</p>
+<hr />
+<ul>
+<li>int Orion.SkillValue(skillIndex/'skillName', ['type'=real]);</li>
+</ul>
+<p>Get skill value 'skillName' (You can also refer to the order number).</p>
+<p>type - value type: real, base, cap, lock.</p>
+<p>Result: Integer value of the skill (e.g: 3.0 will be 30, 10.3 - 103, 50.8 - 508, 100.0 - 1000).</p>
+<hr />
+<ul>
+<li>void Orion.CloseUO();</li>
+</ul>
+<p>Close game client.</p>
+<hr />
+<ul>
+<li>void Orion.WarMode([state=switch]);</li>
+</ul>
+<p>Switch war mode.</p>
+<p>state - turn on/turn off war mode. If not specified - switches the current state.</p>
+<hr />
+<ul>
+<li>void Orion.Morph(['graphic'=0]);</li>
+</ul>
+<p>Change character body graphic.</p>
+<p>Without parameters or 0 - returns body to its original state.</p>
+<hr />
+<ul>
+<li>void Orion.Resend();</li>
+</ul>
+<p>Synchronisation with the server. Can be used every few seconds.</p>
+<hr />
+<ul>
+<li>void Orion.Sound(index);</li>
+</ul>
+<p>Play sound index.</p>
+<hr />
+<ul>
+<li>void Orion.EmoteAction('actionName');</li>
+</ul>
+<p>Request to emotion reproducing  actionName.</p>
+<hr />
+<ul>
+<li>void Orion.Print(['color'], 'text');</li>
+</ul>
+<p>Display in system chat</p>
+<p>If displayed only 1 argument - string color will be standard.</p>
+<p>color - message color.</p>
+<p>text - text.</p>
+<hr />
+<ul>
+<li>void Orion.CharPrint('serial', 'color', 'text');</li>
+</ul>
+<p>Display message above the character</p>
+<p>serial - serial of the character, above who you want to display the message</p>
+<p>color - message color</p>
+<p>text - text.</p>
+<hr />
+<ul>
+<li>void Orion.Say('text');</li>
+</ul>
+<p>Say in the chat 'text'</p>
+<hr />
+<ul>
+<li>void Orion.BuffExists('name');</li>
+</ul>
+<p>Checking for buffs by name or graphic.</p>
+<p>Result: true if buff is active.</p>
+<hr />
+<ul>
+<li>void Orion.SetFontColor(state, ['color'=0x02B2]);</li>
+</ul>
+<p>Change text color for player character and state of this option.</p>
+<p>state - true/false.</p>
+<p>color - text color.</p>
+<hr />
+<ul>
+<li>bool Orion.GetFontColor();</li>
+</ul>
+<p>Retrieve status of text replacement option for player character.</p>
+<p>Returns true if option is enabled.</p>
+<hr />
+<ul>
+<li>String Orion.GetFontColorValue();</li>
+</ul>
+<p>Retrieve text replacement color for player character.</p>
+<p>Returns: text color.</p>
+<hr />
+<ul>
+<li>void Orion.SetCharactersFontColor(state, ['color'=0x02B2]);</li>
+</ul>
+<p>Change text color used by characters for output and state of this option.</p>
+<p>state - true/false.</p>
+<p>color - text color.</p>
+<hr />
+<ul>
+<li>bool Orion.GetCharactersFontColor();</li>
+</ul>
+<p>Retrieve status of text replacement option for characters.</p>
+<p>Returns true if option is enabled.</p>
+<hr />
+<ul>
+<li>String Orion.GetCharactersFontColorValue();</li>
+</ul>
+<p>Retrieve text replacement color for all characters.</p>
+<p>Returns: text color.</p>
+<hr />
+<a class="header" href="#introduced-in-2070-5" id="introduced-in-2070-5"><h2>Introduced in 2.0.7.0</h2></a>
+<ul>
+<li>void Orion.UseAbility('abilityName');</li>
+</ul>
+<p>Use request for an ability 'abilityName'.</p>
+<p>'abilityName' can also be 'Primary', 'Secondary', or its real name in(can also be found in script editor context menu) or it can be ability index starting from '0' and '30' as last index.</p>
+<hr />
+<ul>
+<li>void Orion.UseWrestlingDisarm();</li>
+</ul>
+<p>Wrestling Disarm ability use request.</p>
+<hr />
+<ul>
+<li>void Orion.UseWrestlingStun();</li>
+</ul>
+<p>Wrestling Stun ability use request..</p>
+<hr />
+<a class="header" href="#introduced-in-2080-4" id="introduced-in-2080-4"><h2>Introduced in 2.0.8.0</h2></a>
+<ul>
+<li>void Orion.InvokeVirture('name');</li>
+</ul>
+<p>...</p>
+<hr />
+<a class="header" href="#introduced-in-2090" id="introduced-in-2090"><h2>Introduced in 2.0.9.0</h2></a>
+<ul>
+<li>void Orion.PlayWav('filePath');</li>
+</ul>
+<p>Play a *.WAV file from filePath.</p>
+<hr />
+<a class="header" href="#introduced-in-20120-1" id="introduced-in-20120-1"><h2>Introduced in 2.0.12.0</h2></a>
+<ul>
+<li>void Orion.Screenshot();</li>
+</ul>
+<p>Create a screenshot.</p>
+<hr />
+<a class="header" href="#introduced-in-20130-3" id="introduced-in-20130-3"><h2>Introduced in 2.0.13.0</h2></a>
+<ul>
+<li>void Orion.LogOut();</li>
+</ul>
+<p>Client log out ( client will remain running, at login screen ).</p>
+<hr />
+<ul>
+<li>MacroObject Orion.CreateClientMacro(['action'], ['subAction']);</li>
+</ul>
+<p>Create a macro in client options.</p>
+<p>Returns MacroObject or null reference.</p>
+<hr />
+<a class="header" href="#introduced-in-20140-1" id="introduced-in-20140-1"><h2>Introduced in 2.0.14.0</h2></a>
+<ul>
+<li>void Orion.OpenPaperdoll('serial');</li>
+</ul>
+<p>Open paperdoll by serial.</p>
+<hr />
+<ul>
+<li>void Orion.ClosePaperdoll('serial');</li>
+</ul>
+<p>Close paperdoll by serial.</p>
+<hr />
+<ul>
+<li>void Orion.MovePaperdoll('serial', x, y);</li>
+</ul>
+<p>Move paperdoll by serial to chosen x and y coordinates on screen.</p>
+<hr />
+<a class="header" href="#introduced-in-20150-8" id="introduced-in-20150-8"><h2>Introduced in 2.0.15.0</h2></a>
+<ul>
+<li>void Orion.ClientViewRange(range);</li>
+</ul>
+<p>Set clients view range ( 5 is minimal, 25 is maximal ).</p>
+<hr />
+<ul>
+<li>int Orion.ClientViewRange();</li>
+</ul>
+<p>Get current client view range.</p>
+<p>Returns clients view range in tiles.</p>
+<hr />
+<ul>
+<li>void Orion.LoadProfile('name');</li>
+</ul>
+<p>Load OA profile by name.</p>
+<a class="header" href="#classes-1" id="classes-1"><h1>Classes</h1></a>
+<a class="header" href="#game-object" id="game-object"><h1>Game Object</h1></a>
+<a class="header" href="#command-format-22" id="command-format-22"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>String obj.Serial();</li>
+</ul>
+<p>Result: Serial number of an Object.</p>
+<hr />
+<ul>
+<li>String obj.Graphic();</li>
+</ul>
+<p>Result: Type of an Object (Picture ID).</p>
+<hr />
+<ul>
+<li>String obj.Color();</li>
+</ul>
+<p>Result: Color of an Object.</p>
+<hr />
+<ul>
+<li>int obj.X();</li>
+</ul>
+<p>Result: X object coordinates in world.</p>
+<hr />
+<ul>
+<li>int obj.Y();</li>
+</ul>
+<p>Result: Y object coordinates in world.</p>
+<hr />
+<ul>
+<li>int obj.Z();</li>
+</ul>
+<p>Result: Z object coordinates in world.</p>
+<hr />
+<ul>
+<li>String obj.Container();</li>
+</ul>
+<p>Result: Serial number of an Main(parent)-Object. 0xFFFFFFFF if object is located in world.</p>
+<hr />
+<ul>
+<li>int obj.Map();</li>
+</ul>
+<p>Result: World map objects index.</p>
+<hr />
+<ul>
+<li>int obj.Count();</li>
+</ul>
+<p>Result: Quantity</p>
+<hr />
+<ul>
+<li>int obj.Flags();</li>
+</ul>
+<p>Result: Object flags.</p>
+<hr />
+<ul>
+<li>String obj.Name();</li>
+</ul>
+<p>Result: Name of an Object (empty for items, until click on object).</p>
+<hr />
+<ul>
+<li>bool obj.Mobile();</li>
+</ul>
+<p>Result: true is object is alive.</p>
+<hr />
+<ul>
+<li>bool obj.Ignored();</li>
+</ul>
+<p>Result: true - if object is marked as ignored.</p>
+<hr />
+<ul>
+<li>bool obj.Frozen();</li>
+</ul>
+<p>Result: true - if object is frozen.</p>
+<hr />
+<ul>
+<li>bool obj.Poisoned();</li>
+</ul>
+<p>Result: true - if object is poisoned.</p>
+<hr />
+<ul>
+<li>bool obj.Flying();</li>
+</ul>
+<p>Result: true - if object is flying (gargoyle).</p>
+<hr />
+<ul>
+<li>bool obj.YellowHits();</li>
+</ul>
+<p>Result: true - if object has yellow health bar.</p>
+<hr />
+<ul>
+<li>bool obj.IgnoreCharacters();</li>
+</ul>
+<p>Result: true - if object is ignoring players while moving.</p>
+<hr />
+<ul>
+<li>bool obj.Locked();</li>
+</ul>
+<p>Result: true - if object cant be moved or marked (items).</p>
+<hr />
+<ul>
+<li>bool obj.WarMode();</li>
+</ul>
+<p>Result: true - if object is in war mode.</p>
+<hr />
+<ul>
+<li>bool obj.Hidden();</li>
+</ul>
+<p>Result: true - if object is invisible.</p>
+<hr />
+<ul>
+<li>bool obj.IsHuman();</li>
+</ul>
+<p>Result: true - if object is attacking humanoid.</p>
+<hr />
+<ul>
+<li>bool obj.IsPlayer();</li>
+</ul>
+<p>Result: true - if object is current player.</p>
+<hr />
+<ul>
+<li>bool obj.IsCorpse();</li>
+</ul>
+<p>Result: true - if object is dead body.</p>
+<hr />
+<ul>
+<li>int obj.Layer();</li>
+</ul>
+<p>Result: Number of Layer - object is located in.</p>
+<hr />
+<ul>
+<li>bool obj.IsMulti();</li>
+</ul>
+<p>Result: true - if object is - Multi.</p>
+<hr />
+<ul>
+<li>int obj.EquipLayer();</li>
+</ul>
+<p>Result: Number of Layer - object is supposed to locate in.</p>
+<hr />
+<ul>
+<li>int obj.Hits();</li>
+</ul>
+<p>Result: Hit points amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxHits();</li>
+</ul>
+<p>Result: Maximum hit points amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Mana();</li>
+</ul>
+<p>Result: Mana amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxMana();</li>
+</ul>
+<p>Result: Maximum mana amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Stam();</li>
+</ul>
+<p>Result: Stamina amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxStam();</li>
+</ul>
+<p>Result: Maximum stamina amount of an Object.</p>
+<hr />
+<ul>
+<li>bool obj.Female();</li>
+</ul>
+<p>Result: true - if object player is a female gender.</p>
+<hr />
+<ul>
+<li>int obj.Race();</li>
+</ul>
+<p>Result: Race number of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Direction();</li>
+</ul>
+<p>Result: Direction of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Notoriety();</li>
+</ul>
+<p>Result: Wickedness of an Object.</p>
+<hr />
+<ul>
+<li>bool obj.CanChangeName();</li>
+</ul>
+<p>Result: true - if object can be renamed.</p>
+<hr />
+<ul>
+<li>bool obj.Dead();</li>
+</ul>
+<p>Result: true - if object is dead.</p>
+<hr />
+<ul>
+<li>bool obj.Exists();</li>
+</ul>
+<p>Result: true - if object does not exist.</p>
+<hr />
+<a class="header" href="#introduced-in-2082-1" id="introduced-in-2082-1"><h2>Introduced in 2.0.8.2</h2></a>
+<ul>
+<li>String obj.Properties();</li>
+</ul>
+<p>Returns string with object properties ( if they were received by MegaCliloc packet from server )</p>
+<hr />
+<a class="header" href="#introduced-in-20120-2" id="introduced-in-20120-2"><h2>Introduced in 2.0.12.0</h2></a>
+<ul>
+<li>bool obj.ProfileReceived();</li>
+</ul>
+<p>Returns true if profile was received from server.</p>
+<hr />
+<ul>
+<li>String obj.Profile();</li>
+</ul>
+<p>Returns profile contents.</p>
+<hr />
+<ul>
+<li>String obj.Title();</li>
+</ul>
+<p>Returns characters title ( displayed in paperdoll ).</p>
+<a class="header" href="#player-character" id="player-character"><h1>Player Character</h1></a>
+<a class="header" href="#command-format-23" id="command-format-23"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>String obj.Serial();</li>
+</ul>
+<p>Result: Serial number of an Object.</p>
+<hr />
+<ul>
+<li>String obj.Graphic();</li>
+</ul>
+<p>Result: Type of an Object (Picture ID).</p>
+<hr />
+<ul>
+<li>String obj.Color();</li>
+</ul>
+<p>Result: Color of an Object.</p>
+<hr />
+<ul>
+<li>int obj.X();</li>
+</ul>
+<p>Result: X object coordinates in the world.</p>
+<hr />
+<ul>
+<li>int obj.Y();</li>
+</ul>
+<p>Result: Y object coordinates in the world.</p>
+<hr />
+<ul>
+<li>int obj.Z();</li>
+</ul>
+<p>Result: Z object coordinates in the world.</p>
+<hr />
+<ul>
+<li>String obj.Container();</li>
+</ul>
+<p>Result: Serial number of an Main(parent)-Object. 0xFFFFFFFF if object is located in world.</p>
+<hr />
+<ul>
+<li>int obj.Map();</li>
+</ul>
+<p>Result: World map objects index.</p>
+<hr />
+<ul>
+<li>int obj.Count();</li>
+</ul>
+<p>Result: Quantity.</p>
+<hr />
+<ul>
+<li>int obj.Flags();</li>
+</ul>
+<p>Result: Object flags.</p>
+<hr />
+<ul>
+<li>String obj.Name();</li>
+</ul>
+<p>Result: Name of an Objext (empty for items, until click on object).</p>
+<hr />
+<ul>
+<li>bool obj.Mobile();</li>
+</ul>
+<p>Result: true is object is alive.</p>
+<hr />
+<ul>
+<li>bool obj.Ignored();</li>
+</ul>
+<p>Result: true - if object is marked as ignored.</p>
+<hr />
+<ul>
+<li>bool obj.Frozen();</li>
+</ul>
+<p>Result: true - if object is frozen.</p>
+<hr />
+<ul>
+<li>bool obj.Poisoned();</li>
+</ul>
+<p>Result: true - if object is poisoned.</p>
+<hr />
+<ul>
+<li>bool obj.Paralyzed();</li>
+</ul>
+<p>Result:true - if object is paralyzed.</p>
+<hr />
+<ul>
+<li>bool obj.Flying();</li>
+</ul>
+<p>Result: true - if object is flying (gargoyle).</p>
+<hr />
+<ul>
+<li>bool obj.YellowHits();</li>
+</ul>
+<p>Result: true - if object has yellow health bar.</p>
+<hr />
+<ul>
+<li>bool obj.IgnoreCharacters();</li>
+</ul>
+<p>Result: true - if object is ignoring players while moving.</p>
+<hr />
+<ul>
+<li>bool obj.Locked();</li>
+</ul>
+<p>Result: true - if object cant be moved or marked (items).</p>
+<hr />
+<ul>
+<li>bool obj.WarMode();</li>
+</ul>
+<p>Result: true - if object is in war mode</p>
+<hr />
+<ul>
+<li>bool obj.Hidden();</li>
+</ul>
+<p>Result: true - if object is invisible.</p>
+<hr />
+<ul>
+<li>bool obj.IsHuman();</li>
+</ul>
+<p>Result: true - if object is attacking humanoid.</p>
+<hr />
+<ul>
+<li>bool obj.IsPlayer();</li>
+</ul>
+<p>Result: true - if object is current player.</p>
+<hr />
+<ul>
+<li>bool obj.IsCorpse();</li>
+</ul>
+<p>Result: true - if object is dead body.</p>
+<hr />
+<ul>
+<li>int obj.Layer();</li>
+</ul>
+<p>Result: Number of Layer - object is located in.</p>
+<hr />
+<ul>
+<li>bool obj.IsMulti();</li>
+</ul>
+<p>Result: true - if object is - Multi.</p>
+<hr />
+<ul>
+<li>int obj.EquipLayer();</li>
+</ul>
+<p>Result: Number of Layer - object is supposed to locate in.</p>
+<hr />
+<ul>
+<li>int obj.Hits();</li>
+</ul>
+<p>Result: Hit points amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxHits();</li>
+</ul>
+<p>Result: Maximum hit points amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Mana();</li>
+</ul>
+<p>Result: Mana amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxMana();</li>
+</ul>
+<p>Result: Maximum mana amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Stam();</li>
+</ul>
+<p>Result: Stamina amount of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxStam();</li>
+</ul>
+<p>Result: Maximum stamina amount of an Object.</p>
+<hr />
+<ul>
+<li>bool obj.Female();</li>
+</ul>
+<p>Result: true - if object player is a female gender.</p>
+<hr />
+<ul>
+<li>int obj.Race();</li>
+</ul>
+<p>Result: Race number of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Direction();</li>
+</ul>
+<p>Result: Direction of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Notoriety();</li>
+</ul>
+<p>Result: Wickedness of an Object.</p>
+<hr />
+<ul>
+<li>bool obj.CanChangeName();</li>
+</ul>
+<p>Result: true - if object can be renamed.</p>
+<hr />
+<ul>
+<li>bool obj.Dead();</li>
+</ul>
+<p>Result: true - if object is dead.</p>
+<hr />
+<ul>
+<li>int obj.Str();</li>
+</ul>
+<p>Result: Str value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Int();</li>
+</ul>
+<p>Result: Int value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Dex();</li>
+</ul>
+<p>Result: Dex value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.LockStrState();</li>
+</ul>
+<p>Result: The value perspective gaining Str of an Object.</p>
+<hr />
+<ul>
+<li>int obj.LockIntState();</li>
+</ul>
+<p>Result: The value perspective gaining Int of an Object.</p>
+<hr />
+<ul>
+<li>int obj.LockDexState();</li>
+</ul>
+<p>Result: The value perspective gaining Dex of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Weight();</li>
+</ul>
+<p>Result: Weight value of an object.</p>
+<hr />
+<ul>
+<li>int obj.MaxWeight();</li>
+</ul>
+<p>Result: Maximum weight value of an object.</p>
+<hr />
+<ul>
+<li>int obj.Armor();</li>
+</ul>
+<p>Result: Armor value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Gold();</li>
+</ul>
+<p>Result: Gold value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.StatsCap();</li>
+</ul>
+<p>Result: Maximum Statcap value (str+int+dex) of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Followers();</li>
+</ul>
+<p>Result: Creature quantity tamed to an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxFollowers();</li>
+</ul>
+<p>Result: Maximum creature quantity that can be dependent to an Object.</p>
+<hr />
+<ul>
+<li>int obj.FireResistance();</li>
+</ul>
+<p>Result: Fire defence value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.ColdResistance();</li>
+</ul>
+<p>Result: Cold defence value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.PoisonResistance();</li>
+</ul>
+<p>Result: Poison defence value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.EnergyResistance();</li>
+</ul>
+<p>Result: Energy defence value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.Luck();</li>
+</ul>
+<p>Result: Luck value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MinDamage();</li>
+</ul>
+<p>Result: Minimal damage value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.MaxDamage();</li>
+</ul>
+<p>Result: Maximum damage value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.TithingPoints();</li>
+</ul>
+<p>Result: Skill point value of an Object.</p>
+<hr />
+<ul>
+<li>int obj.StealthSteps();</li>
+</ul>
+<p>Result: Number of steps in Stealth of an Object.</p>
+<hr />
+<a class="header" href="#introduced-in-20100" id="introduced-in-20100"><h2>Introduced in 2.0.10.0</h2></a>
+<ul>
+<li>String obj.Properties();</li>
+</ul>
+<p>Returns string with object properties ( if they were received by MegaCliloc packet from server )</p>
+<hr />
+<a class="header" href="#introduced-in-20120-3" id="introduced-in-20120-3"><h2>Introduced in 2.0.12.0</h2></a>
+<ul>
+<li>bool obj.ProfileReceived();</li>
+</ul>
+<p>Returns true if profile was received from server.</p>
+<hr />
+<ul>
+<li>String obj.Profile();</li>
+</ul>
+<p>Returns profile contents.</p>
+<hr />
+<ul>
+<li>String obj.Title();</li>
+</ul>
+<p>Returns characters title ( displayed in paperdoll ).</p>
+<a class="header" href="#journal-message" id="journal-message"><h1>Journal Message</h1></a>
+<a class="header" href="#command-format-24" id="command-format-24"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>String msg.Serial();</li>
+</ul>
+<p>Result: Serial number of an Object, bounded with message.</p>
+<hr />
+<ul>
+<li>int msg.Timer();</li>
+</ul>
+<p>Result: Temporary mark of the message.</p>
+<hr />
+<ul>
+<li>String msg.Color();</li>
+</ul>
+<p>Result: Color of the message.</p>
+<hr />
+<ul>
+<li>String msg.Text();</li>
+</ul>
+<p>Result: Message text.</p>
+<hr />
+<ul>
+<li>int msg.Flags();</li>
+</ul>
+<p>Result: Message flags.</p>
+<hr />
+<ul>
+<li>int msg.FindTextID();</li>
+</ul>
+<p>Result: Text index in search request from 0 to the number of sets in request.</p>
+<hr />
+<a class="header" href="#introduced-in-2080-5" id="introduced-in-2080-5"><h2>Introduced in 2.0.8.0</h2></a>
+<ul>
+<li>void msg.SetText('newText');</li>
+</ul>
+<p>Change journal message to 'newText' string.</p>
+<a class="header" href="#menu-object" id="menu-object"><h1>Menu Object</h1></a>
+<a class="header" href="#command-format-25" id="command-format-25"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>String menu.Serial();</li>
+</ul>
+<p>Result: Menu serial number.</p>
+<hr />
+<ul>
+<li>String menu.ID();</li>
+</ul>
+<p>Result: Menu identifier number.</p>
+<hr />
+<ul>
+<li>String menu.Name();</li>
+</ul>
+<p>Result: Menu name.</p>
+<hr />
+<ul>
+<li>bool menu.IsGrayMenu();</li>
+</ul>
+<p>Result: Gray Menu (chart) or normal.</p>
+<hr />
+<ul>
+<li>void menu.Select(index);</li>
+</ul>
+<p>Choose menu by index element under current menu.</p>
+<hr />
+<ul>
+<li>void menu.Select('name');</li>
+</ul>
+<p>Choose menu by item name under current menu.</p>
+<hr />
+<ul>
+<li>void menu.Close();</li>
+</ul>
+<p>Close current menu without changes.</p>
+<hr />
+<ul>
+<li>int menu.ItemsCount();</li>
+</ul>
+<p>Result: Item quantity in the menu.</p>
+<hr />
+<ul>
+<li>int menu.ItemID(index);</li>
+</ul>
+<p>Result: ID of an item menu under specified index.</p>
+<hr />
+<ul>
+<li>String menu.ItemGraphic(index);</li>
+</ul>
+<p>Result: Graphic of an item menu under specified index.</p>
+<hr />
+<ul>
+<li>String menu.ItemColor(index);</li>
+</ul>
+<p>Result: Color of an item menu under specified index.</p>
+<hr />
+<ul>
+<li>String menu.ItemName(index);</li>
+</ul>
+<p>Result: Name of an item menu under specified index.</p>
+<a class="header" href="#object-coordinates" id="object-coordinates"><h1>Object Coordinates</h1></a>
+<a class="header" href="#command-format-26" id="command-format-26"><h3>Command Format</h3></a>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<hr />
+<ul>
+<li>int pos.X();</li>
+</ul>
+<p>Returns: x coordinate.</p>
+<hr />
+<ul>
+<li>int pos.Y();</li>
+</ul>
+<p>Returns: y coordinate.</p>
+<a class="header" href="#gump-object" id="gump-object"><h1>Gump Object</h1></a>
+<p><code>Version: 2.0.8.2</code></p>
+<a class="header" href="#command-format-27" id="command-format-27"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>int gump.Serial();</li>
+</ul>
+<p>Returns gump serial.</p>
+<hr />
+<ul>
+<li>int gump.ID();</li>
+</ul>
+<p>Returns gump id.</p>
+<hr />
+<ul>
+<li>int gump.X();</li>
+</ul>
+<p>Returns gumps X screen coordinate.</p>
+<hr />
+<ul>
+<li>int gump.Y();</li>
+</ul>
+<p>Returns gumps Y screen coordinate.</p>
+<hr />
+<ul>
+<li>bool gump.Replayed();</li>
+</ul>
+<p>Returns true If gump response was already made.</p>
+<hr />
+<ul>
+<li>int gump.ReplyID();</li>
+</ul>
+<p>Returns response button id if Replayed() was true.</p>
+<hr />
+<ul>
+<li>StringList gump.ButtonList();</li>
+</ul>
+<p>Returns a list of all buttons within a gump.</p>
+<hr />
+<ul>
+<li>StringList gump.CheckboxList();</li>
+</ul>
+<p>Returns a list with all checkboxes within a gump.</p>
+<hr />
+<ul>
+<li>StringList gump.RadioList();</li>
+</ul>
+<p>Returns a list with all radio buttons within a gump.</p>
+<hr />
+<ul>
+<li>StringList gump.TilepicList();</li>
+</ul>
+<p>Returns a list with all tile pics within a gump.</p>
+<hr />
+<ul>
+<li>StringList gump.GumppicList();</li>
+</ul>
+<p>Returns a list with all gump pics within a gump.</p>
+<hr />
+<ul>
+<li>StringList gump.EntriesList();</li>
+</ul>
+<p>Returns a list with all text entries within a gump.</p>
+<hr />
+<ul>
+<li>StringList gump.CommandList();</li>
+</ul>
+<p>Returns a list with all commands within a gump ( in same order as received from server ).</p>
+<hr />
+<ul>
+<li>StringList gump.TextList();</li>
+</ul>
+<p>Returns a list with all strings within a gump ( in same order as received from server ).</p>
+<hr />
+<ul>
+<li>String gump.Command(index);</li>
+</ul>
+<p>Returns gump command by index.</p>
+<hr />
+<ul>
+<li>String gump.Text(index);</li>
+</ul>
+<p>Returns gump textby index.</p>
+<hr />
+<ul>
+<li>bool gump.Select(hook);</li>
+</ul>
+<p>Selects gump by a hook object (GumpHookObject).</p>
+<p>Returns true if successfull.</p>
+<hr />
+<ul>
+<li>void gump.Close();</li>
+</ul>
+<a class="header" href="#gump-hook" id="gump-hook"><h1>Gump Hook</h1></a>
+<p><code>Version: 2.0.8.2</code></p>
+<a class="header" href="#command-format-28" id="command-format-28"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>int hook.Index();</li>
+</ul>
+<p>Returns button index to select by this hook.</p>
+<hr />
+<ul>
+<li>void hook.AddEntry(index, 'text');</li>
+</ul>
+<p>Adds a TextEntry hook by index and inputs text string.</p>
+<p>index - index of text entry.</p>
+<p>text - text entry input string.</p>
+<hr />
+<ul>
+<li>void hook.AddCheck(index, state);</li>
+</ul>
+<p>Adds a hook for radio/checkbox and sets the state.</p>
+<p>index - button index.</p>
+<p>state - input state ( true/false).</p>
+<a class="header" href="#selected-tile" id="selected-tile"><h1>Selected Tile</h1></a>
+<p><strong>SelectedTileis a static reference just like Orion so you can always get it.
+You can reassign this reference by targeting something.</strong></p>
+<hr />
+<a class="header" href="#command-format-29" id="command-format-29"><h3>Command Format</h3></a>
+<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<hr />
+<ul>
+<li>String SelectedTile.Serial();</li>
+</ul>
+<p>Returns serial of selected tile ( if it's an in-game item, not land art ).</p>
+<hr />
+<ul>
+<li>String SelectedTile.Graphic();</li>
+</ul>
+<p>Returns graphic id/type of selected tile.</p>
+<hr />
+<ul>
+<li>String SelectedTile.Color();</li>
+</ul>
+<p>Returns color of selected tile.</p>
+<hr />
+<ul>
+<li>int SelectedTile.X();</li>
+</ul>
+<p>Returns x coordinate value of selected tile.</p>
+<hr />
+<ul>
+<li>int SelectedTile.Y();</li>
+</ul>
+<p>Returns y coordinate value of selected tile.</p>
+<hr />
+<ul>
+<li>int SelectedTile.Z();</li>
+</ul>
+<p>Returns z coordinate value of selected tile.</p>
+<hr />
+<ul>
+<li>String SelectedTile.LandGraphic();</li>
+</ul>
+<p>Returns graphics id/type of land art of selected tile.</p>
+<hr />
+<ul>
+<li>int SelectedTile.LandX();</li>
+</ul>
+<p>Returns land x coordinate ( will be same as SelectedTile.X() )</p>
+<hr />
+<ul>
+<li>int SelectedTile.LandY();</li>
+</ul>
+<p>Returns land y coordinate ( will be same as SelectedTile.Y() )</p>
+<hr />
+<ul>
+<li>int SelectedTile.LandZ();</li>
+</ul>
+<p>Returns land z coordinate ( CAN BE different from SelectedTile.Z() )</p>
+<hr />
+<ul>
+<li>bool SelectedTile.IsLandTile();</li>
+</ul>
+<p>Returns true if this is a land tile.</p>
+<hr />
+<ul>
+<li>bool SelectedTile.IsStaticTile();</li>
+</ul>
+<p>Returns true if this is a static/multi tile.</p>
+<hr />
+<ul>
+<li>bool SelectedTile.IsGameObject();</li>
+</ul>
+<p>Returns true if this is a game object.</p>
+<a class="header" href="#client-macro-object-class" id="client-macro-object-class"><h1>Client Macro Object Class</h1></a>
+<a class="header" href="#command-format-30" id="command-format-30"><h3>Command Format</h3></a>
+<p><code>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</code></p>
+<hr />
+<a class="header" href="#macroobject-orioncreateclientmacroaction-subaction" id="macroobject-orioncreateclientmacroaction-subaction"><h4>MacroObject Orion.CreateClientMacro('action', ['subAction']);</h4></a>
+<p>Creates a MacroObject instance with gives action and possible subactions.</p>
+<p><code>Returns</code> a MacroObject object.</p>
+<p>Example:</p>
+<pre><code class="language-javascript">//This creates a 'BandageSelf' client macro and instantly executes it.
+Orion.CreateClientMacro('BandageSelf').Play(false, 1000);
+</code></pre>
+<hr />
+<a class="header" href="#void-macroaddactionaction-subaction" id="void-macroaddactionaction-subaction"><h4>void macro.AddAction('action', ['subAction']);</h4></a>
+<p>Add action entry to macros.</p>
+<hr />
+<a class="header" href="#void-macroplaywaitwhilemacroplayingfalse-delay100500" id="void-macroplaywaitwhilemacroplayingfalse-delay100500"><h4>void macro.Play([waitWhileMacroPlaying=false], [delay=100500]);</h4></a>
+<p>Play macro in client.</p>
+<p>Attention! Only 1 macro can be played in client at a time!</p>
+<p>Multiple requests to play a macro while there's a macro already playing will cancel each other out. Last requested macro will be played.</p>
+<p><code>waitWhileMacroPlaying</code> Will wait if there's a macro already playing.</p>
+<p><code>delay</code> Delay to wait for current macro completion.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,8 @@
+[book]
+authors = ["Tal-Dor"]
+multilingual = false
+src = "src"
+title = "OrionUO Documentation"
+
+[build]
+build-dir = "docs"
