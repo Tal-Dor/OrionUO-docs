@@ -8,7 +8,7 @@
 
 3. Define path to Orion-UO files folder.
 
-4. [Configure client version](configuration-editor.md) - Orion client configuration settings (ConfigurationEditor.exe file must be in the UO folder). If the Client.cuo file is absent - text of button will be red.
+4. [Configure client version](configuration-editor.md) - Orion client configuration settings. If the `Client.cuo` file is absent -> text of button will be red.
 
 5. Check updates - Automatic check for updates for the files from the selected UO folder.
 

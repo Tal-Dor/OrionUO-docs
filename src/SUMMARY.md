@@ -4,12 +4,19 @@
 	- [Server Tab](launcher/tab-server.md)
 	- [Proxy Tab](launcher/tab-proxy.md)
 	- [Update Tab](launcher/tab-updates.md)
+	- [Orion Features Tab](tab-orion-features.md)
 	- [OA Features Tab](launcher/tab-oa-features.md)
-- [UO Configuration Editor](launcher/configuration-editor.md)
+
+- [Client Version Configuration](launcher/configuration-editor.md)
+	- [Mini menu](launcher/ce-mini.md)
+	- [Main](launcher/ce-main.md)
+	- [Plugin](launcher/ce-plugin.md)
+
 - [Client](client/client.md)
 	- [Tab 2: Configuration](client/options-orion-configuration.md)
 	- [Tab 6: Interface](client/options-interface.md)
 	- [Tab 7: Display](client/options-display.md)
+
 - [Assistant Tabs](assistant/assistant.md)
 	- [Main](assistant/main-tab.md)
 	- [Display](assistant/display.md)
@@ -37,6 +44,7 @@
 	- [List Editor](assistant/shop-list-editor-dialog.md)
 	- [Progress Bar](assistant/shop-progress-bar-dialog.md)
 	- [Ship Control](assistant/ship-control-dialog.md)
+
 - [Scripting](scripting/scripting.md)
 	- [Object Searching](scripting/objects-searching-orion-assistant.md)
 	- [Collections](scripting/collections-orion-assistant.md)
@@ -60,6 +68,7 @@
 	- [Speech](scripting/speech-commands.md)
 	- [Map](scripting/map-commands.md)
 	- [Non Categorized](scripting/non-categorized-commands-orion-assistant.md)
+
 - [Classes](scripting/classes.md)
 	- [Game Object](scripting/game-object-class-orion-assistant.md)
 	- [Player Character](scripting/player-character-class-orion-assistant.md)
@@ -72,4 +81,3 @@
 	- [Client Macro](scripting/client-macro-object-class.md)
 
 ----
-
