@@ -138,39 +138,39 @@
                     <main>
                         <a class="header" href="#character-movement" id="character-movement"><h1>Character Movement</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.BlockMoving(state);</li>
-</ul>
-<p>Blocks character movement.</p>
+<p></br>
+<em>void</em> <strong>Orion.BlockMoving</strong>(state);</p>
+<p>Blocks character movement.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.CanWalk(direction, x, y, z);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.CanWalk</strong>(direction, x, y, z);</p>
 <p>Check for the ability to take a step.</p>
-<p>Result: true if you can step from the current coordinates (the turn is considered as a step).</p>
+<p>Result: true if you can step from the current coordinates (the turn is considered as a step).
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.Step(direction, [run=false]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.Step</strong>(direction, [run=false]);</p>
 <p>Request to move a character with the ability to run.</p>
-<p>Result: true if the step was successfully made (the turn is considered as a step).</p>
+<p>Result: true if the step was successfully made (the turn is considered as a step).
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.WalkTo(x, y, z, [distance=1]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.WalkTo</strong>(x, y, z, [distance=1]);</p>
 <p>Path search to the specified coordinates until the specified distance is reached. Can be used within one screen.</p>
-<p>Result: true if the destination or specified distance is reached.</p>
+<p>Result: true if the destination or specified distance is reached.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.StopWalking();</li>
-</ul>
-<p>Cancel the path search.</p>
+<p></br>
+<em>void</em> <strong>Orion.StopWalking</strong>();</p>
+<p>Cancel the path search.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.IsWalking();</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.IsWalking</strong>();</p>
 <p>Check: whether the character is currently moving (automatic movement).</p>
 <p>Result: true if auto-movement is on.</p>
 

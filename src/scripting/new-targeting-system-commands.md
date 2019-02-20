@@ -5,21 +5,21 @@ Targeting this way works faster because there's no target awaiting time after an
 ### Command Format
 
 NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);
-
+</br></br>
 ***
-
-- void Orion.BandageTarget('serial');
+</br>
+_void_ **Orion.BandageTarget**('serial');
 
 Apply bandage to target by serial.
-
+</br></br>
 ***
-
-- void Orion.CastTarget('nameOrIndex', 'serial');
+</br>
+_void_ **Orion.CastTarget**('nameOrIndex', 'serial');
 
 Cast a spell on target by serial.
-
+</br></br>
 ***
-
-- void Orion.UseSkillTarget('nameOrIndex', 'serial');
+</br>
+_void_ **Orion.UseSkillTarget**('nameOrIndex', 'serial');
 
 Use a skill on target by serial.

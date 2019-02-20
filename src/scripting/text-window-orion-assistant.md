@@ -1,55 +1,50 @@
 # Text Window
 
 **TextWindow is a static reference just like Orion so you can always get it.**
-
+</br></br>
 ***
-
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
-
+</br></br>
 ***
-- void TextWindow.Open();
+</br>
+_void_ **TextWindow.Open**();
 
 Open the text box.
-
+</br></br>
 ***
-
-- void TextWindow.Close();
+</br>
+_void_ **TextWindow.Close**();
 
 Close the text box.
-
+</br></br>
 ***
-
-- void TextWindow.Clear();
+</br>
+_void_ **TextWindow.Clear**();
 
 Clear the text box.
-
+</br></br>
 ***
-
-- void TextWindow.Print('text');
+</br>
+_void_ **TextWindow.Print**('text');
 
 Type the text in the text box.
-
+</br></br>
 ***
-
-## Introduced in 2.0.13.0
-
-- void TextWindow.SetPos(x, y);
+</br>
+_void_ **TextWindow.SetPos**(x, y);
 
 Move text windows to x and y screen coordinates.
-
+</br></br>
 ***
-
-- void TextWindow.SetSize(width, height);
+</br>
+_void_ **TextWindow.SetSize**(width, height);
 
 Sets text windows size by given width and height.
-
+</br></br>
 ***
-
-## Introduced in 2.0.16.0
-
-- void TextWindow.SaveToFile('filePath');
+</br>
+_void_ **TextWindow.SaveToFile**('filePath');
 
 Write contents of text windows into a file at filePath.

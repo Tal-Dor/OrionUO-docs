@@ -138,11 +138,11 @@
                     <main>
                         <a class="header" href="#shop" id="shop"><h1>Shop</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Buy('shopListName', ['vendorName'], [shopDelay=0]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Buy</strong>('shopListName', ['vendorName'], [shopDelay=0]);</p>
 <p>Initiate buying.</p>
 <p>This will block user input untill completed.</p>
 <p>If shops buy list has appeared but there are no matches for buying, this process will end and resume accepting user input.</p>
@@ -155,13 +155,13 @@
 <p>vendorName - name of vendor.</p>
 </li>
 <li>
-<p>shopDelay - buying operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to buy and 'Shop delay for 1 stack' value.</p>
+<p>shopDelay - buying operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to buy and 'Shop delay for 1 stack' value.
+</br></br></p>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.Sell('shopListName', ['vendorName'], [shopDelay=0]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Sell</strong>('shopListName', ['vendorName'], [shopDelay=0]);</p>
 <p>Initiate selling.</p>
 <p>This will block user input untill completed.</p>
 <p>If shops sell list has appeared but there are no matches for selling, this process will end and resume accepting user input.</p>
@@ -174,14 +174,13 @@
 <p>vendorName - name of vendor.</p>
 </li>
 <li>
-<p>shopDelay - selling operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to sell and 'Shop delay for 1 stack' value.</p>
+<p>shopDelay - selling operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to sell and 'Shop delay for 1 stack' value.
+</br></br></p>
 </li>
 </ul>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>bool Orion.WaitForShop([delay=1000]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.WaitForShop</strong>([delay=1000]);</p>
 <p>Await for a shop gump for a given 'delay' amount of time and blocking script execution.</p>
 <p>Returns true if a shop gump was received during this period.</p>
 

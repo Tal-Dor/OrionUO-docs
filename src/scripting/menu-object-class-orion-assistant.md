@@ -3,75 +3,75 @@
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
-
-- String menu.Serial();
+</br>
+_String_ **menu.Serial**();
 
 Result: Menu serial number.
-
+</br></br>
 ***
-
-- String menu.ID();
+</br>
+_String_ **menu.ID**();
 
 Result: Menu identifier number.
-
+</br></br>
 ***
-
-- String menu.Name();
+</br>
+_String_ **menu.Name**();
 
 Result: Menu name.
-
+</br></br>
 ***
-
-- bool menu.IsGrayMenu();
+</br>
+_bool_ **menu.IsGrayMenu**();
 
 Result: Gray Menu (chart) or normal.
-
+</br></br>
 ***
-
-- void menu.Select(index);
+</br>
+_void_ **menu.Select**(index);
 
 Choose menu by index element under current menu.
-
+</br></br>
 ***
-
-- void menu.Select('name');
+</br>
+_void_ **menu.Select**('name');
 
 Choose menu by item name under current menu.
-
+</br></br>
 ***
-
-- void menu.Close();
+</br>
+_void_ **menu.Close**();
 
 Close current menu without changes.
-
+</br></br>
 ***
-
-- int menu.ItemsCount();
+</br>
+_int_ **menu.ItemsCount**();
 
 Result: Item quantity in the menu.
-
+</br></br>
 ***
-
-- int menu.ItemID(index);
+</br>
+_int_ **menu.ItemID**(index);
 
 Result: ID of an item menu under specified index.
-
+</br></br>
 ***
-
-- String menu.ItemGraphic(index);
+</br>
+_String_ **menu.ItemGraphic**(index);
 
 Result: Graphic of an item menu under specified index.
-
+</br></br>
 ***
-
-- String menu.ItemColor(index);
+</br>
+_String_ **menu.ItemColor**(index);
 
 Result: Color of an item menu under specified index.
-
+</br></br>
 ***
-
-- String menu.ItemName(index);
+</br>
+_String_ **menu.ItemName**(index);
 
 Result: Name of an item menu under specified index.

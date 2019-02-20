@@ -138,35 +138,34 @@
                     <main>
                         <a class="header" href="#context-menu" id="context-menu"><h1>Context Menu</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.RequestContextMenu('serial');</li>
-</ul>
-<p>Send a context menu request for given serial.</p>
+<p></br>
+<em>void</em> <strong>Orion.RequestContextMenu</strong>('serial');</p>
+<p>Send a context menu request for given serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WaitContextMenu('serial', index);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitContextMenu</strong>('serial', index);</p>
 <p>Add context menu wait hook.</p>
 <ul>
 <li>
-<p>serial - serial of context menu object. If serial equals 0, serial check will be ignored.</p>
+<p><code>serial</code> - serial of context menu object. If serial equals 0, serial check will be ignored.</p>
 </li>
 <li>
-<p>index - index of context menu choice, starting with 0.</p>
+<p><code>index</code> - index of context menu choice, starting with 0.
+</br></br></p>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.CancelContextMenu();</li>
-</ul>
-<p>Cancel all context menu hooks.</p>
+<p></br>
+<em>void</em> <strong>Orion.CancelContextMenu</strong>();</p>
+<p>Cancel all context menu hooks.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>bool Orion.WaitForContextMenu([delay=1000]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.WaitForContextMenu</strong>([delay=1000]);</p>
 <p>Awaits context menu for 'delay' amount of time in ms.</p>
 <p>Returns true is context menu was received during this period.</p>
 

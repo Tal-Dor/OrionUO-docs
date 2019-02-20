@@ -138,97 +138,96 @@
                     <main>
                         <a class="header" href="#speech" id="speech"><h1>Speech</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Print(['color'], 'text');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Print</strong>(['color'], 'text');</p>
 <p>Prints 'text' string into system chat.</p>
 <p>If only 'text' string was passed, default color [no color] will be used.</p>
-<p>color - message color.</p>
-<p>text - message text.</p>
+<p><code>color</code> - message color.</p>
+<p><code>text</code> - message text.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.CharPrint('serial', 'color', 'text');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.CharPrint</strong>('serial', 'color', 'text');</p>
 <p>Print a message above character with given serial.</p>
-<p>serial - given character serial.</p>
-<p>color - message color.</p>
-<p>text - message text.</p>
+<p><code>serial</code> - given character serial.</p>
+<p><code>color</code> - message color.</p>
+<p><code>text</code> - message text.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Say('text');</li>
-</ul>
-<p>Display 'text' speech in client.</p>
+<p></br>
+<em>void</em> <strong>Orion.Say</strong>('text');</p>
+<p>Display 'text' speech in client.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetFontColor(state, ['color'=0x02B2]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetFontColor</strong>(state, ['color'=0x02B2]);</p>
 <p>Changes font color of YOUR character to given color argument ( if given ) and disables/enables this feature by state argument.</p>
-<p>state - can be either true or false.</p>
-<p>color - message color.</p>
+<p><code>state</code> - can be either true or false.</p>
+<p><code>color</code> - message color.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.GetFontColor();</li>
-</ul>
-<p>Returns state of Orion.SetFontColor() option.</p>
+<p></br>
+<em>bool</em> <strong>Orion.GetFontColor</strong>();</p>
+<p>Returns state of Orion.SetFontColor() option.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetFontColorValue();</li>
-</ul>
-<p>Returns color value of Orion.SetFontColor() option.</p>
+<p></br>
+<em>String</em> <strong>Orion.GetFontColorValue</strong>();</p>
+<p>Returns color value of Orion.SetFontColor() option.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetCharactersFontColor(state, ['color'=0x02B2]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetCharactersFontColor</strong>(state, ['color'=0x02B2]);</p>
 <p>Changes font color of all characters to a given color argument ( if given ) and disables/enables this feature by state argument.</p>
-<p>state - can be either true or false.</p>
-<p>color - message color.</p>
+<p><code>state</code> - can be either true or false.</p>
+<p><code>color</code> - message color.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.GetCharactersFontColor();</li>
-</ul>
-<p>Returns state of Orion.SetCharactersFontColor() option.</p>
+<p></br>
+<em>bool</em> <strong>Orion.GetCharactersFontColor</strong>();</p>
+<p>Returns state of Orion.SetCharactersFontColor() option.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetCharactersFontColorValue();</li>
-</ul>
-<p>Returns color value of Orion.SetCharactersFontColor() option.</p>
+<p></br>
+<em>String</em> <strong>Orion.GetCharactersFontColorValue</strong>();</p>
+<p>Returns color value of Orion.SetCharactersFontColor() option.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>void Orion.SayYell('some text');</li>
-</ul>
-<p>Do 'yelling' speech.</p>
+<p></br>
+<em>void</em> <strong>Orion.SayYell</strong>('some text');</p>
+<p>Do 'yelling' speech.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SayWhisper('some text');</li>
-</ul>
-<p>Do 'whisper' speech.</p>
+<p></br>
+<em>void</em> <strong>Orion.SayWhisper</strong>('some text');</p>
+<p>Do 'whisper' speech.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SayEmote('some text');</li>
-</ul>
-<p>Do 'emote' speech.</p>
+<p></br>
+<em>void</em> <strong>Orion.SayEmote</strong>('some text');</p>
+<p>Do 'emote' speech.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SayBroadcast('some text');</li>
-</ul>
-<p>Do 'broadcast' speech.</p>
+<p></br>
+<em>void</em> <strong>Orion.SayBroadcast</strong>('some text');</p>
+<p>Do 'broadcast' speech.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SayParty('some text');</li>
-</ul>
-<p>Send 'text' to party chat.</p>
+<p></br>
+<em>void</em> <strong>Orion.SayParty</strong>('some text');</p>
+<p>Send 'text' to party chat.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SayGuild('some text');</li>
-</ul>
-<p>Send 'text' to guild chat.</p>
+<p></br>
+<em>void</em> <strong>Orion.SayGuild</strong>('some text');</p>
+<p>Send 'text' to guild chat.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SayAlliance('some text');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SayAlliance</strong>('some text');</p>
 <p>Send 'text' to alliance chat.</p>
 
                     </main>

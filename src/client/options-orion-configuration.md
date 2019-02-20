@@ -1,110 +1,110 @@
-# Options tab 2
+# Client - Options tab 2
 
 ![options2](http://www.imageup.ru/img130/2766109/optionstab2.jpg)
 
 
-1) Debug options - output debugging information to the window;
+1) `Debug options` output debugging information to the window.
 
-   - No debug - do not display information about debugging
+   - `No debug` Don't display information about debugging.
 
-   - FPS only - Отображать только количество FPS;
+   - `FPS only` Display only the number FPS;
 
-   - Debugging - Show debugging information (fps count, scale , loaded object amount e.t.c).
+   - `Debugging` Show debugging information (fps count, scale , loaded object amount, etc...).
 
-2) FPS rate - Desired fps count (Actual may differ from the one indicated here under heavy loads and / or at a slow video card).
+2) `FPS rate` Desired fps count (Actual may differ from the one indicated here under heavy loads and / or at a slow video card).
 
-3) Reduce FPS when UO window is unactive - Урезать ФПС если окно неактивно.
+3) `Reduce FPS when UO window is inactive` Cut the FPS do predefined number if the window is inactive.
 
-4) Standard characters animation delay - Standard delay between changing frames of living being animations.
+4) `Standard characters animation delay` Standard delay between changing frames of living being animations.
 
-5) Standard items animation delay - The standard delay between changing frames of inanimated objects.
+5) `Standard items animation delay` The standard delay between changing frames of animated objects.
 
-6) Use scaling in game window - use scaling of game window (test version).
+6) `Use scaling in game window` use scaling of game window (test version).
 
-7) Remove object's text with alpha-blending - text deleting with alpha blending (smooth text removal).
+7) `Remove object's text with alpha-blending` text deleting with alpha blending (smooth text removal).
 
-8) Draw characters status mode - show character status in the world:
+8) `Draw characters status mode` show character status in the world:
 
-   - No draw - do not show;
+   - `No draw` - do not show;
 
-   - Above character (Text) - Show above character (displayed with text);
+   - `Above character (Text)` - Show above character (displayed with text);
 
-   - Under character (Line) - Show under character (gump with hp line).
+   - `Under character (Line)` - Show under character (gump with hp line).
 
    Draw characters status condition - conditions for character status display:
 
-   - Always - always display;
+   - `Always `- always display;
 
-   - HP <> MaxHP - Display only if hp is not equal to max.(more or less);
+   - `HP <> MaxHP` - Display only if hp is not equal to max.(more or less);
 
-   - HP lower % - hp is lower of displayed % of max.
+   - `HP lower %` - hp is lower of displayed % of max.
 
-9) Change trees to stumps - trees will be replaced with stumps;
+9) `Change trees to stumps` - trees will be replaced with stumps;
 
-10) Marking cave tiles - caved tiles;
+10) `Marking cave tiles` - caved tiles;
 
-11) Hide vegetation - hide vegetation;
+11) `Hide vegetation` - hide vegetation;
 
-12) No fields animation - inanimate fields;
+12) `No fields animation` - inanimate fields;
 
-13) Lock gumps moving - Ability to block accidental closing or moving of certain types of gump. When the option is on and Ctrl + Alt is pressed, locks appear on the available gumps. Green - gump not locked, red - blocked;
+13) `Lock gumps moving` - Ability to block accidental closing or moving of certain types of gump. When the option is on and Ctrl + Alt is pressed, locks appear on the available gumps. Green - gump not locked, red - blocked;
 
-14) Chat need press 'Enter' to activate it - For chat activation press enter;
+14) `Chat need press 'Enter' to activate it` - For chat activation press enter;
 
-15) Hidden characters display mode - display mode of hidden characters:
+15) `Hidden characters display mode` - display mode of hidden characters:
 
-   - Original - without changes;
+   - `Original` - without changes;
 
-   - With alpha-blending, alpha - uses alpha-blending, value is configurable;
+   - `With alpha-blending, alpha` - uses alpha-blending, value is configurable;
 
-   - With spectral color - uses spectral color;
+   - `With spectral color` - uses spectral color;
 
-   - With special spectral color - uses special spectral color;
-    
-16) Change hidden characters mode only for your person - changes hidden characters only for yourself;
+   - `With special spectral color` - uses special spectral color;
 
-17) Transparent spell icons, alpha - use transparency for cast icons. level is configurable;
+16) `Change hidden characters mode only for your person `- changes hidden characters only for yourself;
 
-18) Old style maximized statusbar - in new client maximied statusbar is shown from old client gump;
+17) `Transparent spell icons, alpha` - use transparency for cast icons. level is configurable;
 
-19) Original party statusbar gump - replace party statusgroup to basic;
+18) `Old style maximized statusbar` - in new client maximied statusbar is shown from old client gump;
 
-20) Colorize characters by state - colorize characters based on state (poisoned, paralyzed);
+19) `Original party statusbar gump` - replace party statusgroup to basic;
 
-21) Change animated fields to tiles - change fields to tiles;
+20) `Colorize characters by stat`e - colorize characters based on state (poisoned, paralyzed);
 
-22) Add paperdoll slots - add slots to paperdoll for small things;
+21) `Change animated fields to tiles` - change fields to tiles;
 
-   - Scale images in slots - scale objects on paperdoll (test version);
+22) `Add paperdoll slots `- add slots to paperdoll for small things;
 
-23) Remove statusbars without objects - remove statusbar,whose objects cannot be seen
+   - `Scale images in slots` - scale objects on paperdoll (test version);
 
-24) Show console entry mode under game window - console entry mode under game window;
+23) `Remove statusbars without objects` - remove statusbar,whose objects cannot be seen
 
-25) Draw aura under characters mode -draw aura under character:
+24) `Show console entry mode under game window` - console entry mode under game window;
 
-   - Never - never show;
+25) `Draw aura under characters mode` -draw aura under character:
 
-   - Only in war mode - show only if war mode is on
+   - `Never` - never show;
 
-   - Always - always show.
+   - `Only in war mode` - show only if war mode is on
 
-26) Draw aura only if Ctrl pressed - draw aura if Ctrl is pressed;
+   - `Always` - always show.
 
-27) Screenshots format - screen format:
+26) `Draw aura only if Ctrl pressed` - draw aura if Ctrl is pressed;
 
-   - BMP;
+27) `Screenshots format` - screen format:
 
-   - PNG;
+   - `BMP`
 
-   - TIFF;
+   - `PNG`
 
-   - JPEG (by using this type, there might be crashes).
+   - `TIFF`
 
-28) Remove or new draw objects displaying with use blending - smoothly remove/draw world objects/statics with alpha-blending use.
+   - `JPEG`
 
-29) Draw helmets on shroud in the world - draw helmet about shroud in the world;
+28) `Remove or new draw objects displaying with use blending` - smoothly remove/draw world objects/statics with alpha-blending use.
 
-30) Draw world map before all gumps - draw world map for all gumps;
+29) `Draw helmets on shroud in the world` - draw helmet about shroud in the world;
 
-31) No draw roofs - without roof draws.
+30) `Draw world map before all gumps` - draw world map for all gumps;
+
+31) `No draw roofs` - without roof draws.

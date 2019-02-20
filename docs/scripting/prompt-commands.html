@@ -138,48 +138,52 @@
                     <main>
                         <a class="header" href="#prompt" id="prompt"><h1>Prompt</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WaitPrompt('text', 'serial'=0, 'type'=all);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitPrompt</strong>('text', 'serial'=0, 'type'=all);</p>
 <p>Add a prompt hook.</p>
 <ul>
 <li>
-<p>text - input text</p>
+<p><code>text</code> - input text</p>
 </li>
 <li>
-<p>serial - serial of prompt object. If serial equals 0, serial check will be ignored.</p>
+<p><code>serial</code> - serial of prompt object. If serial equals 0, serial check will be ignored.</p>
 </li>
 <li>
-<p>type - prompt type. all - all types; ascii - only ASCII prompts; unicode - only UNIDCODE prompts;</p>
+<p><code>type</code> - prompt type:</p>
+<ul>
+<li><code>all</code> - all types;</li>
+<li><code>ascii</code> - only ASCII prompts;</li>
+<li><code>unicode</code> - only UNIDCODE prompts;
+</br></br></li>
+</ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.CancelWaitPrompt();</li>
-</ul>
-<p>Cancel all prompt hooks.</p>
+<p></br>
+<em>void</em> <strong>Orion.CancelWaitPrompt</strong>();</p>
+<p>Cancel all prompt hooks.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20140" id="introduced-in-20140"><h2>Introduced in 2.0.14.0</h2></a>
-<ul>
-<li>bool Orion.PrompsExists();</li>
-</ul>
-<p>Returns true if a prompt is active.</p>
+<p></br>
+<em>bool</em> <strong>Orion.PrompsExists</strong>();</p>
+<p>Returns true if a prompt is active.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.PromptSerial();</li>
-</ul>
-<p>Returns prompt serial as string.</p>
+<p></br>
+<em>String</em> <strong>Orion.PromptSerial</strong>();</p>
+<p>Returns prompt serial as string.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.PromptID();</li>
-</ul>
-<p>Returns prompt id as string.</p>
+<p></br>
+<em>String</em> <strong>Orion.PromptID</strong>();</p>
+<p>Returns prompt id as string.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SendPrompt('text');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SendPrompt</strong>('text');</p>
 <p>Send prompt response ( if there's a prompt active ) with text input.</p>
 
                     </main>

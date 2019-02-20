@@ -1,152 +1,103 @@
 # Equipment
 
 A group of commands to work with clothes and dress/undress.
+#### Table of equipment layers:
 
-List of layers:
+  |   |   |   |   |  |
+--|---|---|---|---|--|
+ 1 - RightHand |  7 - Gloves | 13 - InnerTorso  | 19 - Arms  | 25 - Mount  |  
+ 2 - LeftHand |  8 - Ring | 14 - Bracelet  | 20 - Cloak  | 26 - Buy  |  
+ 3 - Shoes | 9 - Talisman  | 15 - Face  | 21 - Backpack  | 27 - Resale  |  
+ 4 - Pants | 10 - Necklace  | 16 - Beard  | 22 - Robe  | 28 - Sell  |  
+ 5 - Shirt | 11 - Hair  | 17 - MidTorso  | 23 - Eggs  |  29 - Bank |  
+ 6 - Helmet |  12 - Waist | 18 - Earrings  | 24 - Legs  |   |  
 
-1 - RightHand
-
-2 - LeftHand
-
-3 - Shoes
-
-4 - Pants
-
-5 - Shirt
-
-6 - Helmet
-
-7 - Gloves
-
-8 - Ring
-
-9 - Talisman
-
-10 - Necklace
-
-11 - Hair
-
-12 - Waist
-
-13 - InnerTorso
-
-14 - Bracelet
-
-15 - Face
-
-16 - Beard
-
-17 - MidTorso
-
-18 - Earrings
-
-19 - Arms
-
-20 - Cloak
-
-21 - Backpack
-
-22 - Robe
-
-23 - Eggs
-
-24 - Legs
-
-25 - Mount
-
-26 - Buy
-
-27 - Resale
-
-28 - Sell
-
-29 - Bank
 
 
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
-
-- void Orion.SetDressBag(['serial'=targetRequest]);
+</br>
+_void_ **Orion.SetDressBag**(['serial'=targetRequest]);
 
 Change the serial of bag for clothes on "serial".
 
 Request target to be aimed at the desired object, if parameters were not specified.
-
+</br></br>
 ***
-
-- void Orion.UnsetDressBag();
+</br>
+_void_ **Orion.UnsetDressBag**();
 
 Reset the serial of bag.
-
+</br></br>
 ***
-
-- void Orion.SetArm ('setName');
+</br>
+_void_ **Orion.SetArm**('setName');
 
 Set the weapon/shield.
-
+</br></br>
 ***
-
-- void Orion.UnsetArm ('setName');
+</br>
+_void_ **Orion.UnsetArm**('setName');
 
 Clear setName.
-
+</br></br>
 ***
-
-- void Orion.SetDress ('setName');
+</br>
+_void_ **Orion.SetDress**('setName');
 
 Set the clothes in the 'setName' (except weapons and shields).
-
+</br></br>
 ***
-
-- void Orion.UnsetDress ('setName');
+</br>
+_void_ **Orion.UnsetDress**('setName');
 
 Clear setName.
-
+</br></br>
 ***
-
-- void Orion.Arm('setName');
+</br>
+_void_ **Orion.Arm**('setName');
 
 Dress setName.
 
 Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.
-
+</br></br>
 ***
-
-- void Orion.Disarm();
+</br>
+_void_ **Orion.Disarm**();
 
 Disarm your weapon/shield.
-
+</br></br>
 ***
-
-- void Orion.Dress('setName');
+</br>
+_void_ **Orion.Dress**('setName');
 
 Dress setName.
 
 Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.
-
+</br></br>
 ***
-
-- void Orion.Undress();
+</br>
+_void_ **Orion.Undress**();
 
 Take off all but the weapons and shields.
-
+</br></br>
 ***
-
-- void Orion.Unequip ('layerName');
+</br>
+_void_ **Orion.Unequip**('layerName');
 
 Remove the object from the specified layer.
-
+</br></br>
 ***
-
-- void Orion.Equip ('serial');
+</br>
+_void_ **Orion.Equip**('serial');
 
 Dress the specified item.
-
+</br></br>
 ***
-
-- void Orion.EquipT('graphic', ['color'=0xFFFF]);
+</br>
+_void_ **Orion.EquipT**('graphic', ['color'=0xFFFF]);
 
 Find the item in the character backpack/sub-packs and bags with the type "graphic" and "color" (if required) and dress them.

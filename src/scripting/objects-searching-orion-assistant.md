@@ -3,40 +3,40 @@
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
+</br>
+**flags** - search filters:
 
-flags - search filters:
+- `fast` - the search stops on the first found object;
 
-- fast - the search stops on the first found object;
+- `near` - search for the nearest object to the character;
 
-- near - search for the nearest object to the character;
+- `mobile` - search only for alive creatures;
 
-- mobile - search only for alive creatures;
+- `item` - search only inanimate objects;
 
-- item - search only inanimate objects;
+- `human` - search only for humanoid creatures, types: 0x0190-0x0193, 0x03DB, 0x03DF and 0x03E2;
 
-- human - search only for humanoid creatures, types: 0x0190-0x0193, 0x03DB, 0x03DF and 0x03E2;
+- `live` - search only for living creatures;
 
-- live - search only for living creatures;
+- `dead` - search only for dead creatures, types: 0x0192 and 0x0193.
 
-- dead - search only for dead creatures, types: 0x0192 and 0x0193.
+- `injured` - Searching for a friend with lowest HP (works only for FindFriend/FindEnemy).
 
-- injured - Searching for a friend with lowest HP (works only for FindFriend/FindEnemy).
+- `next` - Searching for next object (works only for FindFriend/FindEnemy).
 
-- next - Searching for next object (works only for FindFriend/FindEnemy).
+- `ignorefriends` - ignores friends(Introduced in OA 2.0.8.0).
 
-- ignorefriends - ignores friends(Introduced in OA 2.0.8.0).
+- `ignoreenemies` - ignores enemies (Introduced in OA 2.0.8.0).
 
-- ignoreenemies - ignores enemies (Introduced in OA 2.0.8.0).
+_When using human, live or dead - mobile flag is set automatically._
 
-_When using human, live или dead - mobile flag is set automatically.
-
-_When using next - fast flag is set automatically.
-
+_When using next - fast flag is set automatically._
+</br></br>
 ***
-
-notoriety - Wickedness of the desired character.
+</br>
+**notoriety** - Wickedness of the desired character.
 
 - innocent/blue
 
@@ -51,180 +51,179 @@ notoriety - Wickedness of the desired character.
 - murderer/red
 
 - invulnerable/yellow
-
+</br></br>
 ***
-
-distance - The search distance.
+</br>
+**distance** - The search distance.
 
 In addition to numerical values, it can take string constants: finddistance, usedistance, opencorpsedistance.
-
+</br></br>
 ***
-
-- void Orion.UseType('graphic', ['color'=0xFFFF], ['container'=self], [recurse=true]);
+</br>
+_void_ **Orion.UseType**('graphic', ['color'=0xFFFF], ['container'=self], [recurse=true]);
 
 Search for an object by type and color in the container.
 
-- - graphic - Type or list of types. 0xFFFF is ignored.
+ - `graphic` - Type or list of types. 0xFFFF is ignored.
 
-- - color - The color or list of colors. 0xFFFF is ignored.
+ - `color` - The color or list of colors. 0xFFFF is ignored.
 
-- - container - The container in which the search is performed.
+ - `container` - The container in which the search is performed.
 
-- - recurse - Recursive search for sub-containers.
-
+ - `recurse` - Recursive search for sub-containers.
+</br></br>
 ***
-
-- void Orion.UseFromGround('graphic', ['color'=0xFFFF], ['distance'=useObjectsDistance], ['flags']);
+</br>
+_void_ **Orion.UseFromGround**('graphic', ['color'=0xFFFF], ['distance'=useObjectsDistance], ['flags']);
 
 Search for an object by type and color on the ground.
 
-- - graphic - Type or list of types. 0xFFFF is ignored.
+ - `graphic` - Type or list of types. 0xFFFF is ignored.
 
-- - color - The color or list of colors. 0xFFFF is ignored.
+ - `color` - The color or list of colors. 0xFFFF is ignored.
 
-- - distance - The search distance.
+ - `distance` - The search distance.
 
-- - flags - Search filter flags.
-
+ - `flags` - Search filter flags.
+</br></br>
 ***
-
-- bool Orion.UseTypeList('listName', ['container'=self], [recurse=true]);
+</br>
+_bool_ **Orion.UseTypeList**('listName', ['container'=self], [recurse=true]);
 
 Search for an object from the find list in the container.
 
-- - listName - The name of the find list.
+ - `listName` - The name of the find list.
 
-- - container - The container in which the search is performed.
+ - `container` - The container in which the search is performed.
 
-- - recurse - Recursive search for sub-containers.
+ - `recurse` - Recursive search for sub-containers.
 
 Result: true if the object was found and used.
-
+</br></br>
 ***
-
-- bool Orion.UseFromGroundList('listName', ['distance'=useObjectsDistance], ['flags']);
+</br>
+_bool_ **Orion.UseFromGroundList**('listName', ['distance'=useObjectsDistance], ['flags']);
 
 Search for an object on the find list on the ground.
 
-- - listName - The name of the find list.
+ - `listName` - The name of the find list.
 
-- - distance - The search distance.
+ - `distance` - The search distance.
 
-- - flags - Search filter flags.
+ - `flags` - Search filter flags.
 
 Result: true if the object was found and used.
-
+</br></br>
 ***
-
-- StringList Orion.FindType('graphic', ['color'=0xFFFF], ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);
+</br>
+_StringList_ **Orion.FindType**('graphic', ['color'=0xFFFF], ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);
 
 Search for an object by type and color.
 
-- - graphic - Type or list of types. 0xFFFF is ignored.
+- `graphic` - Type or list of types. 0xFFFF is ignored.
 
-- - color - The color or list of colors. 0xFFFF is ignored.
+- `color` - The color or list of colors. 0xFFFF is ignored.
 
-- - container - The container in which the search is performed.
+- `container` - The container in which the search is performed.
 
-- - flags - Search filter flags.
+- `flags` - Search filter flags.
 
-- - distance - The search distance.
+- `distance` - The search distance.
 
-- - notoriety - Wickedness of the desired character.
+- `notoriety` - Wickedness of the desired character.
 
-- - recurse - Recursive search for sub-containers.
+- `recurse` - Recursive search for sub-containers.
 
 Result: List of found serials.
-
+</br></br>
 ***
-
-- void Orion.Ignore('serial', [state=true]);
+</br>
+_void_ **Orion.Ignore**('serial', [state=true]);
 
 Set / remove the ignore flag on the serial object.
-
+</br></br>
 ***
-
-- void Orion.IgnoreReset();
+</br>
+_void_ **Orion.IgnoreReset**();
 
 Remove the ignore flag from all objects.
-
+</br></br>
 ***
+</br>
+_GameObject_ **Orion.FindObject**('serial');
 
-- GameObject Orion.FindObject('serial');
-
-Result: an object of type GameObject or null.
-
+Result: an object of type _GameObject_ or null.
+</br></br>
 ***
-
-- int Orion.Count('graphic', ['color'=0xFFFF], ['container'=self], ['distance'=searchObjectsDistance], [recurse]);
+</br>
+_int_ **Orion.Count**('graphic', ['color'=0xFFFF], ['container'=self], ['distance'=searchObjectsDistance], [recurse]);
 
 Returns the total number of items (the number of items, not the number of objects found).
 
-- - graphic - Type or list of types. 0xFFFF is ignored.
+- `graphic` - Type or list of types. 0xFFFF is ignored.
 
-- - color - The color or list of colors. 0xFFFF is ignored.
+- `color` - The color or list of colors. 0xFFFF is ignored.
 
-- - container - The container in which the search is performed.
+- `container` - The container in which the search is performed.
 
-- - distance - The search distance.
+- `distance` - The search distance.
 
-- - recurse - Recursive search for sub-containers.
+- `recurse` - Recursive search for sub-containers.
 
 Result: the amount of items.
-
+</br></br>
 ***
-
-- void Orion.ResetIgnoreList();
+</br>
+_void_ **Orion.ResetIgnoreList**();
 
 Reset the use of the ignore list.
-
+</br></br>
 ***
-
-- void Orion.UseIgnoreList('listName');
+</br>
+_void_ **Orion.UseIgnoreList**('listName');
 
 Use ignore list listName.
-
+</br></br>
 ***
-
-- StringList Orion.FindList('listName', ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);
+</br>
+_StringList_ **Orion.FindList**('listName', ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);
 
 Search for an object in the find list.
 
-- - listName - The name of the find list.
+- `listName` - The name of the find list.
 
-- - container - The container in which the search is performed.
+- `container` - The container in which the search is performed.
 
-- - flags - Search filter flags.
+- `flags` - Search filter flags.
 
-- - distance - The search distance.
+- `distance` - The search distance.
 
-- - notoriety - Wickedness of the desired character.
+- `notoriety` - Wickedness of the desired character.
 
-- - recurse - Recursive search for sub-containers.
-
+- `recurse` - Recursive search for sub-containers.
+</br></br>
 ***
+</br>
+_GameObject_ **Orion.ObjAtLayer**('layerName', ['serial'=self]);
 
-- GameObject Orion.ObjAtLayer('layerName', ['serial'=self]);
-
-Result: an object of type GameObject in the specified layer of the object 'serial' or null.
-
+Result: an object of type _GameObject_ in the specified layer of the object 'serial' or null.
+</br></br>
 ***
-
-- String Orion.FindFriend(['flags'=fast], ['distance'=searchObjectsDistance]);
+</br>
+_String_ **Orion.FindFriend**(['flags'=fast], ['distance'=searchObjectsDistance]);
 
 Searching for a friend serial from friends list.
 
-- - flags - Searching filter flags.
+- `flags` - Searching filter flags.
 
-- - distance - Searching distance.
-
+- `distance` - Searching distance.
+</br></br>
 ***
-
-- String Orion.FindEnemy(['flags'=fast], ['distance'=searchObjectsDistance]);
+</br>
+_String_ **Orion.FindEnemy**(['flags'=fast], ['distance'=searchObjectsDistance]);
 
 Searching for an enemy serial from enemies list.
 
-- - flags - Searching filter flags.
+- `flags` - Searching filter flags.
 
-- - distance - Searching distance.
-
+- `distance` - Searching distance.

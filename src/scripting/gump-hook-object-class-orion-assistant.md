@@ -1,29 +1,28 @@
 # Gump Hook
 
-`Version: 2.0.8.2`
-
 ### Command Format
 
-NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);
-
+**NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
+</br></br>
 ***
-
-- int hook.Index();
+</br>
+_int_ **hook.Index**();
 
 Returns button index to select by this hook.
-
+</br></br>
 ***
-
-- void hook.AddEntry(index, 'text');
+</br>
+_void_ **hook.AddEntry**(index, 'text');
 
 Adds a TextEntry hook by index and inputs text string.
 
 index - index of text entry.
 
 text - text entry input string.
+</br></br>
 ***
-
-- void hook.AddCheck(index, state);
+</br>
+_void_ **hook.AddCheck**(index, state);
 
 Adds a hook for radio/checkbox and sets the state.
 

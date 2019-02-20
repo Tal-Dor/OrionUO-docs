@@ -3,47 +3,45 @@
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
-
-- String msg.Serial();
+</br>
+_String_ **msg.Serial**();
 
 Result: Serial number of an Object, bounded with message.
-
+</br></br>
 ***
-
-- int msg.Timer();
+</br>
+_int_ **msg.Timer**();
 
 Result: Temporary mark of the message.
-
+</br></br>
 ***
-
-- String msg.Color();
+</br>
+_String_ **msg.Color**();
 
 Result: Color of the message.
-
+</br></br>
 ***
-
-- String msg.Text();
+</br>
+_String_ **msg.Text**();
 
 Result: Message text.
-
+</br></br>
 ***
-
-- int msg.Flags();
+</br>
+_int_ **msg.Flags**();
 
 Result: Message flags.
-
+</br></br>
 ***
-
-- int msg.FindTextID();
+</br>
+_int_ **msg.FindTextID**();
 
 Result: Text index in search request from 0 to the number of sets in request.
-
+</br></br>
 ***
-
-## Introduced in 2.0.8.0
-
-- void msg.SetText('newText');
+</br>
+_void_ **msg.SetText**('newText');
 
 Change journal message to 'newText' string.

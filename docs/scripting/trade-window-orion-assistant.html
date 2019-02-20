@@ -138,54 +138,53 @@
                     <main>
                         <a class="header" href="#trade-window" id="trade-window"><h1>Trade Window</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.TradeCount();</li>
-</ul>
-<p>Result: the amount of open menus.</p>
+<p></br>
+<em>int</em> <strong>Orion.TradeCount</strong>();</p>
+<p>Result: the amount of open menus.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.TradeContainer('index', 'container');</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.TradeContainer</strong>('index', 'container');</p>
 <p>Get the container serial of the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
 <p>container - Window identifier, right ('right' or '1') or left ('left' or '0').</p>
-<p>Result: serial of the container.</p>
+<p>Result: serial of the container.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.TradeOpponent('index');</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.TradeOpponent</strong>('index');</p>
 <p>Get an opponent's serial of the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
-<p>Result: opponent's serial.</p>
+<p>Result: opponent's serial.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.TradeName('index');</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.TradeName</strong>('index');</p>
 <p>Get the opponent's name of the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
-<p>Result: opponent's name.</p>
+<p>Result: opponent's name.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.TradeCheckState('index', 'container');</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.TradeCheckState</strong>('index', 'container');</p>
 <p>Obtain the status (confirmation) of the transaction in the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using serial number index 0x12345678).</p>
 <p>container - Window identifier, right ('right' or '1') or left ('left' or '0').</p>
-<p>Result: the status of the checkbox is true / false.</p>
+<p>Result: the status of the checkbox is true / false.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.TradeCheck('index', state);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.TradeCheck</strong>('index', state);</p>
 <p>Change the transaction confirmation status in the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using serial number index 0x12345678).</p>
-<p>state - new state, true (tick) or false (uncheck).</p>
+<p>state - new state, true (tick) or false (uncheck).
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.TradeClose('index');</li>
-</ul>
-<p>Close the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
+<p></br>
+<em>void</em> <strong>Orion.TradeClose</strong>('index');</p>
+<p>Close the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>bool Orion.WaitForTrade([delay=1000]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.WaitForTrade</strong>([delay=1000]);</p>
 <p>Await for a trade window for a given 'delay' amount of time and blocking script execution.</p>
 <p>Returns true if a trade window was received during this period.</p>
 

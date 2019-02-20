@@ -3,270 +3,266 @@
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
-
-- String obj.Serial();
+</br>
+_String_ **obj.Serial**();
 
 Result: Serial number of an Object.
-
+</br></br>
 ***
-
-- String obj.Graphic();
+</br>
+_String_ **obj.Graphic**();
 
 Result: Type of an Object (Picture ID).
-
+</br></br>
 ***
-
-- String obj.Color();
+</br>
+_String_ **obj.Color**();
 
 Result: Color of an Object.
-
+</br></br>
 ***
-
-- int obj.X();
+</br>
+_int_ **obj.X**();
 
 Result: X object coordinates in world.
-
+</br></br>
 ***
-
-- int obj.Y();
+</br>
+_int_ **obj.Y**();
 
 Result: Y object coordinates in world.
-
+</br></br>
 ***
-
-- int obj.Z();
+</br>
+_int_ **obj.Z**();
 
 Result: Z object coordinates in world.
-
+</br></br>
 ***
-
-- String obj.Container();
+</br>
+_String_ **obj.Container**();
 
 Result: Serial number of an Main(parent)-Object. 0xFFFFFFFF if object is located in world.
-
+</br></br>
 ***
-
-- int obj.Map();
+</br>
+_int_ **obj.Map**();
 
 Result: World map objects index.
-
+</br></br>
 ***
-
-- int obj.Count();
+</br>
+_int_ **obj.Count**();
 
 Result: Quantity
-
+</br></br>
 ***
-
-- int obj.Flags();
+</br>
+_int_ **obj.Flags**();
 
 Result: Object flags.
-
+</br></br>
 ***
-
-- String obj.Name();
+</br>
+_String_ **obj.Name**();
 
 Result: Name of an Object (empty for items, until click on object).
-
+</br></br>
 ***
-
-- bool obj.Mobile();
+</br>
+_bool_ **obj.Mobile**();
 
 Result: true is object is alive.
-
+</br></br>
 ***
-
-- bool obj.Ignored();
+</br>
+_bool_ **obj.Ignored**();
 
 Result: true - if object is marked as ignored.
-
+</br></br>
 ***
-
-- bool obj.Frozen();
+</br>
+_bool_ **obj.Frozen**();
 
 Result: true - if object is frozen.
-
+</br></br>
 ***
-
-- bool obj.Poisoned();
+</br>
+_bool_ **obj.Poisoned**();
 
 Result: true - if object is poisoned.
-
+</br></br>
 ***
+</br>
+_bool_ **obj.Flying**();
 
-- bool obj.Flying();
-
-Result: true - if object is flying (gargoyle).
-
+Result: true if obj.ct is flying (gargoyle).
+</br></br>
 ***
-
-- bool obj.YellowHits();
+</br>
+_bool_ **obj.YellowHits**();
 
 Result: true - if object has yellow health bar.
-
+</br></br>
 ***
-
-- bool obj.IgnoreCharacters();
+</br>
+_bool_ **obj.IgnoreCharacters**();
 
 Result: true - if object is ignoring players while moving.
-
+</br></br>
 ***
+</br>
+_bool_ **obj.Locked**();
 
-- bool obj.Locked();
-
-Result: true - if object cant be moved or marked (items).
-
+Result: true - if obj.ct cant be moved or marked (items).
+</br></br>
 ***
-
-- bool obj.WarMode();
+</br>
+_bool_ **obj.WarMode**();
 
 Result: true - if object is in war mode.
-
+</br></br>
 ***
-
-- bool obj.Hidden();
+</br>
+_bool_ **obj.Hidden**();
 
 Result: true - if object is invisible.
-
+</br></br>
 ***
-
-- bool obj.IsHuman();
+</br>
+_bool_ **obj.IsHuman**();
 
 Result: true - if object is attacking humanoid.
-
+</br></br>
 ***
-
-- bool obj.IsPlayer();
+</br>
+_bool_ **obj.IsPlayer**();
 
 Result: true - if object is current player.
-
+</br></br>
 ***
-
-- bool obj.IsCorpse();
+</br>
+_bool_ **obj.IsCorpse**();
 
 Result: true - if object is dead body.
-
+</br></br>
 ***
-
-- int obj.Layer();
+</br>
+_int_ **obj.Layer**();
 
 Result: Number of Layer - object is located in.
-
+</br></br>
 ***
-
-- bool obj.IsMulti();
+</br>
+_bool_ **obj.IsMulti**();
 
 Result: true - if object is - Multi.
-
+</br></br>
 ***
-
-- int obj.EquipLayer();
+</br>
+_int_ **obj.EquipLayer**();
 
 Result: Number of Layer - object is supposed to locate in.
-
+</br></br>
 ***
-
-- int obj.Hits();
+</br>
+_int_ **obj.Hits**();
 
 Result: Hit points amount of an Object.
-
+</br></br>
 ***
-
-- int obj.MaxHits();
+</br>
+_int_ **obj.MaxHits**();
 
 Result: Maximum hit points amount of an Object.
-
+</br></br>
 ***
-
-- int obj.Mana();
+</br>
+_int_ **obj.Mana**();
 
 Result: Mana amount of an Object.
-
+</br></br>
 ***
-
-- int obj.MaxMana();
+</br>
+_int_ **obj.MaxMana**();
 
 Result: Maximum mana amount of an Object.
-
+</br></br>
 ***
-
-- int obj.Stam();
+</br>
+_int_ **obj.Stam**();
 
 Result: Stamina amount of an Object.
-
+</br></br>
 ***
-
-- int obj.MaxStam();
+</br>
+_int_ **obj.MaxStam**();
 
 Result: Maximum stamina amount of an Object.
-
+</br></br>
 ***
-
-- bool obj.Female();
+</br>
+_bool_ **obj.Female**();
 
 Result: true - if object player is a female gender.
-
+</br></br>
 ***
-
-- int obj.Race();
+</br>
+_int_ **obj.Race**();
 
 Result: Race number of an Object.
-
+</br></br>
 ***
-
-- int obj.Direction();
+</br>
+_int_ **obj.Direction**();
 
 Result: Direction of an Object.
-
+</br></br>
 ***
-
-- int obj.Notoriety();
+</br>
+_int_ **obj.Notoriety**();
 
 Result: Wickedness of an Object.
-
+</br></br>
 ***
-
-- bool obj.CanChangeName();
+</br>
+_bool_ **obj.CanChangeName**();
 
 Result: true - if object can be renamed.
-
+</br></br>
 ***
-
-- bool obj.Dead();
+</br>
+_bool_ **obj.Dead**();
 
 Result: true - if object is dead.
-
+</br></br>
 ***
+</br>
+_bool_ **obj.Exists**();
 
-- bool obj.Exists();
-
-Result: true - if object does not exist.
+Result: true - if object does not exist.</br></br>
 ***
-
-## Introduced in 2.0.8.2
-
-- String obj.Properties();
+</br>
+_String_ **obj.Properties**();
 
 Returns string with object properties ( if they were received by MegaCliloc packet from server )
-
+</br></br>
 ***
-
-## Introduced in 2.0.12.0
-
-- bool obj.ProfileReceived();
+</br>
+_bool_ **obj.ProfileReceived**();
 
 Returns true if profile was received from server.
-
+</br></br>
 ***
-
-- String obj.Profile();
+</br>
+_String_ **obj.Profile**();
 
 Returns profile contents.
-
+</br></br>
 ***
-
-- String obj.Title();
+</br>
+_String_ **obj.Title**();
 
 Returns characters title ( displayed in paperdoll ).

@@ -138,116 +138,90 @@
                     <main>
                         <a class="header" href="#journal" id="journal"><h1>Journal</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ShowJournal([linesCount=maxLines]);</li>
-</ul>
-<p>Display the journal content in a text box, linesCount - the number of output lines.</p>
+<p></br>
+<em>void</em> <strong>Orion.ShowJournal</strong>([linesCount=maxLines]);</p>
+<p>Display the journal content in a text box, linesCount - the number of output lines.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ClearJournal(['pattern'], ['flags'], ['serial'=0], ['color'=0xFFFF]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.ClearJournal</strong>(['pattern'], ['flags'], ['serial'=0], ['color'=0xFFFF]);</p>
 <p>Clear the journal.</p>
-<p>Without parameters - clears the whole journal of the assistant; Otherwise it works similarly to InJournal but including deletion.</p>
+<p>Without parameters - clears the whole journal of the assistant; Otherwise it works similarly to InJournal but including deletion.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.JournalIgnoreCase([state=false]);</li>
-</ul>
-<p>Enable / disable ignoring the register for searching text in the journal.</p>
+<p></br>
+<em>void</em> <strong>Orion.JournalIgnoreCase</strong>([state=false]);</p>
+<p>Enable / disable ignoring the register for searching text in the journal.
+</br></br></p>
 <hr />
-<ul>
-<li>JournalMessage Orion.InJournal('pattern', ['flags'], ['serial'=0], ['color'=0xFFFF], [startTime=0, endTime=0]);</li>
-</ul>
+<p></br>
+<em>JournalMessage</em> <strong>Orion.InJournal</strong>('pattern', ['flags'], ['serial'=0], ['color'=0xFFFF], [startTime=0, endTime=0]);</p>
 <p>Search for data in the journal.</p>
 <ul>
 <li>
-<ul>
-<li>pattern - required string, which can consist of several lines separated via |</li>
-</ul>
+<p><code>pattern</code> - required string, which can consist of several lines separated via |</p>
 </li>
 <li>
-<ul>
-<li>flags - search flags in the journal: my/self - search for messages with player's serial; Sys/system - search for messages in the system chat. Can be combined with: 'my|sys'.</li>
-</ul>
+<p><code>flags</code> - search flags in the journal: my/self - search for messages with player's serial; Sys/system - search for messages in the system chat. Can be combined with: 'my|sys'.</p>
 </li>
 <li>
-<ul>
-<li>serial - search for messages from the object with the specified serial. 0 ignores the filter by serial.</li>
-</ul>
+<p><code>serial</code> - search for messages from the object with the specified serial. 0 ignores the filter by serial.</p>
 </li>
 <li>
-<ul>
-<li>color - search for messages with the specified color. 0xFFFF ignores the filter by color.</li>
-</ul>
+<p><code>color</code> - search for messages with the specified color. 0xFFFF ignores the filter by color.</p>
 </li>
 <li>
-<ul>
-<li>startTime - initial time of search. 0 the initial time is ignored.</li>
-</ul>
+<p><code>startTime</code> - initial time of search. 0 the initial time is ignored.</p>
 </li>
 <li>
-<ul>
-<li>endTime - the end time of the search. 0 the end time is ignored</li>
-</ul>
+<p><code>endTime</code> - the end time of the search. 0 the end time is ignored</p>
 </li>
 </ul>
-<p>Result: object of the type JournalMessage or null if nothing was found.</p>
+<p>Result: object of the type JournalMessage or null if nothing was found.
+</br></br></p>
 <hr />
-<ul>
-<li>JournalMessage Orion.WaitJournal('pattern', startTime, endTime, [flags], ['serial'=0], ['color'=0xFFFF]);</li>
-</ul>
+<p></br>
+<em>JournalMessage</em> <strong>Orion.WaitJournal</strong>('pattern', startTime, endTime, [flags], ['serial'=0], ['color'=0xFFFF]);</p>
 <p>Waiting for the appearance of data in the journal.</p>
 <ul>
 <li>
-<ul>
-<li>pattern - required string, which can consist of several lines separated via |</li>
-</ul>
+<p><code>pattern</code> - required string, which can consist of several lines separated via |</p>
 </li>
 <li>
-<ul>
-<li>startTime - initial time of search. 0 the initial time is ignored.</li>
-</ul>
+<p><code>startTime</code> - initial time of search. 0 the initial time is ignored.</p>
 </li>
 <li>
-<ul>
-<li>endTime - the end time of the search. 0 the end time is ignored</li>
-</ul>
+<p><code>endTime</code> - the end time of the search. 0 the end time is ignored</p>
 </li>
 <li>
-<ul>
-<li>flags - search flags in the journal: my/self - search for messages with player's serial; Sys/system - search for messages in the system chat. Can be combined with: 'my|sys'.</li>
-</ul>
+<p><code>flags</code> - search flags in the journal: my/self - search for messages with player's serial; Sys/system - search for messages in the system chat. Can be combined with: 'my|sys'.</p>
 </li>
 <li>
-<ul>
-<li>serial - search for messages from the object with the specified serial. 0 ignores the filter by serial.</li>
-</ul>
+<p><code>serial</code> - search for messages from the object with the specified serial. 0 ignores the filter by serial.</p>
 </li>
 <li>
-<ul>
-<li>color - search for messages with the specified color. 0xFFFF ignores the filter by color.</li>
-</ul>
+<p><code>color</code> - search for messages with the specified color. 0xFFFF ignores the filter by color.</p>
 </li>
 </ul>
-<p>Result: object of the type JournalMessage or null if nothing was found.</p>
+<p>Result: object of the type JournalMessage or null if nothing was found.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2070" id="introduced-in-2070"><h2>Introduced in 2.0.7.0</h2></a>
-<ul>
-<li>JournalMessage Orion.LastJournalMessage();</li>
-</ul>
+<p></br>
+<em>JournalMessage</em> <strong>Orion.LastJournalMessage</strong>();</p>
 <p>Retrieve last message from Orion Assistant journal.</p>
-<p>Result: object of the type JournalMessage or null if nothing was found.</p>
+<p>Result: object of the type JournalMessage or null if nothing was found.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2080" id="introduced-in-2080"><h2>Introduced in 2.0.8.0</h2></a>
-<ul>
-<li>int Orion.JournalCount();</li>
-</ul>
-<p>Returns: Amount of messages in journal.</p>
+<p></br>
+<em>int</em> <strong>Orion.JournalCount</strong>();</p>
+<p>Returns: Amount of messages in journal.
+</br></br></p>
 <hr />
-<ul>
-<li>JournalMessage Orion.JournalLine(index);</li>
-</ul>
+<p></br>
+<em>JournalMessage</em> <strong>Orion.JournalLine</strong>(index);</p>
 <p>Returns JournalMessage by index or null of index wasn't found.</p>
 
                     </main>

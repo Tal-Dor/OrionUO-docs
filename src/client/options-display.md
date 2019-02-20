@@ -4,4 +4,4 @@
 
 1) Game Window size options.
 
-2) Lock game window resizing - Button for window resizing will be blocked (button is changed to the lock sign).
+2) `Lock game window resizing` Button for window resizing will be blocked (button is changed to the lock sign).

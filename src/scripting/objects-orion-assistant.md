@@ -3,261 +3,253 @@
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
-
-- void Orion.Info(['serial'=targetRequest]);
+</br>
+_void_ **Orion.Info**(['serial'=targetRequest]);
 
 Display information about the object "serial" in a text box.
 
 Request target to be aimed at the desired object, if parameters were not specified.
-
+</br></br>
 ***
-
-- void Orion.InfoTile(['lasttile'=targetRequest]);
+</br>
+_void_ **Orion.InfoTile**(['lasttile'=targetRequest]);
 
 Display information about 'lasttile' (tile, on which target was selected last time ) in the text box.
 
 Request target to be aimed at the desired tile, if parameters were not specified.
-
+</br></br>
 ***
-
-- String Orion.GetSerial('serial');
+</br>
+_String_ **Orion.GetSerial**('serial');
 
 Returns real value of the serial.
 
 For instance: Orion.GetSerial(self) or Orion.GetSerial(lastcontainer) - will return the serial of the player 0x12345678
-
+</br></br>
 ***
-
-- String Orion.GetGraphic('graphic');
+</br>
+_String_ **Orion.GetGraphic**('graphic');
 
 Return real value of "graphic".
 
 For instance: Orion.GetGraphic('bm') - will return type of blood moss, stated in Lists/Types
-
+</br></br>
 ***
-
-- String Orion.GetContainer('serial');
+</br>
+_String_ **Orion.GetContainer**('serial');
 
 Return serial of the object, in which an object with "serial" is located.
 
 Orion.GetContainer(self) will return 0xFFFFFFFF (worlds serial) or Orion.GetContainer(backpack) - will return serial of the player 0x12345678, since backpack container is the player, who's owning it.
-
+</br></br>
 ***
-
-- void Orion.Click(['serial'=self]);
+</br>
+_void_ **Orion.Click**(['serial'=self]);
 
 Request click for the object serial.
-
+</br></br>
 ***
-
-- void Orion.UseObject(['serial'=self]);
+</br>
+_void_ **Orion.UseObject**(['serial'=self]);
 
 Request to use (doubleclick) the object serial.
-
+</br></br>
 ***
-
-- void Orion.GetStatus(['serial'=self]);
+</br>
+_void_ **Orion.GetStatus**(['serial'=self]);
 
 Request for the object serial status.
-
+</br></br>
 ***
-
-- void Orion.Attack('serial');
+</br>
+_void_ **Orion.Attack**('serial');
 
 Request to attack the object serial.
-
+</br></br>
 ***
-
-- void Orion.Hide(['serial'=targetRequest]);
+</br>
+_void_ **Orion.Hide**(['serial'=targetRequest]);
 
 Hide the object serial.
 
 Request target selection for the object indication, if parameters were not specified.
-
+</br></br>
 ***
-
-- void Orion.RenameMount('serial', 'new name');
+</br>
+_void_ **Orion.RenameMount**('serial', 'new name');
 
 Rename your mount "serial".
-
+</br></br>
 ***
-
-- void Orion.Drop(['serial'=targetRequest], [count=0(all)], [x=-1, y=-1, z=0]);
+</br>
+_void_ **Orion.Drop**(['serial'=targetRequest], [count=0(all)], [x=-1, y=-1, z=0]);
 
 Drop the item 'serial' with amount 'count' into coordinates x, y, z ; Use target if parameters were not specified.
-
+</br></br>
 ***
-
-- void Orion.DropHere(['serial'=targetRequest], [count=0(all)]);
+</br>
+_void_ **Orion.DropHere**(['serial'=targetRequest], [count=0(all)]);
 
 Drop the item 'serial' under the character with amount 'count'. Request target to be aimed at the desired object, if parameters were not specified.
-
+</br></br>
 ***
-
-- void Orion.MoveItem(['serial'=targetRequest], [count=0(all)], ['container'=backpack], [x=-1, y=-1], [z=0]);
+</br>
+_void_ **Orion.MoveItem**(['serial'=targetRequest], [count=0(all)], ['container'=backpack], [x=-1, y=-1], [z=0]);
 
 Move the object 'serial' with amount 'count' to the container 'container' into coordinates x, y, z (z when throwing on the ground), use target if parameters were not specified.
-
+</br></br>
 ***
-
-- int Orion.GetDistance('serial');
+</br>
+_int_ **Orion.GetDistance**('serial');
 
 Return distance to the object.
-
+</br></br>
 ***
-
-- int Orion.GetDistance(x, y);
+</br>
+_int_ **Orion.GetDistance**(x, y);
 
 Return distance to the coordinates.
-
+</br></br>
 ***
-
-- void Orion.BandageSelf();
+</br>
+_void_ **Orion.BandageSelf**();
 
 Bandageself.
-
+</br></br>
 ***
-
-- String ClientLastTarget();
+</br>
+_String_ **ClientLastTarget**();
 
 Get the state of the global client variable LastTarget.
 
-Result: The string with the serial.
-
+Result: The _String_ with the serial.
+</br></br>
 ***
-
-- void ClientLastTarget(serial);
+</br>
+_void_ **ClientLastTarget**(serial);
 
 Set the state of the client global variable LastTarget to the serial.
-
+</br></br>
 ***
-
-- String ClientLastAttack();
+</br>
+_String_ **ClientLastAttack**();
 
 Get the state of the global client variable LastAttack
 
-Result: The string with the serial.
-
+Result: The _String_ with the serial.
+</br></br>
 ***
-
-- void ClientLastAttack(serial);
+</br>
+_void_ **ClientLastAttack**(serial);
 
 Set the state of the global client variable LastAttack to the serial.
-
+</br></br>
 ***
-
-- String TargetSystemSerial();
+</br>
+_String_ **TargetSystemSerial**();
 
 Get the state of the global client variable TargetSystemSerial (from new target system).
 
-Result: The string with the serial.
-
+Result: The String with the serial.
+</br></br>
 ***
-
-- void TargetSystemSerial(serial);
+</br>
+_void_ **TargetSystemSerial**(serial);
 
 Set the state of the global client variable TargetSystemSerial (from new target system) to the serial.
-
+</br></br>
 ***
-
-- void Orion.GetFriendsStatus();
+</br>
+_void_ **Orion.GetFriendsStatus**();
 
 Retrieves statuses of all friends in update range ( required to get updates about their hp etc. ).
-
+</br></br>
 ***
-
-- void Orion.GetEnemiesStatus();
+</br>
+_void_ **Orion.GetEnemiesStatus**();
 
 Retrieves statuses of all enemies in update range ( required to get updates about their hp etc. ).
-
+</br></br>
 ***
-
-## Introduced in 2.0.7.0
-
-- PositionObject Orion.GetLastTargetPosition();
+</br>
+_PositionObject_ **Orion.GetLastTargetPosition**();
 
 Retrieves latest coordinates of LastTarget, if object has disappeared - it will retrieve last known coordinates.
 
 Returns: a PositionObject data type.
-
+</br></br>
 ***
-
-- PositionObject Orion.GetLastAttackPosition();
+</br>
+_PositionObject_ **Orion.GetLastAttackPosition**();
 
 Retrieves latest coordinates of LastAttack, if object has disappeared - it will retrieve last known coordinates.
 
 Returns: a PositionObject data type.
-
+</br></br>
 ***
-
-## Introduced in 2.0.8.0
-
-- bool Orion.OpenContainer('serial', ['delay'=600], ['errorTextPattern']);
+</br>
+_bool_ **Orion.OpenContainer**('serial', ['delay'=600], ['errorTextPattern']);
 
 Open container.
 
-- serial - serial of the container we're opening.
+- `serial` - serial of the container we're opening.
 
-- delay - Maximum delay for container opening action.
+- `delay` - Maximum delay for container opening action.
 
-- errorTextPattern - Error text. Default: 'reach that|too away'.
+- `errorTextPattern` - Error text. Default: 'reach that|too away'.
 
 Returns: true if container was opened successfully.
-
+</br></br>
 ***
-
-- bool Orion.ObjectExists('serial');
+</br>
+_bool_ **Orion.ObjectExists**('serial');
 
 Returns: true if object with 'serial' is present in OA memory.
-
+</br></br>
 ***
-
-- String Orion.RequestName('serial', ['delay'=200]);
+</br>
+_String_ **Orion.RequestName**('serial', ['delay'=200]);
 
 Requests objects name. If the name is already present, it will return immediately. Otherwise name will be requested from the server.
 
-- serial - serial of the object we're requesting name from.
+- `serial` - serial of the object we're requesting name from.
 
-- delay - Max delay for name requesting.
+- `delay` - Max delay for name requesting.
 
-Returns: Objects name or an empty string if failed.
+Returns: Objects name or an empty _String_ if failed.
+</br></br>
 ***
-
-## Introduced in 2.0.12.0
-
-- bool Orion.GetProfile('serial', ['delay'=300], ['errorTextPattern']);
+</br>
+_bool_ **Orion.GetProfile**('serial', ['delay'=300], ['errorTextPattern']);
 
 Retrieves characters profile.
 
-- serial - characters serial.
+- `serial` - characters serial.
 
-- delay - maximum wait time for profile retrievement.
+- `delay` - maximum wait time for profile retrievement.
 
-- errorTextPattern - error pattern, default: 'reach that|too away'.
+- `errorTextPattern` - error pattern, default: 'reach that|too away'.
 
 Returns true if a profile was retrieved.
+</br></br>
 ***
-
-## Introduced in 2.0.13.0
-
-- void Orion.ShowStatusbar('serial', x, y, [minimized=true]);
+</br>
+_void_ **Orion.ShowStatusbar**('serial', x, y, [minimized=true]);
 
 Show/Move status bar gump in client screen.
 
-serial - character serial.
+- `serial` - character serial.
 
-x - screen X coordinate.
+- `x` - screen X coordinate.
 
-y - screen Y coordinate.
+- `y` - screen Y coordinate.
 
-minimized - only for your character. true will show minimized status bar, false will show expanded one.
-
+- `minimized` - only for your character. true will show minimized status bar, false will show expanded one.
+</br></br>
 ***
-
-- void Orion.CloseStatusbar('serial');
+</br>
+_void_ **Orion.CloseStatusbar**('serial');
 
 Close status bar which belongs to serial.
-
-

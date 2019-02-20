@@ -138,338 +138,336 @@
                     <main>
                         <a class="header" href="#player-character" id="player-character"><h1>Player Character</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
-<hr />
-<ul>
-<li>String obj.Serial();</li>
-</ul>
-<p>Result: Serial number of an Object.</p>
-<hr />
-<ul>
-<li>String obj.Graphic();</li>
-</ul>
-<p>Result: Type of an Object (Picture ID).</p>
-<hr />
-<ul>
-<li>String obj.Color();</li>
-</ul>
-<p>Result: Color of an Object.</p>
-<hr />
-<ul>
-<li>int obj.X();</li>
-</ul>
-<p>Result: X object coordinates in the world.</p>
-<hr />
-<ul>
-<li>int obj.Y();</li>
-</ul>
-<p>Result: Y object coordinates in the world.</p>
-<hr />
-<ul>
-<li>int obj.Z();</li>
-</ul>
-<p>Result: Z object coordinates in the world.</p>
-<hr />
-<ul>
-<li>String obj.Container();</li>
-</ul>
-<p>Result: Serial number of an Main(parent)-Object. 0xFFFFFFFF if object is located in world.</p>
-<hr />
-<ul>
-<li>int obj.Map();</li>
-</ul>
-<p>Result: World map objects index.</p>
-<hr />
-<ul>
-<li>int obj.Count();</li>
-</ul>
-<p>Result: Quantity.</p>
-<hr />
-<ul>
-<li>int obj.Flags();</li>
-</ul>
-<p>Result: Object flags.</p>
-<hr />
-<ul>
-<li>String obj.Name();</li>
-</ul>
-<p>Result: Name of an Objext (empty for items, until click on object).</p>
-<hr />
-<ul>
-<li>bool obj.Mobile();</li>
-</ul>
-<p>Result: true is object is alive.</p>
-<hr />
-<ul>
-<li>bool obj.Ignored();</li>
-</ul>
-<p>Result: true - if object is marked as ignored.</p>
-<hr />
-<ul>
-<li>bool obj.Frozen();</li>
-</ul>
-<p>Result: true - if object is frozen.</p>
-<hr />
-<ul>
-<li>bool obj.Poisoned();</li>
-</ul>
-<p>Result: true - if object is poisoned.</p>
-<hr />
-<ul>
-<li>bool obj.Paralyzed();</li>
-</ul>
-<p>Result:true - if object is paralyzed.</p>
-<hr />
-<ul>
-<li>bool obj.Flying();</li>
-</ul>
-<p>Result: true - if object is flying (gargoyle).</p>
-<hr />
-<ul>
-<li>bool obj.YellowHits();</li>
-</ul>
-<p>Result: true - if object has yellow health bar.</p>
-<hr />
-<ul>
-<li>bool obj.IgnoreCharacters();</li>
-</ul>
-<p>Result: true - if object is ignoring players while moving.</p>
-<hr />
-<ul>
-<li>bool obj.Locked();</li>
-</ul>
-<p>Result: true - if object cant be moved or marked (items).</p>
-<hr />
-<ul>
-<li>bool obj.WarMode();</li>
-</ul>
-<p>Result: true - if object is in war mode</p>
-<hr />
-<ul>
-<li>bool obj.Hidden();</li>
-</ul>
-<p>Result: true - if object is invisible.</p>
-<hr />
-<ul>
-<li>bool obj.IsHuman();</li>
-</ul>
-<p>Result: true - if object is attacking humanoid.</p>
-<hr />
-<ul>
-<li>bool obj.IsPlayer();</li>
-</ul>
-<p>Result: true - if object is current player.</p>
-<hr />
-<ul>
-<li>bool obj.IsCorpse();</li>
-</ul>
-<p>Result: true - if object is dead body.</p>
-<hr />
-<ul>
-<li>int obj.Layer();</li>
-</ul>
-<p>Result: Number of Layer - object is located in.</p>
-<hr />
-<ul>
-<li>bool obj.IsMulti();</li>
-</ul>
-<p>Result: true - if object is - Multi.</p>
-<hr />
-<ul>
-<li>int obj.EquipLayer();</li>
-</ul>
-<p>Result: Number of Layer - object is supposed to locate in.</p>
-<hr />
-<ul>
-<li>int obj.Hits();</li>
-</ul>
-<p>Result: Hit points amount of an Object.</p>
-<hr />
-<ul>
-<li>int obj.MaxHits();</li>
-</ul>
-<p>Result: Maximum hit points amount of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Mana();</li>
-</ul>
-<p>Result: Mana amount of an Object.</p>
-<hr />
-<ul>
-<li>int obj.MaxMana();</li>
-</ul>
-<p>Result: Maximum mana amount of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Stam();</li>
-</ul>
-<p>Result: Stamina amount of an Object.</p>
-<hr />
-<ul>
-<li>int obj.MaxStam();</li>
-</ul>
-<p>Result: Maximum stamina amount of an Object.</p>
-<hr />
-<ul>
-<li>bool obj.Female();</li>
-</ul>
-<p>Result: true - if object player is a female gender.</p>
-<hr />
-<ul>
-<li>int obj.Race();</li>
-</ul>
-<p>Result: Race number of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Direction();</li>
-</ul>
-<p>Result: Direction of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Notoriety();</li>
-</ul>
-<p>Result: Wickedness of an Object.</p>
-<hr />
-<ul>
-<li>bool obj.CanChangeName();</li>
-</ul>
-<p>Result: true - if object can be renamed.</p>
-<hr />
-<ul>
-<li>bool obj.Dead();</li>
-</ul>
-<p>Result: true - if object is dead.</p>
-<hr />
-<ul>
-<li>int obj.Str();</li>
-</ul>
-<p>Result: Str value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Int();</li>
-</ul>
-<p>Result: Int value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Dex();</li>
-</ul>
-<p>Result: Dex value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.LockStrState();</li>
-</ul>
-<p>Result: The value perspective gaining Str of an Object.</p>
-<hr />
-<ul>
-<li>int obj.LockIntState();</li>
-</ul>
-<p>Result: The value perspective gaining Int of an Object.</p>
-<hr />
-<ul>
-<li>int obj.LockDexState();</li>
-</ul>
-<p>Result: The value perspective gaining Dex of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Weight();</li>
-</ul>
-<p>Result: Weight value of an object.</p>
-<hr />
-<ul>
-<li>int obj.MaxWeight();</li>
-</ul>
-<p>Result: Maximum weight value of an object.</p>
-<hr />
-<ul>
-<li>int obj.Armor();</li>
-</ul>
-<p>Result: Armor value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Gold();</li>
-</ul>
-<p>Result: Gold value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.StatsCap();</li>
-</ul>
-<p>Result: Maximum Statcap value (str+int+dex) of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Followers();</li>
-</ul>
-<p>Result: Creature quantity tamed to an Object.</p>
-<hr />
-<ul>
-<li>int obj.MaxFollowers();</li>
-</ul>
-<p>Result: Maximum creature quantity that can be dependent to an Object.</p>
-<hr />
-<ul>
-<li>int obj.FireResistance();</li>
-</ul>
-<p>Result: Fire defence value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.ColdResistance();</li>
-</ul>
-<p>Result: Cold defence value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.PoisonResistance();</li>
-</ul>
-<p>Result: Poison defence value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.EnergyResistance();</li>
-</ul>
-<p>Result: Energy defence value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.Luck();</li>
-</ul>
-<p>Result: Luck value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.MinDamage();</li>
-</ul>
-<p>Result: Minimal damage value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.MaxDamage();</li>
-</ul>
-<p>Result: Maximum damage value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.TithingPoints();</li>
-</ul>
-<p>Result: Skill point value of an Object.</p>
-<hr />
-<ul>
-<li>int obj.StealthSteps();</li>
-</ul>
-<p>Result: Number of steps in Stealth of an Object.</p>
-<hr />
-<a class="header" href="#introduced-in-20100" id="introduced-in-20100"><h2>Introduced in 2.0.10.0</h2></a>
-<ul>
-<li>String obj.Properties();</li>
-</ul>
-<p>Returns string with object properties ( if they were received by MegaCliloc packet from server )</p>
-<hr />
-<a class="header" href="#introduced-in-20120" id="introduced-in-20120"><h2>Introduced in 2.0.12.0</h2></a>
-<ul>
-<li>bool obj.ProfileReceived();</li>
-</ul>
-<p>Returns true if profile was received from server.</p>
-<hr />
-<ul>
-<li>String obj.Profile();</li>
-</ul>
-<p>Returns profile contents.</p>
-<hr />
-<ul>
-<li>String obj.Title();</li>
-</ul>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Serial</strong>();</p>
+<p>Result: Serial number of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Graphic</strong>();</p>
+<p>Result: Type of an Object (Picture ID).
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Color</strong>();</p>
+<p>Result: Color of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.X</strong>();</p>
+<p>Result: X object coordinates in the world.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Y</strong>();</p>
+<p>Result: Y object coordinates in the world.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Z</strong>();</p>
+<p>Result: Z object coordinates in the world.
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Container</strong>();</p>
+<p>Result: Serial number of an Main(parent)-Object. 0xFFFFFFFF if object is located in world.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Map</strong>();</p>
+<p>Result: World map objects index.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Count</strong>();</p>
+<p>Result: Quantity.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Flags</strong>();</p>
+<p>Result: Object flags.
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Name</strong>();</p>
+<p>Result: Name of an Objext (empty for items, until click on object).
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Mobile</strong>();</p>
+<p>Result: true is object is alive.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Ignored</strong>();</p>
+<p>Result: true - if object is marked as ignored.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Frozen</strong>();</p>
+<p>Result: true - if object is frozen.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Poisoned</strong>();</p>
+<p>Result: true - if object is poisoned.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Paralyzed</strong>();</p>
+<p>Result:true - if object is paralyzed.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Flying</strong>();</p>
+<p>Result: true <em>if</em> **obj.ct is flying **(gargoyle).
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.YellowHits</strong>();</p>
+<p>Result: true - if object has yellow health bar.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.IgnoreCharacters</strong>();</p>
+<p>Result: true - if object is ignoring players while moving.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Locked</strong>();</p>
+<p>Result: true <em>if</em> **obj.ct cant be moved or marked **(items).
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.WarMode</strong>();</p>
+<p>Result: true - if object is in war mode
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Hidden</strong>();</p>
+<p>Result: true - if object is invisible.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.IsHuman</strong>();</p>
+<p>Result: true - if object is attacking humanoid.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.IsPlayer</strong>();</p>
+<p>Result: true - if object is current player.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.IsCorpse</strong>();</p>
+<p>Result: true - if object is dead body.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Layer</strong>();</p>
+<p>Result: Number of Layer - object is located in.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.IsMulti</strong>();</p>
+<p>Result: true - if object is - Multi.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.EquipLayer</strong>();</p>
+<p>Result: Number of Layer - object is supposed to locate in.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Hits</strong>();</p>
+<p>Result: Hit points amount of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.MaxHits</strong>();</p>
+<p>Result: Maximum hit points amount of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Mana</strong>();</p>
+<p>Result: Mana amount of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.MaxMana</strong>();</p>
+<p>Result: Maximum mana amount of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Stam</strong>();</p>
+<p>Result: Stamina amount of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.MaxStam</strong>();</p>
+<p>Result: Maximum stamina amount of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Female</strong>();</p>
+<p>Result: true - if object player is a female gender.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Race</strong>();</p>
+<p>Result: Race number of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Direction</strong>();</p>
+<p>Result: Direction of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Notoriety</strong>();</p>
+<p>Result: Wickedness of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.CanChangeName</strong>();</p>
+<p>Result: true - if object can be renamed.
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.Dead</strong>();</p>
+<p>Result: true - if object is dead.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Str</strong>();</p>
+<p>Result: Str value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Int</strong>();</p>
+<p>Result: Int value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Dex</strong>();</p>
+<p>Result: Dex value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.LockStrState</strong>();</p>
+<p>Result: The value perspective gaining Str of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.LockIntState</strong>();</p>
+<p>Result: The value perspective gaining Int of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.LockDexState</strong>();</p>
+<p>Result: The value perspective gaining Dex of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Weight</strong>();</p>
+<p>Result: Weight value of an object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.MaxWeight</strong>();</p>
+<p>Result: Maximum weight value of an object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Armor</strong>();</p>
+<p>Result: Armor value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Gold</strong>();</p>
+<p>Result: Gold value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.StatsCap</strong>();</p>
+<p>Result: Maximum Statcap value (str+int+dex) of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Followers</strong>();</p>
+<p>Result: Creature quantity tamed to an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.MaxFollowers</strong>();</p>
+<p>Result: Maximum creature quantity that can be dependent to an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.FireResistance</strong>();</p>
+<p>Result: Fire defence value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.ColdResistance</strong>();</p>
+<p>Result: Cold defence value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.PoisonResistance</strong>();</p>
+<p>Result: Poison defence value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.EnergyResistance</strong>();</p>
+<p>Result: Energy defence value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.Luck</strong>();</p>
+<p>Result: Luck value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.MinDamage</strong>();</p>
+<p>Result: Minimal damage value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.MaxDamage</strong>();</p>
+<p>Result: Maximum damage value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.TithingPoints</strong>();</p>
+<p>Result: Skill point value of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>int</em> <strong>obj.StealthSteps</strong>();</p>
+<p>Result: Number of steps in Stealth of an Object.
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Properties</strong>();</p>
+<p>Returns string with object properties ( if they were received by MegaCliloc packet from server )
+</br></br></p>
+<hr />
+<p></br>
+<em>bool</em> <strong>obj.ProfileReceived</strong>();</p>
+<p>Returns true if profile was received from server.
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Profile</strong>();</p>
+<p>Returns profile contents.
+</br></br></p>
+<hr />
+<p></br>
+<em>String</em> <strong>obj.Title</strong>();</p>
 <p>Returns characters title ( displayed in paperdoll ).</p>
 
                     </main>

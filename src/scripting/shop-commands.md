@@ -2,11 +2,11 @@
 
 ### Command Format
 
-NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);
-
+**NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
+</br></br>
 ***
-
-- void Orion.Buy('shopListName', ['vendorName'], [shopDelay=0]);
+</br>
+_void_ **Orion.Buy**('shopListName', ['vendorName'], [shopDelay=0]);
 
 Initiate buying.
 
@@ -21,10 +21,10 @@ If shops buy list doesn't appear, it awaits 'shopDelay' amount of time in ms and
 - vendorName - name of vendor.
 
 - shopDelay - buying operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to buy and 'Shop delay for 1 stack' value.
-
+</br></br>
 ***
-
-- void Orion.Sell('shopListName', ['vendorName'], [shopDelay=0]);
+</br>
+_void_ **Orion.Sell**('shopListName', ['vendorName'], [shopDelay=0]);
 
 Initiate selling.
 
@@ -39,12 +39,10 @@ If shops sell list doesn't appear, it awaits 'shopDelay' amount of time in ms an
 - vendorName - name of vendor.
 
 - shopDelay - selling operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to sell and 'Shop delay for 1 stack' value.
-
+</br></br>
 ***
-
-## Introduced in 2.0.15.0
-
-- bool Orion.WaitForShop([delay=1000]);
+</br>
+_bool_ **Orion.WaitForShop**([delay=1000]);
 
 Await for a shop gump for a given 'delay' amount of time and blocking script execution.
 

@@ -138,251 +138,243 @@
                     <main>
                         <a class="header" href="#non-categorized" id="non-categorized"><h1>Non Categorized</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SaveConfig();</li>
-</ul>
-<p>Save configuration.</p>
+<p></br>
+<em>void</em> <strong>Orion.SaveConfig</strong>();</p>
+<p>Save configuration.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetLight(state, [value=currentLight]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetLight</strong>(state, [value=currentLight]);</p>
 <p>Set the light level.</p>
-<p>state - state turn on/turn off.</p>
-<p>value - light level value from 0 to 31.</p>
+<p><code>state</code> - state turn on/turn off.</p>
+<p><code>value</code> - light level value from 0 to 31.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetWeather(state, [index=currentWeather], [effectsCount=currentCount], [temperature=currentTemperature]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetWeather</strong>(state, [index=currentWeather], [effectsCount=currentCount], [temperature=currentTemperature]);</p>
 <p>Set weather conditions.</p>
-<p>state - state turn on/turn off.</p>
-<p>index - ordinal number of the weather effect.</p>
-<p>effectsCount - number of effects on screen.</p>
-<p>temperature - not used.</p>
+<p><code>state</code> - state turn on/turn off.</p>
+<p><code>index</code> - ordinal number of the weather effect.</p>
+<p><code>effectsCount</code> - number of effects on screen.</p>
+<p><code>temperature</code> - not used.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetSeason(state, [index=currentIndex], [musicIndex=currentMusic]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetSeason</strong>(state, [index=currentIndex], [musicIndex=currentMusic]);</p>
 <p>Set season with number.</p>
-<p>state - state turn on/turn off.</p>
-<p>index - ordinal number of season.</p>
-<p>musicIndex - music number for playback.</p>
+<p><code>state</code> - state turn on/turn off.</p>
+<p><code>index</code> - ordinal number of season.</p>
+<p><code>musicIndex</code> - music number for playback.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Track([state=false], [x=-1, y=-1]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Track</strong>([state=false], [x=-1, y=-1]);</p>
 <p>Hide/show quest arrow to the indicated coordinates. -1 in coordinates indicates current location in the world.</p>
-<p>state - state show/hide.</p>
-<p>x - coordinate X in the world, where the arrow points</p>
-<p>y - coordinate Y в мире, where the arrow points</p>
+<p><code>state</code> - state show/hide.</p>
+<p><code>x</code> - coordinate X in the world, where the arrow points</p>
+<p><code>y</code> - coordinate Y в мире, where the arrow points
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.SaveHotkeys('fileName');</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.SaveHotkeys</strong>('fileName');</p>
 <p>Save current hotkey set with file name 'filename' (to the Hotkeys folder at the root of the assistant).</p>
-<p>Result: true on successful file save.</p>
+<p>Result: true on successful file save.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.LoadHotkeys('fileName');</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.LoadHotkeys</strong>('fileName');</p>
 <p>Load hotkey set with file name 'fileName' (from the Hotkeys folder at the root of the assistant).</p>
-<p>Result: true on successful file load.</p>
+<p>Result: true on successful file load.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Cast(spellIndex/'spellName', ['targetSerial']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Cast</strong>(spellIndex/'spellName', ['targetSerial']);</p>
 <p>Cast a spell 'spellName' (You can also refer to the order number in the spellbook).</p>
-<p>If targetSerial is specified - automatically use the target on this object, otherwise - only sends a cast request to the server.</p>
+<p>If targetSerial is specified - automatically use the target on this object, otherwise - only sends a cast request to the server.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UseSkill(skillIndex/'skillName', ['targetSerial']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.UseSkill</strong>(skillIndex/'skillName', ['targetSerial']);</p>
 <p>Use skill 'skillName' (You can also refer to the order number).</p>
-<p>If targetSerial is specified - automatically use the target on this object, otherwise - only sends a request to use skill to the server.</p>
+<p>If targetSerial is specified - automatically use the target on this object, otherwise - only sends a request to use skill to the server.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.SkillValue(skillIndex/'skillName', ['type'=real]);</li>
-</ul>
+<p></br>
+<em>int</em> <strong>Orion.SkillValue</strong>(skillIndex/'skillName', ['type'=real]);</p>
 <p>Get skill value 'skillName' (You can also refer to the order number).</p>
 <p>type - value type: real, base, cap, lock.</p>
-<p>Result: Integer value of the skill (e.g: 3.0 will be 30, 10.3 - 103, 50.8 - 508, 100.0 - 1000).</p>
+<p>Result: Integer value of the skill (e.g: 3.0 will be 30, 10.3 - 103, 50.8 - 508, 100.0 - 1000).
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.CloseUO();</li>
-</ul>
-<p>Close game client.</p>
+<p></br>
+<em>void</em> <strong>Orion.CloseUO</strong>();</p>
+<p>Close game client.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WarMode([state=switch]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WarMode</strong>([state=switch]);</p>
 <p>Switch war mode.</p>
-<p>state - turn on/turn off war mode. If not specified - switches the current state.</p>
+<p><code>state</code> - turn on/turn off war mode. If not specified - switches the current state.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Morph(['graphic'=0]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Morph</strong>(['graphic'=0]);</p>
 <p>Change character body graphic.</p>
-<p>Without parameters or 0 - returns body to its original state.</p>
+<p>Without parameters or 0 - returns body to its original state.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Resend();</li>
-</ul>
-<p>Synchronisation with the server. Can be used every few seconds.</p>
+<p></br>
+<em>void</em> <strong>Orion.Resend</strong>();</p>
+<p>Synchronisation with the server. Can be used every few seconds.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Sound(index);</li>
-</ul>
-<p>Play sound index.</p>
+<p></br>
+<em>void</em> <strong>Orion.Sound</strong>(index);</p>
+<p>Play sound index.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.EmoteAction('actionName');</li>
-</ul>
-<p>Request to emotion reproducing  actionName.</p>
+<p></br>
+<em>void</em> <strong>Orion.EmoteAction</strong>('actionName');</p>
+<p>Request to emotion reproducing  actionName.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Print(['color'], 'text');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Print</strong>(['color'], 'text');</p>
 <p>Display in system chat</p>
 <p>If displayed only 1 argument - string color will be standard.</p>
-<p>color - message color.</p>
-<p>text - text.</p>
+<p><code>color</code> - message color.</p>
+<p><code>text</code> - text.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.CharPrint('serial', 'color', 'text');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.CharPrint</strong>('serial', 'color', 'text');</p>
 <p>Display message above the character</p>
-<p>serial - serial of the character, above who you want to display the message</p>
-<p>color - message color</p>
-<p>text - text.</p>
+<p><code>serial</code> - serial of the character, above who you want to display the message.</p>
+<p><code>color</code> - message color.</p>
+<p><code>text</code> - text.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Say('text');</li>
-</ul>
-<p>Say in the chat 'text'</p>
+<p></br>
+<em>void</em> <strong>Orion.Say</strong>('text');</p>
+<p>Say in the chat 'text'
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.BuffExists('name');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.BuffExists</strong>('name');</p>
 <p>Checking for buffs by name or graphic.</p>
-<p>Result: true if buff is active.</p>
+<p>Result: true if buff is active.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetFontColor(state, ['color'=0x02B2]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetFontColor</strong>(state, ['color'=0x02B2]);</p>
 <p>Change text color for player character and state of this option.</p>
-<p>state - true/false.</p>
-<p>color - text color.</p>
+<p><code>state</code> - true/false.</p>
+<p><code>color</code> - text color.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.GetFontColor();</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.GetFontColor</strong>();</p>
 <p>Retrieve status of text replacement option for player character.</p>
-<p>Returns true if option is enabled.</p>
+<p>Returns true if option is enabled.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetFontColorValue();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.GetFontColorValue</strong>();</p>
 <p>Retrieve text replacement color for player character.</p>
-<p>Returns: text color.</p>
+<p>Returns: text color.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetCharactersFontColor(state, ['color'=0x02B2]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetCharactersFontColor</strong>(state, ['color'=0x02B2]);</p>
 <p>Change text color used by characters for output and state of this option.</p>
-<p>state - true/false.</p>
-<p>color - text color.</p>
+<p><code>state</code> - true/false.</p>
+<p><code>color</code> - text color.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.GetCharactersFontColor();</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.GetCharactersFontColor</strong>();</p>
 <p>Retrieve status of text replacement option for characters.</p>
-<p>Returns true if option is enabled.</p>
+<p>Returns true if option is enabled.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetCharactersFontColorValue();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.GetCharactersFontColorValue</strong>();</p>
 <p>Retrieve text replacement color for all characters.</p>
-<p>Returns: text color.</p>
+<p>Returns: text color.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2070" id="introduced-in-2070"><h2>Introduced in 2.0.7.0</h2></a>
-<ul>
-<li>void Orion.UseAbility('abilityName');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.UseAbility</strong>('abilityName');</p>
 <p>Use request for an ability 'abilityName'.</p>
-<p>'abilityName' can also be 'Primary', 'Secondary', or its real name in(can also be found in script editor context menu) or it can be ability index starting from '0' and '30' as last index.</p>
+<p>'abilityName' can also be 'Primary', 'Secondary', or its real name in(can also be found in script editor context menu) or it can be ability index starting from '0' and '30' as last index.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UseWrestlingDisarm();</li>
-</ul>
-<p>Wrestling Disarm ability use request.</p>
+<p></br>
+<em>void</em> <strong>Orion.UseWrestlingDisarm</strong>();</p>
+<p>Wrestling Disarm ability use request.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UseWrestlingStun();</li>
-</ul>
-<p>Wrestling Stun ability use request..</p>
+<p></br>
+<em>void</em> <strong>Orion.UseWrestlingStun</strong>();</p>
+<p>Wrestling Stun ability use request..
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2080" id="introduced-in-2080"><h2>Introduced in 2.0.8.0</h2></a>
-<ul>
-<li>void Orion.InvokeVirture('name');</li>
-</ul>
-<p>...</p>
+<p></br>
+<em>void</em> <strong>Orion.InvokeVirture</strong>('name');</p>
+<p>...
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2090" id="introduced-in-2090"><h2>Introduced in 2.0.9.0</h2></a>
-<ul>
-<li>void Orion.PlayWav('filePath');</li>
-</ul>
-<p>Play a *.WAV file from filePath.</p>
+<p></br>
+<em>void</em> <strong>Orion.PlayWav</strong>('filePath');</p>
+<p>Play a *.WAV file from filePath.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20120" id="introduced-in-20120"><h2>Introduced in 2.0.12.0</h2></a>
-<ul>
-<li>void Orion.Screenshot();</li>
-</ul>
-<p>Create a screenshot.</p>
+<p></br>
+<em>void</em> <strong>Orion.Screenshot</strong>();</p>
+<p>Create a screenshot.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20130" id="introduced-in-20130"><h2>Introduced in 2.0.13.0</h2></a>
-<ul>
-<li>void Orion.LogOut();</li>
-</ul>
-<p>Client log out ( client will remain running, at login screen ).</p>
+<p></br>
+<em>void</em> <strong>Orion.LogOut</strong>();</p>
+<p>Client log out ( client will remain running, at login screen ).
+</br></br></p>
 <hr />
-<ul>
-<li>MacroObject Orion.CreateClientMacro(['action'], ['subAction']);</li>
-</ul>
+<p></br>
+_ MacroObject_ <strong>Orion.CreateClientMacro</strong>(['action'], ['subAction']);</p>
 <p>Create a macro in client options.</p>
-<p>Returns MacroObject or null reference.</p>
+<p>Returns MacroObject or null reference.</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20140" id="introduced-in-20140"><h2>Introduced in 2.0.14.0</h2></a>
-<ul>
-<li>void Orion.OpenPaperdoll('serial');</li>
-</ul>
-<p>Open paperdoll by serial.</p>
+<p></br>
+<em>void</em> <strong>Orion.OpenPaperdoll</strong>('serial');</p>
+<p>Open paperdoll by serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ClosePaperdoll('serial');</li>
-</ul>
-<p>Close paperdoll by serial.</p>
+<p></br>
+<em>void</em> <strong>Orion.ClosePaperdoll</strong>('serial');</p>
+<p>Close paperdoll by serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.MovePaperdoll('serial', x, y);</li>
-</ul>
-<p>Move paperdoll by serial to chosen x and y coordinates on screen.</p>
+<p></br>
+<em>void</em> <strong>Orion.MovePaperdoll</strong>('serial', x, y);</p>
+<p>Move paperdoll by serial to chosen x and y coordinates on screen.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>void Orion.ClientViewRange(range);</li>
-</ul>
-<p>Set clients view range ( 5 is minimal, 25 is maximal ).</p>
+<p></br>
+<em>void</em> <strong>Orion.ClientViewRange</strong>(range);</p>
+<p>Set clients view range ( 5 is minimal, 25 is maximal ).
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.ClientViewRange();</li>
-</ul>
+<p></br>
+<em>int</em> <strong>Orion.ClientViewRange</strong>();</p>
 <p>Get current client view range.</p>
-<p>Returns clients view range in tiles.</p>
+<p>Returns clients view range in tiles.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.LoadProfile('name');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.LoadProfile</strong>('name');</p>
 <p>Load OA profile by name.</p>
 
                     </main>

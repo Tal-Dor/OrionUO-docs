@@ -138,51 +138,50 @@
                     <main>
                         <a class="header" href="#menu" id="menu"><h1>Menu</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.InfoMenu();</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.InfoMenu</strong>();</p>
 <p>Display information about the content of the last menu in the journal that came from the server.</p>
-<p>(Introduced in OA 2.0.8.0) index - gump index, -1 or lastmenu will display information about last gump ( if it was there ).</p>
+<p>(Introduced in OA 2.0.8.0) index - gump index, -1 or lastmenu will display information about last gump ( if it was there ).
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WaitMenu('prompt', 'choice');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitMenu</strong>('prompt', 'choice');</p>
 <p>Waiting for the menu with the title 'prompt' to select object 'choice'.</p>
-<p>(Introduced in OA 2.0.8.0) Choice can be numeric, it will chose a choice according to its index. You can also use 'random' - to get a random one.</p>
+<p>(Introduced in OA 2.0.8.0) Choice can be numeric, it will chose a choice according to its index. You can also use 'random' - to get a random one.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.CancelWaitMenu();</li>
-</ul>
-<p>Cancel the menu waiting.</p>
+<p></br>
+<em>void</em> <strong>Orion.CancelWaitMenu</strong>();</p>
+<p>Cancel the menu waiting.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.MenuCount();</li>
-</ul>
+<p></br>
+<em>int</em> <strong>Orion.MenuCount</strong>();</p>
 <p>Information about the number of open menus.</p>
-<p>Result: the amount of open menus.</p>
+<p>Result: the amount of open menus.
+</br></br></p>
 <hr />
-<ul>
-<li>MenuObject Orion.GetMenu('nameOrIndex');</li>
-</ul>
+<p></br>
+<em>MenuObject</em> <strong>Orion.GetMenu</strong>('nameOrIndex');</p>
 <p>Get the menu object by name/index.</p>
-<p>Result: the object of type MenuObject or null if the menu with the specified name or index does not exist.</p>
+<p>Result: the object of type MenuObject or null if the menu with the specified name or index does not exist.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SelectMenu('name', 'itemName');</li>
-</ul>
-<p>Make a choice in the client's open menu - 'name' of the item that named itemName.</p>
+<p></br>
+<em>void</em> <strong>Orion.SelectMenu</strong>('name', 'itemName');</p>
+<p>Make a choice in the client's open menu - 'name' of the item that named itemName.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.CloseMenu('name');</li>
-</ul>
-<p>Close the open menu 'name' in the client.</p>
+<p></br>
+<em>void</em> <strong>Orion.CloseMenu</strong>('name');</p>
+<p>Close the open menu 'name' in the client.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>bool Orion.WaitForMenu([delay=1000]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.WaitForMenu</strong>([delay=1000]);</p>
 <p>Awaits ( blocks execution ) for a menu for a given 'delay' of time in ms.</p>
 <p>Returns true is a menu was received during the given delay.</p>
 

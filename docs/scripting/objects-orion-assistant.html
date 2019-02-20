@@ -138,223 +138,229 @@
                     <main>
                         <a class="header" href="#objects" id="objects"><h1>Objects</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Info(['serial'=targetRequest]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Info</strong>(['serial'=targetRequest]);</p>
 <p>Display information about the object &quot;serial&quot; in a text box.</p>
-<p>Request target to be aimed at the desired object, if parameters were not specified.</p>
+<p>Request target to be aimed at the desired object, if parameters were not specified.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.InfoTile(['lasttile'=targetRequest]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.InfoTile</strong>(['lasttile'=targetRequest]);</p>
 <p>Display information about 'lasttile' (tile, on which target was selected last time ) in the text box.</p>
-<p>Request target to be aimed at the desired tile, if parameters were not specified.</p>
+<p>Request target to be aimed at the desired tile, if parameters were not specified.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetSerial('serial');</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.GetSerial</strong>('serial');</p>
 <p>Returns real value of the serial.</p>
-<p>For instance: Orion.GetSerial(self) or Orion.GetSerial(lastcontainer) - will return the serial of the player 0x12345678</p>
+<p>For instance: Orion.GetSerial(self) or Orion.GetSerial(lastcontainer) - will return the serial of the player 0x12345678
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetGraphic('graphic');</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.GetGraphic</strong>('graphic');</p>
 <p>Return real value of &quot;graphic&quot;.</p>
-<p>For instance: Orion.GetGraphic('bm') - will return type of blood moss, stated in Lists/Types</p>
+<p>For instance: Orion.GetGraphic('bm') - will return type of blood moss, stated in Lists/Types
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetContainer('serial');</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.GetContainer</strong>('serial');</p>
 <p>Return serial of the object, in which an object with &quot;serial&quot; is located.</p>
-<p>Orion.GetContainer(self) will return 0xFFFFFFFF (worlds serial) or Orion.GetContainer(backpack) - will return serial of the player 0x12345678, since backpack container is the player, who's owning it.</p>
+<p>Orion.GetContainer(self) will return 0xFFFFFFFF (worlds serial) or Orion.GetContainer(backpack) - will return serial of the player 0x12345678, since backpack container is the player, who's owning it.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Click(['serial'=self]);</li>
-</ul>
-<p>Request click for the object serial.</p>
+<p></br>
+<em>void</em> <strong>Orion.Click</strong>(['serial'=self]);</p>
+<p>Request click for the object serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UseObject(['serial'=self]);</li>
-</ul>
-<p>Request to use (doubleclick) the object serial.</p>
+<p></br>
+<em>void</em> <strong>Orion.UseObject</strong>(['serial'=self]);</p>
+<p>Request to use (doubleclick) the object serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.GetStatus(['serial'=self]);</li>
-</ul>
-<p>Request for the object serial status.</p>
+<p></br>
+<em>void</em> <strong>Orion.GetStatus</strong>(['serial'=self]);</p>
+<p>Request for the object serial status.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Attack('serial');</li>
-</ul>
-<p>Request to attack the object serial.</p>
+<p></br>
+<em>void</em> <strong>Orion.Attack</strong>('serial');</p>
+<p>Request to attack the object serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Hide(['serial'=targetRequest]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Hide</strong>(['serial'=targetRequest]);</p>
 <p>Hide the object serial.</p>
-<p>Request target selection for the object indication, if parameters were not specified.</p>
+<p>Request target selection for the object indication, if parameters were not specified.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.RenameMount('serial', 'new name');</li>
-</ul>
-<p>Rename your mount &quot;serial&quot;.</p>
+<p></br>
+<em>void</em> <strong>Orion.RenameMount</strong>('serial', 'new name');</p>
+<p>Rename your mount &quot;serial&quot;.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Drop(['serial'=targetRequest], [count=0(all)], [x=-1, y=-1, z=0]);</li>
-</ul>
-<p>Drop the item 'serial' with amount 'count' into coordinates x, y, z ; Use target if parameters were not specified.</p>
+<p></br>
+<em>void</em> <strong>Orion.Drop</strong>(['serial'=targetRequest], [count=0(all)], [x=-1, y=-1, z=0]);</p>
+<p>Drop the item 'serial' with amount 'count' into coordinates x, y, z ; Use target if parameters were not specified.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.DropHere(['serial'=targetRequest], [count=0(all)]);</li>
-</ul>
-<p>Drop the item 'serial' under the character with amount 'count'. Request target to be aimed at the desired object, if parameters were not specified.</p>
+<p></br>
+<em>void</em> <strong>Orion.DropHere</strong>(['serial'=targetRequest], [count=0(all)]);</p>
+<p>Drop the item 'serial' under the character with amount 'count'. Request target to be aimed at the desired object, if parameters were not specified.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.MoveItem(['serial'=targetRequest], [count=0(all)], ['container'=backpack], [x=-1, y=-1], [z=0]);</li>
-</ul>
-<p>Move the object 'serial' with amount 'count' to the container 'container' into coordinates x, y, z (z when throwing on the ground), use target if parameters were not specified.</p>
+<p></br>
+<em>void</em> <strong>Orion.MoveItem</strong>(['serial'=targetRequest], [count=0(all)], ['container'=backpack], [x=-1, y=-1], [z=0]);</p>
+<p>Move the object 'serial' with amount 'count' to the container 'container' into coordinates x, y, z (z when throwing on the ground), use target if parameters were not specified.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.GetDistance('serial');</li>
-</ul>
-<p>Return distance to the object.</p>
+<p></br>
+<em>int</em> <strong>Orion.GetDistance</strong>('serial');</p>
+<p>Return distance to the object.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.GetDistance(x, y);</li>
-</ul>
-<p>Return distance to the coordinates.</p>
+<p></br>
+<em>int</em> <strong>Orion.GetDistance</strong>(x, y);</p>
+<p>Return distance to the coordinates.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.BandageSelf();</li>
-</ul>
-<p>Bandageself.</p>
+<p></br>
+<em>void</em> <strong>Orion.BandageSelf</strong>();</p>
+<p>Bandageself.
+</br></br></p>
 <hr />
-<ul>
-<li>String ClientLastTarget();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>ClientLastTarget</strong>();</p>
 <p>Get the state of the global client variable LastTarget.</p>
-<p>Result: The string with the serial.</p>
+<p>Result: The <em>String</em> with the serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void ClientLastTarget(serial);</li>
-</ul>
-<p>Set the state of the client global variable LastTarget to the serial.</p>
+<p></br>
+<em>void</em> <strong>ClientLastTarget</strong>(serial);</p>
+<p>Set the state of the client global variable LastTarget to the serial.
+</br></br></p>
 <hr />
-<ul>
-<li>String ClientLastAttack();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>ClientLastAttack</strong>();</p>
 <p>Get the state of the global client variable LastAttack</p>
-<p>Result: The string with the serial.</p>
+<p>Result: The <em>String</em> with the serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void ClientLastAttack(serial);</li>
-</ul>
-<p>Set the state of the global client variable LastAttack to the serial.</p>
+<p></br>
+<em>void</em> <strong>ClientLastAttack</strong>(serial);</p>
+<p>Set the state of the global client variable LastAttack to the serial.
+</br></br></p>
 <hr />
-<ul>
-<li>String TargetSystemSerial();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>TargetSystemSerial</strong>();</p>
 <p>Get the state of the global client variable TargetSystemSerial (from new target system).</p>
-<p>Result: The string with the serial.</p>
+<p>Result: The String with the serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void TargetSystemSerial(serial);</li>
-</ul>
-<p>Set the state of the global client variable TargetSystemSerial (from new target system) to the serial.</p>
+<p></br>
+<em>void</em> <strong>TargetSystemSerial</strong>(serial);</p>
+<p>Set the state of the global client variable TargetSystemSerial (from new target system) to the serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.GetFriendsStatus();</li>
-</ul>
-<p>Retrieves statuses of all friends in update range ( required to get updates about their hp etc. ).</p>
+<p></br>
+<em>void</em> <strong>Orion.GetFriendsStatus</strong>();</p>
+<p>Retrieves statuses of all friends in update range ( required to get updates about their hp etc. ).
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.GetEnemiesStatus();</li>
-</ul>
-<p>Retrieves statuses of all enemies in update range ( required to get updates about their hp etc. ).</p>
+<p></br>
+<em>void</em> <strong>Orion.GetEnemiesStatus</strong>();</p>
+<p>Retrieves statuses of all enemies in update range ( required to get updates about their hp etc. ).
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2070" id="introduced-in-2070"><h2>Introduced in 2.0.7.0</h2></a>
-<ul>
-<li>PositionObject Orion.GetLastTargetPosition();</li>
-</ul>
+<p></br>
+<em>PositionObject</em> <strong>Orion.GetLastTargetPosition</strong>();</p>
 <p>Retrieves latest coordinates of LastTarget, if object has disappeared - it will retrieve last known coordinates.</p>
-<p>Returns: a PositionObject data type.</p>
+<p>Returns: a PositionObject data type.
+</br></br></p>
 <hr />
-<ul>
-<li>PositionObject Orion.GetLastAttackPosition();</li>
-</ul>
+<p></br>
+<em>PositionObject</em> <strong>Orion.GetLastAttackPosition</strong>();</p>
 <p>Retrieves latest coordinates of LastAttack, if object has disappeared - it will retrieve last known coordinates.</p>
-<p>Returns: a PositionObject data type.</p>
+<p>Returns: a PositionObject data type.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2080" id="introduced-in-2080"><h2>Introduced in 2.0.8.0</h2></a>
-<ul>
-<li>bool Orion.OpenContainer('serial', ['delay'=600], ['errorTextPattern']);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.OpenContainer</strong>('serial', ['delay'=600], ['errorTextPattern']);</p>
 <p>Open container.</p>
 <ul>
 <li>
-<p>serial - serial of the container we're opening.</p>
+<p><code>serial</code> - serial of the container we're opening.</p>
 </li>
 <li>
-<p>delay - Maximum delay for container opening action.</p>
+<p><code>delay</code> - Maximum delay for container opening action.</p>
 </li>
 <li>
-<p>errorTextPattern - Error text. Default: 'reach that|too away'.</p>
+<p><code>errorTextPattern</code> - Error text. Default: 'reach that|too away'.</p>
 </li>
 </ul>
-<p>Returns: true if container was opened successfully.</p>
+<p>Returns: true if container was opened successfully.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.ObjectExists('serial');</li>
-</ul>
-<p>Returns: true if object with 'serial' is present in OA memory.</p>
+<p></br>
+<em>bool</em> <strong>Orion.ObjectExists</strong>('serial');</p>
+<p>Returns: true if object with 'serial' is present in OA memory.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.RequestName('serial', ['delay'=200]);</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.RequestName</strong>('serial', ['delay'=200]);</p>
 <p>Requests objects name. If the name is already present, it will return immediately. Otherwise name will be requested from the server.</p>
 <ul>
 <li>
-<p>serial - serial of the object we're requesting name from.</p>
+<p><code>serial</code> - serial of the object we're requesting name from.</p>
 </li>
 <li>
-<p>delay - Max delay for name requesting.</p>
+<p><code>delay</code> - Max delay for name requesting.</p>
 </li>
 </ul>
-<p>Returns: Objects name or an empty string if failed.</p>
+<p>Returns: Objects name or an empty <em>String</em> if failed.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20120" id="introduced-in-20120"><h2>Introduced in 2.0.12.0</h2></a>
-<ul>
-<li>bool Orion.GetProfile('serial', ['delay'=300], ['errorTextPattern']);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.GetProfile</strong>('serial', ['delay'=300], ['errorTextPattern']);</p>
 <p>Retrieves characters profile.</p>
 <ul>
 <li>
-<p>serial - characters serial.</p>
+<p><code>serial</code> - characters serial.</p>
 </li>
 <li>
-<p>delay - maximum wait time for profile retrievement.</p>
+<p><code>delay</code> - maximum wait time for profile retrievement.</p>
 </li>
 <li>
-<p>errorTextPattern - error pattern, default: 'reach that|too away'.</p>
+<p><code>errorTextPattern</code> - error pattern, default: 'reach that|too away'.</p>
 </li>
 </ul>
-<p>Returns true if a profile was retrieved.</p>
+<p>Returns true if a profile was retrieved.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20130" id="introduced-in-20130"><h2>Introduced in 2.0.13.0</h2></a>
-<ul>
-<li>void Orion.ShowStatusbar('serial', x, y, [minimized=true]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.ShowStatusbar</strong>('serial', x, y, [minimized=true]);</p>
 <p>Show/Move status bar gump in client screen.</p>
-<p>serial - character serial.</p>
-<p>x - screen X coordinate.</p>
-<p>y - screen Y coordinate.</p>
-<p>minimized - only for your character. true will show minimized status bar, false will show expanded one.</p>
-<hr />
 <ul>
-<li>void Orion.CloseStatusbar('serial');</li>
+<li>
+<p><code>serial</code> - character serial.</p>
+</li>
+<li>
+<p><code>x</code> - screen X coordinate.</p>
+</li>
+<li>
+<p><code>y</code> - screen Y coordinate.</p>
+</li>
+<li>
+<p><code>minimized</code> - only for your character. true will show minimized status bar, false will show expanded one.
+</br></br></p>
+</li>
 </ul>
+<hr />
+<p></br>
+<em>void</em> <strong>Orion.CloseStatusbar</strong>('serial');</p>
 <p>Close status bar which belongs to serial.</p>
 
                     </main>

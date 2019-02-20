@@ -138,34 +138,33 @@
                     <main>
                         <a class="header" href="#timers" id="timers"><h1>Timers</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.TimerExists('name');</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.TimerExists</strong>('name');</p>
 <p>Check if timer with given name exists.</p>
-<p>Returns true if such timer exists.</p>
+<p>Returns true if such timer exists.</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetTimer('name', [delay=0]);</li>
-</ul>
-<p>Create/Change timer with 'delay' as initial value. Default is 0.</p>
+<p></br>
+<em>void</em> <strong>Orion.SetTimer</strong>('name', [delay=0]);</p>
+<p>Create/Change timer with 'delay' as initial value. Default is 0.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.Timer('name');</li>
-</ul>
+<p></br>
+<em>int</em> <strong>Orion.Timer</strong>('name');</p>
 <p>Get current value of timer by name.</p>
 <p>Returns -1 if such timer doesn't exist .</p>
-<p>Returns time passed from timer initiation in ms.</p>
+<p>Returns time passed from timer initiation in ms.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.RemoveTimer('name');</li>
-</ul>
-<p>Removes timer with a given name.</p>
+<p></br>
+<em>void</em> <strong>Orion.RemoveTimer</strong>('name');</p>
+<p>Removes timer with a given name.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ClearTimers();</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.ClearTimers</strong>();</p>
 <p>Removes all existing timers.</p>
 
                     </main>

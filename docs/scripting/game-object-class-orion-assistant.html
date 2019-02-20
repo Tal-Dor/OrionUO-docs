@@ -138,228 +138,225 @@
                     <main>
                         <a class="header" href="#game-object" id="game-object"><h1>Game Object</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>String obj.Serial();</li>
-</ul>
-<p>Result: Serial number of an Object.</p>
+<p></br>
+<em>String</em> <strong>obj.Serial</strong>();</p>
+<p>Result: Serial number of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>String obj.Graphic();</li>
-</ul>
-<p>Result: Type of an Object (Picture ID).</p>
+<p></br>
+<em>String</em> <strong>obj.Graphic</strong>();</p>
+<p>Result: Type of an Object (Picture ID).
+</br></br></p>
 <hr />
-<ul>
-<li>String obj.Color();</li>
-</ul>
-<p>Result: Color of an Object.</p>
+<p></br>
+<em>String</em> <strong>obj.Color</strong>();</p>
+<p>Result: Color of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.X();</li>
-</ul>
-<p>Result: X object coordinates in world.</p>
+<p></br>
+<em>int</em> <strong>obj.X</strong>();</p>
+<p>Result: X object coordinates in world.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Y();</li>
-</ul>
-<p>Result: Y object coordinates in world.</p>
+<p></br>
+<em>int</em> <strong>obj.Y</strong>();</p>
+<p>Result: Y object coordinates in world.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Z();</li>
-</ul>
-<p>Result: Z object coordinates in world.</p>
+<p></br>
+<em>int</em> <strong>obj.Z</strong>();</p>
+<p>Result: Z object coordinates in world.
+</br></br></p>
 <hr />
-<ul>
-<li>String obj.Container();</li>
-</ul>
-<p>Result: Serial number of an Main(parent)-Object. 0xFFFFFFFF if object is located in world.</p>
+<p></br>
+<em>String</em> <strong>obj.Container</strong>();</p>
+<p>Result: Serial number of an Main(parent)-Object. 0xFFFFFFFF if object is located in world.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Map();</li>
-</ul>
-<p>Result: World map objects index.</p>
+<p></br>
+<em>int</em> <strong>obj.Map</strong>();</p>
+<p>Result: World map objects index.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Count();</li>
-</ul>
-<p>Result: Quantity</p>
+<p></br>
+<em>int</em> <strong>obj.Count</strong>();</p>
+<p>Result: Quantity
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Flags();</li>
-</ul>
-<p>Result: Object flags.</p>
+<p></br>
+<em>int</em> <strong>obj.Flags</strong>();</p>
+<p>Result: Object flags.
+</br></br></p>
 <hr />
-<ul>
-<li>String obj.Name();</li>
-</ul>
-<p>Result: Name of an Object (empty for items, until click on object).</p>
+<p></br>
+<em>String</em> <strong>obj.Name</strong>();</p>
+<p>Result: Name of an Object (empty for items, until click on object).
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Mobile();</li>
-</ul>
-<p>Result: true is object is alive.</p>
+<p></br>
+<em>bool</em> <strong>obj.Mobile</strong>();</p>
+<p>Result: true is object is alive.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Ignored();</li>
-</ul>
-<p>Result: true - if object is marked as ignored.</p>
+<p></br>
+<em>bool</em> <strong>obj.Ignored</strong>();</p>
+<p>Result: true - if object is marked as ignored.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Frozen();</li>
-</ul>
-<p>Result: true - if object is frozen.</p>
+<p></br>
+<em>bool</em> <strong>obj.Frozen</strong>();</p>
+<p>Result: true - if object is frozen.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Poisoned();</li>
-</ul>
-<p>Result: true - if object is poisoned.</p>
+<p></br>
+<em>bool</em> <strong>obj.Poisoned</strong>();</p>
+<p>Result: true - if object is poisoned.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Flying();</li>
-</ul>
-<p>Result: true - if object is flying (gargoyle).</p>
+<p></br>
+<em>bool</em> <strong>obj.Flying</strong>();</p>
+<p>Result: true if obj.ct is flying (gargoyle).
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.YellowHits();</li>
-</ul>
-<p>Result: true - if object has yellow health bar.</p>
+<p></br>
+<em>bool</em> <strong>obj.YellowHits</strong>();</p>
+<p>Result: true - if object has yellow health bar.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.IgnoreCharacters();</li>
-</ul>
-<p>Result: true - if object is ignoring players while moving.</p>
+<p></br>
+<em>bool</em> <strong>obj.IgnoreCharacters</strong>();</p>
+<p>Result: true - if object is ignoring players while moving.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Locked();</li>
-</ul>
-<p>Result: true - if object cant be moved or marked (items).</p>
+<p></br>
+<em>bool</em> <strong>obj.Locked</strong>();</p>
+<p>Result: true - if obj.ct cant be moved or marked (items).
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.WarMode();</li>
-</ul>
-<p>Result: true - if object is in war mode.</p>
+<p></br>
+<em>bool</em> <strong>obj.WarMode</strong>();</p>
+<p>Result: true - if object is in war mode.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Hidden();</li>
-</ul>
-<p>Result: true - if object is invisible.</p>
+<p></br>
+<em>bool</em> <strong>obj.Hidden</strong>();</p>
+<p>Result: true - if object is invisible.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.IsHuman();</li>
-</ul>
-<p>Result: true - if object is attacking humanoid.</p>
+<p></br>
+<em>bool</em> <strong>obj.IsHuman</strong>();</p>
+<p>Result: true - if object is attacking humanoid.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.IsPlayer();</li>
-</ul>
-<p>Result: true - if object is current player.</p>
+<p></br>
+<em>bool</em> <strong>obj.IsPlayer</strong>();</p>
+<p>Result: true - if object is current player.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.IsCorpse();</li>
-</ul>
-<p>Result: true - if object is dead body.</p>
+<p></br>
+<em>bool</em> <strong>obj.IsCorpse</strong>();</p>
+<p>Result: true - if object is dead body.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Layer();</li>
-</ul>
-<p>Result: Number of Layer - object is located in.</p>
+<p></br>
+<em>int</em> <strong>obj.Layer</strong>();</p>
+<p>Result: Number of Layer - object is located in.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.IsMulti();</li>
-</ul>
-<p>Result: true - if object is - Multi.</p>
+<p></br>
+<em>bool</em> <strong>obj.IsMulti</strong>();</p>
+<p>Result: true - if object is - Multi.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.EquipLayer();</li>
-</ul>
-<p>Result: Number of Layer - object is supposed to locate in.</p>
+<p></br>
+<em>int</em> <strong>obj.EquipLayer</strong>();</p>
+<p>Result: Number of Layer - object is supposed to locate in.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Hits();</li>
-</ul>
-<p>Result: Hit points amount of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.Hits</strong>();</p>
+<p>Result: Hit points amount of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.MaxHits();</li>
-</ul>
-<p>Result: Maximum hit points amount of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.MaxHits</strong>();</p>
+<p>Result: Maximum hit points amount of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Mana();</li>
-</ul>
-<p>Result: Mana amount of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.Mana</strong>();</p>
+<p>Result: Mana amount of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.MaxMana();</li>
-</ul>
-<p>Result: Maximum mana amount of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.MaxMana</strong>();</p>
+<p>Result: Maximum mana amount of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Stam();</li>
-</ul>
-<p>Result: Stamina amount of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.Stam</strong>();</p>
+<p>Result: Stamina amount of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.MaxStam();</li>
-</ul>
-<p>Result: Maximum stamina amount of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.MaxStam</strong>();</p>
+<p>Result: Maximum stamina amount of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Female();</li>
-</ul>
-<p>Result: true - if object player is a female gender.</p>
+<p></br>
+<em>bool</em> <strong>obj.Female</strong>();</p>
+<p>Result: true - if object player is a female gender.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Race();</li>
-</ul>
-<p>Result: Race number of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.Race</strong>();</p>
+<p>Result: Race number of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Direction();</li>
-</ul>
-<p>Result: Direction of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.Direction</strong>();</p>
+<p>Result: Direction of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>int obj.Notoriety();</li>
-</ul>
-<p>Result: Wickedness of an Object.</p>
+<p></br>
+<em>int</em> <strong>obj.Notoriety</strong>();</p>
+<p>Result: Wickedness of an Object.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.CanChangeName();</li>
-</ul>
-<p>Result: true - if object can be renamed.</p>
+<p></br>
+<em>bool</em> <strong>obj.CanChangeName</strong>();</p>
+<p>Result: true - if object can be renamed.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Dead();</li>
-</ul>
-<p>Result: true - if object is dead.</p>
+<p></br>
+<em>bool</em> <strong>obj.Dead</strong>();</p>
+<p>Result: true - if object is dead.
+</br></br></p>
 <hr />
-<ul>
-<li>bool obj.Exists();</li>
-</ul>
-<p>Result: true - if object does not exist.</p>
+<p></br>
+<em>bool</em> <strong>obj.Exists</strong>();</p>
+<p>Result: true - if object does not exist.</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2082" id="introduced-in-2082"><h2>Introduced in 2.0.8.2</h2></a>
-<ul>
-<li>String obj.Properties();</li>
-</ul>
-<p>Returns string with object properties ( if they were received by MegaCliloc packet from server )</p>
+<p></br>
+<em>String</em> <strong>obj.Properties</strong>();</p>
+<p>Returns string with object properties ( if they were received by MegaCliloc packet from server )
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20120" id="introduced-in-20120"><h2>Introduced in 2.0.12.0</h2></a>
-<ul>
-<li>bool obj.ProfileReceived();</li>
-</ul>
-<p>Returns true if profile was received from server.</p>
+<p></br>
+<em>bool</em> <strong>obj.ProfileReceived</strong>();</p>
+<p>Returns true if profile was received from server.
+</br></br></p>
 <hr />
-<ul>
-<li>String obj.Profile();</li>
-</ul>
-<p>Returns profile contents.</p>
+<p></br>
+<em>String</em> <strong>obj.Profile</strong>();</p>
+<p>Returns profile contents.
+</br></br></p>
 <hr />
-<ul>
-<li>String obj.Title();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>obj.Title</strong>();</p>
 <p>Returns characters title ( displayed in paperdoll ).</p>
 
                     </main>

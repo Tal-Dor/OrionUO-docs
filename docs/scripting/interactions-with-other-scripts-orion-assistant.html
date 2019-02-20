@@ -138,27 +138,27 @@
                     <main>
                         <a class="header" href="#interactions-with-other-scripts" id="interactions-with-other-scripts"><h1>Interactions With Other Scripts</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Wait('delay');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Wait</strong>('delay');</p>
 <p>Wait delay (milliseconds).</p>
-<p>In addition, the value can take in the parameter string constants: moveitemdelay, waittargetdelay, useitemdelay, keepcorpsedelay.</p>
+<p>In addition, the value can take in the parameter string constants: moveitemdelay, waittargetdelay, useitemdelay, keepcorpsedelay.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.Now();</li>
-</ul>
-<p>Result: the current time in milliseconds.</p>
+<p></br>
+<em>int</em> <strong>Orion.Now</strong>();</p>
+<p>Result: the current time in milliseconds.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.LoadScript('filePath');</li>
-</ul>
-<p>Load the script file.</p>
+<p></br>
+<em>void</em> <strong>Orion.LoadScript</strong>('filePath');</p>
+<p>Load the script file.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Exec('functionName', [oneScriptRunning=false], [argumentsList]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Exec</strong>('functionName', [oneScriptRunning=false], [argumentsList]);</p>
 <p>Start the function.</p>
 <ul>
 <li>
@@ -173,14 +173,14 @@
 </li>
 <li>
 <ul>
-<li>argumentsList - List of function parameters.</li>
+<li>argumentsList - List of function parameters.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.Terminate('functionName', ['functionsSave']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Terminate</strong>('functionName', ['functionsSave']);</p>
 <p>Terminate the script. The function name register is important !!!</p>
 <ul>
 <li>
@@ -188,28 +188,23 @@
 <li>functionName - The name of the function to be terminated. Ends all functions with that name. If 'all' is specified - exits all functions except those that were specified in functionsSave.</li>
 </ul>
 </li>
-<li>
-<ul>
-<li>functionsSave - Functions that do not need to be terminated are indicated by '|' ; For example, Orion.Terminate ('all', 'Heal | Loot | CheckMana') - terminates all working functions except Heal, Loot, CheckMana.</li>
 </ul>
-</li>
-</ul>
+<p><em>- functionsSave - Functions that do not need to be terminated are indicated by '|' ; For example,</em> <strong>Orion.Terminate</strong>('all', 'Heal | Loot | CheckMana') - terminates all working functions except Heal, Loot, CheckMana.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.ScriptRunning('functionName');</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.ScriptRunning</strong>('functionName');</p>
 <p>Check if the script is already running.</p>
-<p>Result: true if the script is running.</p>
+<p>Result: true if the script is running.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2070" id="introduced-in-2070"><h2>Introduced in 2.0.7.0</h2></a>
-<ul>
-<li>void Orion.Launch('filePath', [arguments]);</li>
-</ul>
-<p>Launching of external program from 'filePath' with optional 'arguments'.</p>
+<p></br>
+<em>void</em> <strong>Orion.Launch</strong>('filePath', [arguments]);</p>
+<p>Launching of external program from 'filePath' with optional 'arguments'.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.Contains(text, pattern, [ignoreCase=false]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.Contains</strong>(text, pattern, [ignoreCase=false]);</p>
 <p>This function will check for a text pattern or a collection of patters ('patternOne|patternTwo|patternThree') within 'text' string.
 Uses same logic as text searching in UO journal.</p>
 <ul>
@@ -229,11 +224,11 @@ Uses same logic as text searching in UO journal.</p>
 </ul>
 </li>
 </ul>
-<p>Returns true if there's a match.</p>
+<p>Returns true if there's a match.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList Orion.Split(text, [separator=' '], [skipEmptyWord=true]);</li>
-</ul>
+<p></br>
+<em>StringList</em> <strong>Orion.Split</strong>(text, [separator=' '], [skipEmptyWord=true]);</p>
 <p>This function will split 'text' string into a list of strings by separator character. Default is space character.</p>
 <ul>
 <li>
@@ -252,59 +247,57 @@ Uses same logic as text searching in UO journal.</p>
 </ul>
 </li>
 </ul>
-<p>Returns a list of strings.</p>
+<p>Returns a list of strings.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2080" id="introduced-in-2080"><h2>Introduced in 2.0.8.0</h2></a>
-<ul>
-<li>String Orion.OAVersion();</li>
-</ul>
-<p>Returns: Current version number of OA, for example &quot;2.0.8.0&quot;.</p>
+<p></br>
+<em>String</em> <strong>Orion.OAVersion</strong>();</p>
+<p>Returns: Current version number of OA, for example &quot;2.0.8.0&quot;.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.Connected();</li>
-</ul>
-<p>Returns: true if client is connected to a server and character is already in the world.</p>
+<p></br>
+<em>bool</em> <strong>Orion.Connected</strong>();</p>
+<p>Returns: true if client is connected to a server and character is already in the world.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.Time(['format'=hh:mm:ss.zzz]);</li>
-</ul>
-<p>Returns: current time, example &quot;13:27:41.508&quot;.</p>
+<p></br>
+<em>String</em> <strong>Orion.Time</strong>(['format'=hh:mm:ss.zzz]);</p>
+<p>Returns: current time, example &quot;13:27:41.508&quot;.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.Date(['format'=dd.MM.yyyy]);</li>
-</ul>
-<p>Returns: current date, example &quot;26.05.2017&quot;.</p>
+<p></br>
+<em>String</em> <strong>Orion.Date</strong>(['format'=dd.MM.yyyy]);</p>
+<p>Returns: current date, example &quot;26.05.2017&quot;.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.Random([value=2147483647]);</li>
-</ul>
-<p>Returns: random value starting from 0 and up to value-1.</p>
+<p></br>
+<em>int</em> <strong>Orion.Random</strong>([value=2147483647]);</p>
+<p>Returns: random value starting from 0 and up to value-1.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.Random(minValue, maxValue);</li>
-</ul>
-<p>Returns: random value starting from minValue and up to maxValue-1.</p>
+<p></br>
+<em>int</em> <strong>Orion.Random</strong>(minValue, maxValue);</p>
+<p>Returns: random value starting from minValue and up to maxValue-1.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>void Orion.ActivateClient();</li>
-</ul>
-<p>Activates client window.</p>
+<p></br>
+<em>void</em> <strong>Orion.ActivateClient</strong>();</p>
+<p>Activates client window.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ShutdownWindows(['mode']);</li>
-</ul>
-<p>Shuts down your PC :) can add flags as 'mode'.</p>
+<p></br>
+<em>void</em> <strong>Orion.ShutdownWindows</strong>(['mode']);</p>
+<p>Shuts down your PC :) can add flags as 'mode'.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.OnOffHotkeys();</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.OnOffHotkeys</strong>();</p>
 <p>Get current state of hotkeys ( enabled/disabled )</p>
-<p>Returns true if hotkeys are enabled, false if disabled.</p>
+<p>Returns true if hotkeys are enabled, false if disabled.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.OnOffHotkeys(state);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.OnOffHotkeys</strong>(state);</p>
 <p>Sets hotkeys state.</p>
 
                     </main>

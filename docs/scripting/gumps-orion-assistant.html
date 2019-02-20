@@ -138,65 +138,62 @@
                     <main>
                         <a class="header" href="#gumps" id="gumps"><h1>Gumps</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.HelpGump();</li>
-</ul>
-<p>Request for the help menu gump of the server.</p>
+<p></br>
+<em>void</em> <strong>Orion.HelpGump</strong>();</p>
+<p>Request for the help menu gump of the server.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2070" id="introduced-in-2070"><h2>Introduced in 2.0.7.0</h2></a>
-<ul>
-<li>void Orion.InfoGump([index=-1]);</li>
-</ul>
-<p>Outputs data of a gump by its index. If index equals -1, last gump is taken.</p>
+<p></br>
+<em>void</em> <strong>Orion.InfoGump</strong>([index=-1]);</p>
+<p>Outputs data of a gump by its index. If index equals -1, last gump is taken.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2082" id="introduced-in-2082"><h2>Introduced in 2.0.8.2</h2></a>
-<ul>
-<li>GumpHookObjects Orion.CreateGumpHook('index');</li>
-</ul>
+<p></br>
+<em>GumpHookObjects</em> <strong>Orion.CreateGumpHook</strong>('index');</p>
 <p>Creates a gump hook object.</p>
-<p>index - Return-value of gump button or 'cancel' or a 0 when closing a gump with RMB.</p>
+<p>index - Return-value of gump button or 'cancel' or a 0 when closing a gump with RMB.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WaitGump(hook);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitGump</strong>(hook);</p>
 <p>Enables a gump hook to catch an incomming gump.</p>
 <p>When new hook is enabled by Orion.WaitGump, it will be added to a stack. All previously enabled hooks will be waiting as well.</p>
-<p>hook - an object created by Orion.CreateGumpHook.</p>
+<p>hook - an object created by Orion.CreateGumpHook.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.CancelWaitGump();</li>
-</ul>
-<p>Removes **all **enabled gump hooks .</p>
+<p></br>
+<em>void</em> <strong>Orion.CancelWaitGump</strong>();</p>
+<p>Removes **all **enabled gump hooks .
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.GumpCount();</li>
-</ul>
-<p>Returns the amount of opened gumps from OA memory.</p>
+<p></br>
+<em>int</em> <strong>Orion.GumpCount</strong>();</p>
+<p>Returns the amount of opened gumps from OA memory.
+</br></br></p>
 <hr />
-<ul>
-<li>GumpObject Orion.GetLastGump();</li>
-</ul>
+<p></br>
+<em>GumpObject</em> <strong>Orion.GetLastGump</strong>();</p>
 <p>Get last gump sent by server.</p>
-<p>Returns a GumpObject or a null reference.</p>
+<p>Returns a GumpObject or a null reference.
+</br></br></p>
 <hr />
-<ul>
-<li>GumpObject Orion.GetGump(index);</li>
-</ul>
+<p></br>
+<em>GumpObject</em> <strong>Orion.GetGump</strong>(index);</p>
 <p>Get gump by an index.</p>
-<p>Returns a GumpObject or a null reference.</p>
+<p>Returns a GumpObject or a null reference.
+</br></br></p>
 <hr />
-<ul>
-<li>GumpObject Orion.GetGump(serial, id);</li>
-</ul>
+<p></br>
+<em>GumpObject</em> <strong>Orion.GetGump</strong>(serial, id);</p>
 <p>Get gump by serial and id.</p>
-<p>Returns a GumpObject or a null reference.</p>
+<p>Returns a GumpObject or a null reference.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>bool Orion.WaitForGump([delay=1000]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.WaitForGump</strong>([delay=1000]);</p>
 <p>Enables a gump hook and blocks thread for 'delay' amount of time in ms. Removes gump hook afterwards.</p>
 <p>Returns true if a gump was received during delay period.</p>
 

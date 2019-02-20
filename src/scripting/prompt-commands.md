@@ -2,48 +2,49 @@
 
 ### Command Format
 
-NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);
-
+**NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
+</br></br>
 ***
-
-- void Orion.WaitPrompt('text', 'serial'=0, 'type'=all);
+</br>
+_void_ **Orion.WaitPrompt**('text', 'serial'=0, 'type'=all);
 
 Add a prompt hook.
 
-- text - input text
+- `text` - input text
 
-- serial - serial of prompt object. If serial equals 0, serial check will be ignored.
+- `serial` - serial of prompt object. If serial equals 0, serial check will be ignored.
 
-- type - prompt type. all - all types; ascii - only ASCII prompts; unicode - only UNIDCODE prompts;
-
+- `type` - prompt type:
+    - `all` - all types;
+    - `ascii` - only ASCII prompts;
+    - `unicode` - only UNIDCODE prompts;
+</br></br>
 ***
-
-- void Orion.CancelWaitPrompt();
+</br>
+_void_ **Orion.CancelWaitPrompt**();
 
 Cancel all prompt hooks.
-
+</br></br>
 ***
-
-## Introduced in 2.0.14.0
-
-- bool Orion.PrompsExists();
+</br>
+_bool_ **Orion.PrompsExists**();
 
 Returns true if a prompt is active.
-
+</br></br>
 ***
-
-- String Orion.PromptSerial();
+</br>
+_String_ **Orion.PromptSerial**();
 
 Returns prompt serial as string.
-
+</br></br>
 ***
-
-- String Orion.PromptID();
+</br>
+_String_ **Orion.PromptID**();
 
 Returns prompt id as string.
-
+</br></br>
 ***
-
-- void Orion.SendPrompt('text');
+</br>
+_void_ **Orion.SendPrompt**('text');
 
 Send prompt response ( if there's a prompt active ) with text input.

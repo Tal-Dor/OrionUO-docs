@@ -138,22 +138,28 @@
                     <main>
                         <a class="header" href="#client-macro-object-class" id="client-macro-object-class"><h1>Client Macro Object Class</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><code>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</code></p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<a class="header" href="#macroobject-orioncreateclientmacroaction-subaction" id="macroobject-orioncreateclientmacroaction-subaction"><h4>MacroObject Orion.CreateClientMacro('action', ['subAction']);</h4></a>
+<p></br>
+MacroObject Orion.CreateClientMacro('action', ['subAction']);</p>
 <p>Creates a MacroObject instance with gives action and possible subactions.</p>
 <p><code>Returns</code> a MacroObject object.</p>
 <p>Example:</p>
 <pre><code class="language-javascript">//This creates a 'BandageSelf' client macro and instantly executes it.
 Orion.CreateClientMacro('BandageSelf').Play(false, 1000);
 </code></pre>
+<p></br></p>
 <hr />
-<a class="header" href="#void-macroaddactionaction-subaction" id="void-macroaddactionaction-subaction"><h4>void macro.AddAction('action', ['subAction']);</h4></a>
-<p>Add action entry to macros.</p>
+<p></br>
+<em>void</em> <strong>macro.AddAction</strong>('action', ['subAction']);</p>
+<p>Add action entry to macros.
+</br></br></p>
 <hr />
-<a class="header" href="#void-macroplaywaitwhilemacroplayingfalse-delay100500" id="void-macroplaywaitwhilemacroplayingfalse-delay100500"><h4>void macro.Play([waitWhileMacroPlaying=false], [delay=100500]);</h4></a>
+<p></br>
+<em>void</em> <strong>macro.Play</strong>([waitWhileMacroPlaying=false], [delay=100500]);</p>
 <p>Play macro in client.</p>
-<p>Attention! Only 1 macro can be played in client at a time!</p>
+<p><em><strong>Attention! Only 1 macro can be played in client at a time!</strong></em></p>
 <p>Multiple requests to play a macro while there's a macro already playing will cancel each other out. Last requested macro will be played.</p>
 <p><code>waitWhileMacroPlaying</code> Will wait if there's a macro already playing.</p>
 <p><code>delay</code> Delay to wait for current macro completion.</p>

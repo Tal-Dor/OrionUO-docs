@@ -138,105 +138,84 @@
                     <main>
                         <a class="header" href="#equipment" id="equipment"><h1>Equipment</h1></a>
 <p>A group of commands to work with clothes and dress/undress.</p>
-<p>List of layers:</p>
-<p>1 - RightHand</p>
-<p>2 - LeftHand</p>
-<p>3 - Shoes</p>
-<p>4 - Pants</p>
-<p>5 - Shirt</p>
-<p>6 - Helmet</p>
-<p>7 - Gloves</p>
-<p>8 - Ring</p>
-<p>9 - Talisman</p>
-<p>10 - Necklace</p>
-<p>11 - Hair</p>
-<p>12 - Waist</p>
-<p>13 - InnerTorso</p>
-<p>14 - Bracelet</p>
-<p>15 - Face</p>
-<p>16 - Beard</p>
-<p>17 - MidTorso</p>
-<p>18 - Earrings</p>
-<p>19 - Arms</p>
-<p>20 - Cloak</p>
-<p>21 - Backpack</p>
-<p>22 - Robe</p>
-<p>23 - Eggs</p>
-<p>24 - Legs</p>
-<p>25 - Mount</p>
-<p>26 - Buy</p>
-<p>27 - Resale</p>
-<p>28 - Sell</p>
-<p>29 - Bank</p>
+<a class="header" href="#table-of-equipment-layers" id="table-of-equipment-layers"><h4>Table of equipment layers:</h4></a>
+<table><thead><tr><th>   </th><th>   </th><th>   </th><th>   </th><th>  </th></tr></thead><tbody>
+<tr><td>1 - RightHand </td><td>  7 - Gloves </td><td> 13 - InnerTorso  </td><td> 19 - Arms  </td><td> 25 - Mount  </td></tr>
+<tr><td>2 - LeftHand </td><td>  8 - Ring </td><td> 14 - Bracelet  </td><td> 20 - Cloak  </td><td> 26 - Buy  </td></tr>
+<tr><td>3 - Shoes </td><td> 9 - Talisman  </td><td> 15 - Face  </td><td> 21 - Backpack  </td><td> 27 - Resale  </td></tr>
+<tr><td>4 - Pants </td><td> 10 - Necklace  </td><td> 16 - Beard  </td><td> 22 - Robe  </td><td> 28 - Sell  </td></tr>
+<tr><td>5 - Shirt </td><td> 11 - Hair  </td><td> 17 - MidTorso  </td><td> 23 - Eggs  </td><td>  29 - Bank </td></tr>
+<tr><td>6 - Helmet </td><td>  12 - Waist </td><td> 18 - Earrings  </td><td> 24 - Legs  </td><td>   </td></tr>
+</tbody></table>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetDressBag(['serial'=targetRequest]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.SetDressBag</strong>(['serial'=targetRequest]);</p>
 <p>Change the serial of bag for clothes on &quot;serial&quot;.</p>
-<p>Request target to be aimed at the desired object, if parameters were not specified.</p>
+<p>Request target to be aimed at the desired object, if parameters were not specified.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UnsetDressBag();</li>
-</ul>
-<p>Reset the serial of bag.</p>
+<p></br>
+<em>void</em> <strong>Orion.UnsetDressBag</strong>();</p>
+<p>Reset the serial of bag.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetArm ('setName');</li>
-</ul>
-<p>Set the weapon/shield.</p>
+<p></br>
+<em>void</em> <strong>Orion.SetArm</strong>('setName');</p>
+<p>Set the weapon/shield.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UnsetArm ('setName');</li>
-</ul>
-<p>Clear setName.</p>
+<p></br>
+<em>void</em> <strong>Orion.UnsetArm</strong>('setName');</p>
+<p>Clear setName.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetDress ('setName');</li>
-</ul>
-<p>Set the clothes in the 'setName' (except weapons and shields).</p>
+<p></br>
+<em>void</em> <strong>Orion.SetDress</strong>('setName');</p>
+<p>Set the clothes in the 'setName' (except weapons and shields).
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UnsetDress ('setName');</li>
-</ul>
-<p>Clear setName.</p>
+<p></br>
+<em>void</em> <strong>Orion.UnsetDress</strong>('setName');</p>
+<p>Clear setName.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Arm('setName');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Arm</strong>('setName');</p>
 <p>Dress setName.</p>
-<p>Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.</p>
+<p>Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Disarm();</li>
-</ul>
-<p>Disarm your weapon/shield.</p>
+<p></br>
+<em>void</em> <strong>Orion.Disarm</strong>();</p>
+<p>Disarm your weapon/shield.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Dress('setName');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.Dress</strong>('setName');</p>
 <p>Dress setName.</p>
-<p>Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.</p>
+<p>Before dressing, if the option of safe dressing is turned on, removes all clothes in layers 1/2 (left and right hand) and then the rest.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Undress();</li>
-</ul>
-<p>Take off all but the weapons and shields.</p>
+<p></br>
+<em>void</em> <strong>Orion.Undress</strong>();</p>
+<p>Take off all but the weapons and shields.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Unequip ('layerName');</li>
-</ul>
-<p>Remove the object from the specified layer.</p>
+<p></br>
+<em>void</em> <strong>Orion.Unequip</strong>('layerName');</p>
+<p>Remove the object from the specified layer.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Equip ('serial');</li>
-</ul>
-<p>Dress the specified item.</p>
+<p></br>
+<em>void</em> <strong>Orion.Equip</strong>('serial');</p>
+<p>Dress the specified item.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.EquipT('graphic', ['color'=0xFFFF]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.EquipT</strong>('graphic', ['color'=0xFFFF]);</p>
 <p>Find the item in the character backpack/sub-packs and bags with the type &quot;graphic&quot; and &quot;color&quot; (if required) and dress them.</p>
 
                     </main>

@@ -2,39 +2,39 @@
 
 ### Command Format
 
-NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);
-
+**NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
+</br></br>
 ***
-
-- bool Orion.TimerExists('name');
+</br>
+_bool_ **Orion.TimerExists**('name');
 
 Check if timer with given name exists.
 
-Returns true if such timer exists.
+Returns true if such timer exists.</br></br>
 ***
-
-- void Orion.SetTimer('name', [delay=0]);
+</br>
+_void_ **Orion.SetTimer**('name', [delay=0]);
 
 Create/Change timer with 'delay' as initial value. Default is 0.
-
+</br></br>
 ***
-
-- int Orion.Timer('name');
+</br>
+_int_ **Orion.Timer**('name');
 
 Get current value of timer by name.
 
 Returns -1 if such timer doesn't exist .
 
 Returns time passed from timer initiation in ms.
-
+</br></br>
 ***
-
-- void Orion.RemoveTimer('name');
+</br>
+_void_ **Orion.RemoveTimer**('name');
 
 Removes timer with a given name.
-
+</br></br>
 ***
-
-- void Orion.ClearTimers();
+</br>
+_void_ **Orion.ClearTimers**();
 
 Removes all existing timers.

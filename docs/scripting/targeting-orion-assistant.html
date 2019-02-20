@@ -138,9 +138,11 @@
                     <main>
                         <a class="header" href="#targeting" id="targeting"><h1>Targeting</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<p>graphicOrFlags - searching filter:</p>
+<p></br>
+<strong>graphicOrFlags</strong> - searching filter:</p>
 <ul>
 <li>
 <p>mine - searching for cave tiles;</p>
@@ -155,24 +157,24 @@
 <p>land - searching for only land tiles;</p>
 </li>
 <li>
-<p>any - searching of any type of tile (static tiles have higher priority over landscape).</p>
+<p>any - searching of any type of tile (static tiles have higher priority over landscape).
+</br></br></p>
 </li>
 </ul>
 <hr />
-<ul>
-<li>bool Orion.HaveTarget();</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.HaveTarget</strong>();</p>
 <p>Have a target.</p>
-<p>Resul: true if target is on.</p>
+<p>Resul: true if target is on.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WaitTargetObject('serial');</li>
-</ul>
-<p>Set the target trap for object(s) serial.</p>
+<p></br>
+<em>void</em> <strong>Orion.WaitTargetObject</strong>('serial');</p>
+<p>Set the target trap for object(s) serial.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WaitTargetType('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitTargetType</strong>('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);</p>
 <p>Set the target trap for object, found by searching container.</p>
 <ul>
 <li>
@@ -197,14 +199,14 @@
 </li>
 <li>
 <ul>
-<li>recurse - Recursive Search in subcontainers.</li>
+<li>recurse - Recursive Search in subcontainers.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.WaitTargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitTargetGround</strong>('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);</p>
 <p>Set the target trap for object found by search on the ground.</p>
 <ul>
 <li>
@@ -224,14 +226,14 @@
 </li>
 <li>
 <ul>
-<li>flags - Flag Search Filters.</li>
+<li>flags - Flag Search Filters.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.WaitTargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitTargetTypeList</strong>('findListName', ['container'=self], ['flags'], [recurse=true]);</p>
 <p>Set the target trap for object, found by searching container.</p>
 <ul>
 <li>
@@ -251,14 +253,14 @@
 </li>
 <li>
 <ul>
-<li>recurse - Recursive Search in subcontainers.</li>
+<li>recurse - Recursive Search in subcontainers.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.WaitTargetGroundList('findListName', ['distance'=searchObjectsDistance], ['flags']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitTargetGroundList</strong>('findListName', ['distance'=searchObjectsDistance], ['flags']);</p>
 <p>Set the target trap for object found by searching the ground.</p>
 <ul>
 <li>
@@ -273,42 +275,42 @@
 </li>
 <li>
 <ul>
-<li>flags - Flag Search Filters.</li>
+<li>flags - Flag Search Filters.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.WaitTargetTile('graphic', [x, y, z]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitTargetTile</strong>('graphic', [x, y, z]);</p>
 <p>Set the target trap on the ground.</p>
 <p>graphic - type of the tile, might be lasttile</p>
 <p>x - World X coordinate</p>
 <p>y - World Y coordinate</p>
-<p>z - World Z coordinate</p>
+<p>z - World Z coordinate
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.WaitTargetTileRelative('graphic', [x, y, z]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.WaitTargetTileRelative</strong>('graphic', [x, y, z]);</p>
 <p>Set the target trap on the ground, against Character.</p>
 <p>graphic - type of the tile, might be lasttile</p>
 <p>x - X coordinate bias in the world</p>
 <p>y - Y coordinate bias in the world</p>
-<p>z - Z coordinate bias in the world</p>
+<p>z - Z coordinate bias in the world
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.CancelWaitTarget();</li>
-</ul>
-<p>Cancel of the current wait of the target.</p>
+<p></br>
+<em>void</em> <strong>Orion.CancelWaitTarget</strong>();</p>
+<p>Cancel of the current wait of the target.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.TargetObject('serial');</li>
-</ul>
-<p>Point the target on a serial object.</p>
+<p></br>
+<em>void</em> <strong>Orion.TargetObject</strong>('serial');</p>
+<p>Point the target on a serial object.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.TargetType('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.TargetType</strong>('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);</p>
 <p>Point the target on the object found by searching container.</p>
 <ul>
 <li>
@@ -333,14 +335,14 @@
 </li>
 <li>
 <ul>
-<li>recurse - Recursive Search in subcontainers.</li>
+<li>recurse - Recursive Search in subcontainers.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.TargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.TargetGround</strong>('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);</p>
 <p>Point the target on the object found by searching the ground.</p>
 <ul>
 <li>
@@ -360,14 +362,14 @@
 </li>
 <li>
 <ul>
-<li>flags - Flag Search Filters.</li>
+<li>flags - Flag Search Filters.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.TargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.TargetTypeList</strong>('findListName', ['container'=self], ['flags'], [recurse=true]);</p>
 <p>Point the target on the object found by serching container.</p>
 <ul>
 <li>
@@ -387,14 +389,14 @@
 </li>
 <li>
 <ul>
-<li>recurse - Recursive Search in subcontainers.</li>
+<li>recurse - Recursive Search in subcontainers.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.TargetGroundList('findListName', ['distance'=searchObjectsDistance], ['flags']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.TargetGroundList</strong>('findListName', ['distance'=searchObjectsDistance], ['flags']);</p>
 <p>Point the target on the object found by searching the ground.</p>
 <ul>
 <li>
@@ -409,33 +411,32 @@
 </li>
 <li>
 <ul>
-<li>flags - Flag Search Filters.</li>
+<li>flags - Flag Search Filters.
+</br></br></li>
 </ul>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.TargetTile('graphic', [x, y, z]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.TargetTile</strong>('graphic', [x, y, z]);</p>
 <p>Point target on a ground.</p>
 <p>graphic - type of the tile, might be lasttile</p>
 <p>x - World X coordinate</p>
 <p>y - World Y coordinate</p>
-<p>z - World Z coordinate</p>
+<p>z - World Z coordinate
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.TargetTileRelative('graphic', [x, y, z]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.TargetTileRelative</strong>('graphic', [x, y, z]);</p>
 <p>Point target on a ground against Character.</p>
 <p>graphic - type of the tile, might be lasttile</p>
 <p>x - X coordinate bias in the world</p>
 <p>y - Y coordinate bias in the world</p>
-<p>z - Z coordinate bias in the world</p>
+<p>z - Z coordinate bias in the world
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-2070" id="introduced-in-2070"><h2>Introduced in 2.0.7.0</h2></a>
-<ul>
-<li>bool Orion.ValidateTargetTile('graphicOrFlags', x, y);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.ValidateTargetTile</strong>('graphicOrFlags', x, y);</p>
 <p>This function checks if targeted tile is valid for targeting.</p>
 <ul>
 <li>
@@ -454,11 +455,11 @@
 </ul>
 </li>
 </ul>
-<p>Returns true if tile is valid for targeting.</p>
+<p>Returns true if tile is valid for targeting.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.ValidateTargetTileRelative('graphicOrFlags', x, y);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.ValidateTargetTileRelative</strong>('graphicOrFlags', x, y);</p>
 <p>This function checks if targeted tile( relative to character position on the map ) is valid for targeting.</p>
 <ul>
 <li>
@@ -477,24 +478,22 @@
 </ul>
 </li>
 </ul>
-<p>Returns true if tile is valid for targeting.</p>
+<p>Returns true if tile is valid for targeting.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20130" id="introduced-in-20130"><h2>Introduced in 2.0.13.0</h2></a>
-<ul>
-<li>void Orion.CancalTarget();</li>
-</ul>
-<p>Cancels current target ( if present in client ).</p>
+<p></br>
+<em>void</em> <strong>Orion.CancalTarget</strong>();</p>
+<p>Cancels current target ( if present in client ).
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20150" id="introduced-in-20150"><h2>Introduced in 2.0.15.0</h2></a>
-<ul>
-<li>bool Orion.WaitForTarget([delay=1000]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.WaitForTarget</strong>([delay=1000]);</p>
 <p>Awaits ( blocks execution ) for a target for 'delay' amount of time.</p>
-<p>If client had a target already, immediately returns true.</p>
+<p>If client had a target already, immediately returns true.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.GetTargetType();</li>
-</ul>
+<p></br>
+<em>int</em> <strong>Orion.GetTargetType</strong>();</p>
 <p>Get type of target.</p>
 <p>Returns: 0 if there's no target, 1 - neutral, 2 - harmful, 3 - helpful.</p>
 

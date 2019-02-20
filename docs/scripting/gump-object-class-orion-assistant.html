@@ -137,99 +137,98 @@
                 <div id="content" class="content">
                     <main>
                         <a class="header" href="#gump-object" id="gump-object"><h1>Gump Object</h1></a>
-<p><code>Version: 2.0.8.2</code></p>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p>NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>int gump.Serial();</li>
-</ul>
-<p>Returns gump serial.</p>
+<p></br>
+<em>int</em> <strong>gump.Serial</strong>();</p>
+<p>Returns gump serial.
+</br></br></p>
 <hr />
-<ul>
-<li>int gump.ID();</li>
-</ul>
-<p>Returns gump id.</p>
+<p></br>
+<em>int</em> <strong>gump.ID</strong>();</p>
+<p>Returns gump id.
+</br></br></p>
 <hr />
-<ul>
-<li>int gump.X();</li>
-</ul>
-<p>Returns gumps X screen coordinate.</p>
+<p></br>
+<em>int</em> <strong>gump.X</strong>();</p>
+<p>Returns gumps X screen coordinate.
+</br></br></p>
 <hr />
-<ul>
-<li>int gump.Y();</li>
-</ul>
-<p>Returns gumps Y screen coordinate.</p>
+<p></br>
+<em>int</em> <strong>gump.Y</strong>();</p>
+<p>Returns gumps Y screen coordinate.
+</br></br></p>
 <hr />
-<ul>
-<li>bool gump.Replayed();</li>
-</ul>
-<p>Returns true If gump response was already made.</p>
+<p></br>
+<em>bool</em> <strong>gump.Replayed</strong>();</p>
+<p>Returns true If gump response was already made.
+</br></br></p>
 <hr />
-<ul>
-<li>int gump.ReplyID();</li>
-</ul>
-<p>Returns response button id if Replayed() was true.</p>
+<p></br>
+<em>int</em> <strong>gump.ReplyID</strong>();</p>
+<p>Returns response button id if Replayed() was true.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList gump.ButtonList();</li>
-</ul>
-<p>Returns a list of all buttons within a gump.</p>
+<p></br>
+<em>StringList</em> <strong>gump.ButtonList</strong>();</p>
+<p>Returns a list of all buttons within a gump.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList gump.CheckboxList();</li>
-</ul>
-<p>Returns a list with all checkboxes within a gump.</p>
+<p></br>
+<em>StringList</em> <strong>gump.CheckboxList</strong>();</p>
+<p>Returns a list with all checkboxes within a gump.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList gump.RadioList();</li>
-</ul>
-<p>Returns a list with all radio buttons within a gump.</p>
+<p></br>
+<em>StringList</em> <strong>gump.RadioList</strong>();</p>
+<p>Returns a list with all radio buttons within a gump.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList gump.TilepicList();</li>
-</ul>
-<p>Returns a list with all tile pics within a gump.</p>
+<p></br>
+<em>StringList</em> <strong>gump.TilepicList</strong>();</p>
+<p>Returns a list with all tile pics within a gump.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList gump.GumppicList();</li>
-</ul>
-<p>Returns a list with all gump pics within a gump.</p>
+<p></br>
+<em>StringList</em> <strong>gump.GumppicList</strong>();</p>
+<p>Returns a list with all gump pics within a gump.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList gump.EntriesList();</li>
-</ul>
-<p>Returns a list with all text entries within a gump.</p>
+<p></br>
+<em>StringList</em> <strong>gump.EntriesList</strong>();</p>
+<p>Returns a list with all text entries within a gump.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList gump.CommandList();</li>
-</ul>
+<p></br>
+<em>StringList</em> <strong>gump.CommandList</strong>();</p>
 <p>Returns a list with all commands within a gump ( in same order as received from server ).</p>
+<p></br></br></p>
 <hr />
-<ul>
-<li>StringList gump.TextList();</li>
-</ul>
-<p>Returns a list with all strings within a gump ( in same order as received from server ).</p>
+<p></br>
+<em>StringList</em> <strong>gump.TextList</strong>();</p>
+<p>Returns a list with all strings within a gump ( in same order as received from server ).
+</br></br></p>
 <hr />
-<ul>
-<li>String gump.Command(index);</li>
-</ul>
-<p>Returns gump command by index.</p>
+<p></br>
+<em>String</em> <strong>gump.Command</strong>(index);</p>
+<p>Returns gump command by index.
+</br></br></p>
 <hr />
-<ul>
-<li>String gump.Text(index);</li>
-</ul>
-<p>Returns gump textby index.</p>
+<p></br>
+<em>String</em> <strong>gump.Text</strong>(index);</p>
+<p>Returns gump textby index.
+</br></br></p>
 <hr />
-<ul>
-<li>bool gump.Select(hook);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>gump.Select</strong>(hook);</p>
 <p>Selects gump by a hook object (GumpHookObject).</p>
-<p>Returns true if successfull.</p>
+<p>Returns true if successfull.
+</br></br></p>
 <hr />
-<ul>
-<li>void gump.Close();</li>
-</ul>
+<p></br>
+<em>void</em> <strong>gump.Close</strong>();</p>
 
                     </main>
 

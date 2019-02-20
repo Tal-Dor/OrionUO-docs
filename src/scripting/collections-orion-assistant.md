@@ -3,142 +3,143 @@
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
-
-- void Orion.AddType('typeName', ['typeValue'=targetRequest]);
+</br>
+_void_ **Orion.AddType**('typeName', ['typeValue'=targetRequest]);
 
 Add type or select type (if typeValue isn't suggested).
-
+</br></br>
 ***
-
-- void Orion.RemoveType('typeName');
+</br>
+_void_ **Orion.RemoveType**('typeName');
 
 Delete type.
-
+</br></br>
 ***
-
-- void Orion.AddObject('objectName', ['objectValue'=targetRequest]);
+</br>
+_void_ **Orion.AddObject**('objectName', ['objectValue'=targetRequest]);
 
 Add object or select object (if objectValue isn't suggested)
-
+</br></br>
 ***
-
-- void Orion.RemoveObject('objectName');
+</br>
+_void_ **Orion.RemoveObject**('objectName');
 
 Delete object.
-
+</br></br>
 ***
-
-- void Orion.AddFindList(['listName'=targetRequest], ['graphic', 'color'], ['comment']);
+</br>
+_void_ **Orion.AddFindList**(['listName'=targetRequest], ['graphic', 'color'], ['comment']);
 
 Add object properties or select to add object properties to Find list.
 
-- - listName - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save.
-- - graphic - object type.
-- - color- object color.
-- - comment - a comment, which will be displayed in the list.
-
+- `listName` - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save.
+- `graphic` - object type.
+- `color` - object color.
+- `comment` - a comment, which will be displayed in the list.
+</br></br>
 ***
-
-- void Orion.ClearFindList('listName');
+</br>
+_void_ **Orion.ClearFindList**('listName');
 
 Delete search list with all it's content.
 
-- - listName - list name.
-
+- **listName** - list name.
+</br></br>
 ***
-
-- void Orion.AddIgnoreListObject(['listName'=targetRequest], ['serial'], ['comment']);
+</br>
+_void_ **Orion.AddIgnoreListObject**(['listName'=targetRequest], ['serial'], ['comment']);
 
 Add object to ignore list.
 
-- - listName - list name.
-- - serial - serial of the object..
-- - comment - a comment, which will be displayed in the list.
-
+- `listName` - list name.
+- `serial` - serial of the object..
+- `comment` - a comment, which will be displayed in the list.
+</br></br>
 ***
-
-- void Orion.AddIgnoreList(['listName'=targetRequest], ['graphic', 'color'], ['comment']);
+</br>
+_void_ **Orion.AddIgnoreList**(['listName'=targetRequest], ['graphic', 'color'], ['comment']);
 
 Add object properties or target selection appears to add object properties to the ignore list.
 
-- - listName - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save
-- - graphic - Тип объекта.
-- - color- object color.
-- - comment - a comment, which will be displayed in the list.
-
+- `listName` - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save
+- `graphic` - Тип объекта.
+- `color`- object color.
+- `comment` - a comment, which will be displayed in the list.
+</br></br>
 ***
-
-- void Orion.ClearIgnoreList('listName');
+</br>
+_void_ **Orion.ClearIgnoreList**('listName');
 
 Delete search list with all it's content.
 
-- - listName - list name.
-
+- `listName` - list name.
+</br></br>
 ***
-
-- StringList Orion.GetFriendList();
+</br>
+_StringList_ **Orion.GetFriendList**();
 
 Return string list with friends id's.
-
+</br></br>
 ***
-
-- StringList Orion.GetEnemyList();
+</br>
+_StringList_ **Orion.GetEnemyList**();
 
 Return string list with enemies id's.
-
+</br></br>
 ***
-
-- void Orion.AddFriend('friendName', ['serial'=targetRequest]);
+</br>
+_void_ **Orion.AddFriend**('friendName', ['serial'=targetRequest]);
 
 Add a friend or select one to add by a target if there's no 'serial' argument.
-
+</br></br>
 ***
-
-- void Orion.RemoveFriend('friendName');
+</br>
+_void_ **Orion.RemoveFriend**('friendName');
 
 Remove a friend from friends list.
-
+</br></br>
 ***
-
-- void Orion.ClearFriendList();
+</br>
+_void_ **Orion.ClearFriendList**();
 
 Clear friends list.
+</br></br>
 ***
-
-- void Orion.AddEnemy('enemyName', ['serial'=targetRequest]);
+</br>
+_void_ **Orion.AddEnemy**('enemyName', ['serial'=targetRequest]);
 
 Add an enemy or select one to add by a target if there's no 'serial' argument.
-
+</br></br>
 ***
-
-- void Orion.RemoveEnemy('enemyName');
+</br>
+_void_ **Orion.RemoveEnemy**('enemyName');
 
 Remove an enemy from enemies list.
-
+</br></br>
 ***
-
-- void Orion.ClearEnemyList();
+</br>
+_void_ **Orion.ClearEnemyList**();
 
 Clear enemies list.
-
+</br></br>
 ***
-
-- void Orion.SetGlobal(name, value);
+</br>
+_void_ **Orion.SetGlobal**(name, value);
 
 Set a global variable. Value data type is always a string.
-
+</br></br>
 ***
-
-- String Orion.GetGlobal(name);
+</br>
+_String_ **Orion.GetGlobal**(name);
 
 Retrieve value ( string data type ) of a global variable
 
 Returns value of the variable or an empty string is no variable is found with such name.
-
+</br></br>
 ***
-
-- void Orion.ClearGlobals();
+</br>
+_void_ **Orion.ClearGlobals**();
 
 Clear global variables list.

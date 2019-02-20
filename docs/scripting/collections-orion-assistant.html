@@ -138,182 +138,130 @@
                     <main>
                         <a class="header" href="#collections" id="collections"><h1>Collections</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.AddType('typeName', ['typeValue'=targetRequest]);</li>
-</ul>
-<p>Add type or select type (if typeValue isn't suggested).</p>
+<p></br>
+<em>void</em> <strong>Orion.AddType</strong>('typeName', ['typeValue'=targetRequest]);</p>
+<p>Add type or select type (if typeValue isn't suggested).
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.RemoveType('typeName');</li>
-</ul>
-<p>Delete type.</p>
+<p></br>
+<em>void</em> <strong>Orion.RemoveType</strong>('typeName');</p>
+<p>Delete type.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.AddObject('objectName', ['objectValue'=targetRequest]);</li>
-</ul>
-<p>Add object or select object (if objectValue isn't suggested)</p>
+<p></br>
+<em>void</em> <strong>Orion.AddObject</strong>('objectName', ['objectValue'=targetRequest]);</p>
+<p>Add object or select object (if objectValue isn't suggested)
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.RemoveObject('objectName');</li>
-</ul>
-<p>Delete object.</p>
+<p></br>
+<em>void</em> <strong>Orion.RemoveObject</strong>('objectName');</p>
+<p>Delete object.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.AddFindList(['listName'=targetRequest], ['graphic', 'color'], ['comment']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.AddFindList</strong>(['listName'=targetRequest], ['graphic', 'color'], ['comment']);</p>
 <p>Add object properties or select to add object properties to Find list.</p>
 <ul>
-<li>
-<ul>
-<li>listName - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>graphic - object type.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>color- object color.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>comment - a comment, which will be displayed in the list.</li>
-</ul>
-</li>
+<li><code>listName</code> - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save.</li>
+<li><code>graphic</code> - object type.</li>
+<li><code>color</code> - object color.</li>
+<li><code>comment</code> - a comment, which will be displayed in the list.
+</br></br></li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.ClearFindList('listName');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.ClearFindList</strong>('listName');</p>
 <p>Delete search list with all it's content.</p>
 <ul>
-<li>
-<ul>
-<li>listName - list name.</li>
-</ul>
-</li>
+<li><strong>listName</strong> - list name.
+</br></br></li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.AddIgnoreListObject(['listName'=targetRequest], ['serial'], ['comment']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.AddIgnoreListObject</strong>(['listName'=targetRequest], ['serial'], ['comment']);</p>
 <p>Add object to ignore list.</p>
 <ul>
-<li>
-<ul>
-<li>listName - list name.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>serial - serial of the object..</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>comment - a comment, which will be displayed in the list.</li>
-</ul>
-</li>
+<li><code>listName</code> - list name.</li>
+<li><code>serial</code> - serial of the object..</li>
+<li><code>comment</code> - a comment, which will be displayed in the list.
+</br></br></li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.AddIgnoreList(['listName'=targetRequest], ['graphic', 'color'], ['comment']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.AddIgnoreList</strong>(['listName'=targetRequest], ['graphic', 'color'], ['comment']);</p>
 <p>Add object properties or target selection appears to add object properties to the ignore list.</p>
 <ul>
-<li>
-<ul>
-<li>listName - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>graphic - Тип объекта.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>color- object color.</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>comment - a comment, which will be displayed in the list.</li>
-</ul>
-</li>
+<li><code>listName</code> - list name. If not suggested - target selection appears to add properties to the currently selected element from the list(on the list tab), without auto-save</li>
+<li><code>graphic</code> - Тип объекта.</li>
+<li><code>color</code>- object color.</li>
+<li><code>comment</code> - a comment, which will be displayed in the list.
+</br></br></li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.ClearIgnoreList('listName');</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.ClearIgnoreList</strong>('listName');</p>
 <p>Delete search list with all it's content.</p>
 <ul>
-<li>
-<ul>
-<li>listName - list name.</li>
-</ul>
-</li>
+<li><code>listName</code> - list name.
+</br></br></li>
 </ul>
 <hr />
-<ul>
-<li>StringList Orion.GetFriendList();</li>
-</ul>
-<p>Return string list with friends id's.</p>
+<p></br>
+<em>StringList</em> <strong>Orion.GetFriendList</strong>();</p>
+<p>Return string list with friends id's.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList Orion.GetEnemyList();</li>
-</ul>
-<p>Return string list with enemies id's.</p>
+<p></br>
+<em>StringList</em> <strong>Orion.GetEnemyList</strong>();</p>
+<p>Return string list with enemies id's.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.AddFriend('friendName', ['serial'=targetRequest]);</li>
-</ul>
-<p>Add a friend or select one to add by a target if there's no 'serial' argument.</p>
+<p></br>
+<em>void</em> <strong>Orion.AddFriend</strong>('friendName', ['serial'=targetRequest]);</p>
+<p>Add a friend or select one to add by a target if there's no 'serial' argument.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.RemoveFriend('friendName');</li>
-</ul>
-<p>Remove a friend from friends list.</p>
+<p></br>
+<em>void</em> <strong>Orion.RemoveFriend</strong>('friendName');</p>
+<p>Remove a friend from friends list.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ClearFriendList();</li>
-</ul>
-<p>Clear friends list.</p>
+<p></br>
+<em>void</em> <strong>Orion.ClearFriendList</strong>();</p>
+<p>Clear friends list.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.AddEnemy('enemyName', ['serial'=targetRequest]);</li>
-</ul>
-<p>Add an enemy or select one to add by a target if there's no 'serial' argument.</p>
+<p></br>
+<em>void</em> <strong>Orion.AddEnemy</strong>('enemyName', ['serial'=targetRequest]);</p>
+<p>Add an enemy or select one to add by a target if there's no 'serial' argument.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.RemoveEnemy('enemyName');</li>
-</ul>
-<p>Remove an enemy from enemies list.</p>
+<p></br>
+<em>void</em> <strong>Orion.RemoveEnemy</strong>('enemyName');</p>
+<p>Remove an enemy from enemies list.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ClearEnemyList();</li>
-</ul>
-<p>Clear enemies list.</p>
+<p></br>
+<em>void</em> <strong>Orion.ClearEnemyList</strong>();</p>
+<p>Clear enemies list.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.SetGlobal(name, value);</li>
-</ul>
-<p>Set a global variable. Value data type is always a string.</p>
+<p></br>
+<em>void</em> <strong>Orion.SetGlobal</strong>(name, value);</p>
+<p>Set a global variable. Value data type is always a string.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.GetGlobal(name);</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.GetGlobal</strong>(name);</p>
 <p>Retrieve value ( string data type ) of a global variable</p>
-<p>Returns value of the variable or an empty string is no variable is found with such name.</p>
+<p>Returns value of the variable or an empty string is no variable is found with such name.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ClearGlobals();</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.ClearGlobals</strong>();</p>
 <p>Clear global variables list.</p>
 
                     </main>

@@ -138,62 +138,61 @@
                     <main>
                         <a class="header" href="#interactions-with-files" id="interactions-with-files"><h1>Interactions With Files</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<ul>
-<li>FileObject Orion.NewFile();</li>
-</ul>
-<p>Create a file object.</p>
+<p></br>
+<em>FileObject</em> <strong>Orion.NewFile</strong>();</p>
+<p>Create a file object.
+</br></br></p>
 <hr />
-<ul>
-<li>bool fileObject.Open('filePath');</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>fileObject.Open</strong>('filePath');</p>
 <p>An attempt to open a file (or create a new one) by the filePath.</p>
-<p>Result: true if the file is successfully opened.</p>
+<p>Result: true if the file is successfully opened.
+</br></br></p>
 <hr />
-<ul>
-<li>bool fileObject.Append('filePath');</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>fileObject.Append</strong>('filePath');</p>
 <p>An attempt to open the file by the filePath to the write-in (the pointer to the data is placed at the end of the file).</p>
-<p>Result: true if the file is successfully opened.</p>
+<p>Result: true if the file is successfully opened.
+</br></br></p>
 <hr />
-<ul>
-<li>bool fileObject.Opened();</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>fileObject.Opened</strong>();</p>
 <p>Verify the validity of the opened file.</p>
-<p>Result: true if the file is open.</p>
+<p>Result: true if the file is open.
+</br></br></p>
 <hr />
-<ul>
-<li>void fileObject.Close();</li>
-</ul>
-<p>Close the file.</p>
+<p></br>
+<em>void</em> <strong>fileObject.Close</strong>();</p>
+<p>Close the file.
+</br></br></p>
 <hr />
-<ul>
-<li>String fileObject.ReadLine();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>fileObject.ReadLine</strong>();</p>
 <p>Read the line before the line break (\ n).</p>
-<p>Result: The result of reading the data.</p>
+<p>Result: The result of reading the data.
+</br></br></p>
 <hr />
-<ul>
-<li>String fileObject.Read();</li>
-</ul>
+<p></br>
+<em>String</em> <strong>fileObject.Read</strong>();</p>
 <p>Read the word (up to blank-space &quot; &quot;).</p>
-<p>Result: The result of reading the data.</p>
+<p>Result: The result of reading the data.
+</br></br></p>
 <hr />
-<ul>
-<li>void fileObject.WriteLine('data');</li>
-</ul>
-<p>Record the data string and move the string (\ n).</p>
+<p></br>
+<em>void</em> <strong>fileObject.WriteLine</strong>('data');</p>
+<p>Record the data string and move the string (\ n).
+</br></br></p>
 <hr />
-<ul>
-<li>void fileObject.Write('data');</li>
-</ul>
-<p>Write down the data.</p>
+<p></br>
+<em>void</em> <strong>fileObject.Write</strong>('data');</p>
+<p>Write down the data.
+</br></br></p>
 <hr />
-<a class="header" href="#introduced-in-20160" id="introduced-in-20160"><h2>Introduced in 2.0.16.0</h2></a>
-<ul>
-<li>void fileObject.Remove(['filePath']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>fileObject.Remove</strong>(['filePath']);</p>
 <p>Deletes file at filePath.</p>
 <p>If filePath was an empty string or null reference, it'll close and try delete fileObject.</p>
 

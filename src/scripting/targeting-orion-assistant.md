@@ -3,10 +3,10 @@
 ### Command Format
 
 **NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
-
+</br></br>
 ***
-
-graphicOrFlags - searching filter:
+</br>
+**graphicOrFlags** - searching filter:
 
 - mine - searching for cave tiles;
 
@@ -17,24 +17,24 @@ graphicOrFlags - searching filter:
 - land - searching for only land tiles;
 
 - any - searching of any type of tile (static tiles have higher priority over landscape).
-
+</br></br>
 ***
-
-- bool Orion.HaveTarget();
+</br>
+_bool_ **Orion.HaveTarget**();
 
 Have a target.
 
 Resul: true if target is on.
-
+</br></br>
 ***
-
-- void Orion.WaitTargetObject('serial');
+</br>
+_void_ **Orion.WaitTargetObject**('serial');
 
 Set the target trap for object(s) serial.
-
+</br></br>
 ***
-
-- void Orion.WaitTargetType('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);
+</br>
+_void_ **Orion.WaitTargetType**('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);
 
 Set the target trap for object, found by searching container.
 
@@ -47,10 +47,10 @@ Set the target trap for object, found by searching container.
 - - flags - Flag Search Filters.
 
 - - recurse - Recursive Search in subcontainers.
-
+</br></br>
 ***
-
-- void Orion.WaitTargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);
+</br>
+_void_ **Orion.WaitTargetGround**('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);
 
 Set the target trap for object found by search on the ground.
 
@@ -61,10 +61,10 @@ Set the target trap for object found by search on the ground.
 - - distance - Search Distance.
 
 - - flags - Flag Search Filters.
-
+</br></br>
 ***
-
-- void Orion.WaitTargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);
+</br>
+_void_ **Orion.WaitTargetTypeList**('findListName', ['container'=self], ['flags'], [recurse=true]);
 
 Set the target trap for object, found by searching container.
 
@@ -75,10 +75,10 @@ Set the target trap for object, found by searching container.
 - - flags - Flag Search Filters.
 
 - - recurse - Recursive Search in subcontainers.
-
+</br></br>
 ***
-
-- void Orion.WaitTargetGroundList('findListName', ['distance'=searchObjectsDistance], ['flags']);
+</br>
+_void_ **Orion.WaitTargetGroundList**('findListName', ['distance'=searchObjectsDistance], ['flags']);
 
 Set the target trap for object found by searching the ground.
 
@@ -87,10 +87,10 @@ Set the target trap for object found by searching the ground.
 - - distance - Search Distance.
 
 - - flags - Flag Search Filters.
-
+</br></br>
 ***
-
-- void Orion.WaitTargetTile('graphic', [x, y, z]);
+</br>
+_void_ **Orion.WaitTargetTile**('graphic', [x, y, z]);
 
 Set the target trap on the ground.
 
@@ -101,10 +101,10 @@ x - World X coordinate
 y - World Y coordinate
 
 z - World Z coordinate
-
+</br></br>
 ***
-
-- void Orion.WaitTargetTileRelative('graphic', [x, y, z]);
+</br>
+_void_ **Orion.WaitTargetTileRelative**('graphic', [x, y, z]);
 
 Set the target trap on the ground, against Character.
 
@@ -115,22 +115,22 @@ x - X coordinate bias in the world
 y - Y coordinate bias in the world
 
 z - Z coordinate bias in the world
-
+</br></br>
 ***
-
-- void Orion.CancelWaitTarget();
+</br>
+_void_ **Orion.CancelWaitTarget**();
 
 Cancel of the current wait of the target.
-
+</br></br>
 ***
-
-- void Orion.TargetObject('serial');
+</br>
+_void_ **Orion.TargetObject**('serial');
 
 Point the target on a serial object.
-
+</br></br>
 ***
-
-- void Orion.TargetType('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);
+</br>
+_void_ **Orion.TargetType**('graphic', ['color'=0xFFFF], ['container'=self], ['flags'], [recurse=true]);
 
 Point the target on the object found by searching container.
 
@@ -143,10 +143,10 @@ Point the target on the object found by searching container.
 - - flags - Flag Search Filters.
 
 - - recurse - Recursive Search in subcontainers.
-
+</br></br>
 ***
-
-- void Orion.TargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);
+</br>
+_void_ **Orion.TargetGround**('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);
 
 Point the target on the object found by searching the ground.
 
@@ -157,10 +157,10 @@ Point the target on the object found by searching the ground.
 - - distance - Search Distance.
 
 - - flags - Flag Search Filters.
-
+</br></br>
 ***
-
-- void Orion.TargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);
+</br>
+_void_ **Orion.TargetTypeList**('findListName', ['container'=self], ['flags'], [recurse=true]);
 
 Point the target on the object found by serching container.
 
@@ -171,10 +171,10 @@ Point the target on the object found by serching container.
 - - flags - Flag Search Filters.
 
 - - recurse - Recursive Search in subcontainers.
-
+</br></br>
 ***
-
-- void Orion.TargetGroundList('findListName', ['distance'=searchObjectsDistance], ['flags']);
+</br>
+_void_ **Orion.TargetGroundList**('findListName', ['distance'=searchObjectsDistance], ['flags']);
 
 Point the target on the object found by searching the ground.
 
@@ -183,10 +183,10 @@ Point the target on the object found by searching the ground.
 - - distance - Search Distance.
 
 - - flags - Flag Search Filters.
-
+</br></br>
 ***
-
-- void Orion.TargetTile('graphic', [x, y, z]);
+</br>
+_void_ **Orion.TargetTile**('graphic', [x, y, z]);
 
 Point target on a ground.
 
@@ -197,10 +197,10 @@ x - World X coordinate
 y - World Y coordinate
 
 z - World Z coordinate
-
+</br></br>
 ***
-
-- void Orion.TargetTileRelative('graphic', [x, y, z]);
+</br>
+_void_ **Orion.TargetTileRelative**('graphic', [x, y, z]);
 
 Point target on a ground against Character.
 
@@ -211,12 +211,10 @@ x - X coordinate bias in the world
 y - Y coordinate bias in the world
 
 z - Z coordinate bias in the world
-
+</br></br>
 ***
-
-## Introduced in 2.0.7.0
-
-- bool Orion.ValidateTargetTile('graphicOrFlags', x, y);
+</br>
+_bool_ **Orion.ValidateTargetTile**('graphicOrFlags', x, y);
 
 This function checks if targeted tile is valid for targeting.
 
@@ -227,10 +225,10 @@ This function checks if targeted tile is valid for targeting.
 - - y - Y coordinate on the map.
 
 Returns true if tile is valid for targeting.
-
+</br></br>
 ***
-
-- bool Orion.ValidateTargetTileRelative('graphicOrFlags', x, y);
+</br>
+_bool_ **Orion.ValidateTargetTileRelative**('graphicOrFlags', x, y);
 
 This function checks if targeted tile( relative to character position on the map ) is valid for targeting.
 
@@ -241,28 +239,24 @@ This function checks if targeted tile( relative to character position on the map
 - - y - Y offset on the map.
 
 Returns true if tile is valid for targeting.
-
+</br></br>
 ***
-
-## Introduced in 2.0.13.0
-
-- void Orion.CancalTarget();
+</br>
+_void_ **Orion.CancalTarget**();
 
 Cancels current target ( if present in client ).
-
+</br></br>
 ***
-
-## Introduced in 2.0.15.0
-
-- bool Orion.WaitForTarget([delay=1000]);
+</br>
+_bool_ **Orion.WaitForTarget**([delay=1000]);
 
 Awaits ( blocks execution ) for a target for 'delay' amount of time.
 
 If client had a target already, immediately returns true.
-
+</br></br>
 ***
-
-- int Orion.GetTargetType();
+</br>
+_int_ **Orion.GetTargetType**();
 
 Get type of target.
 

@@ -138,48 +138,52 @@
                     <main>
                         <a class="header" href="#objects-searching" id="objects-searching"><h1>Objects Searching</h1></a>
 <a class="header" href="#command-format" id="command-format"><h3>Command Format</h3></a>
-<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);</p>
+<p><strong>NameSpace</strong>.<strong>name</strong>(<em><strong>requiredParameters</strong></em>, [<em>optionalParameters=defaultValue</em>]);
+</br></br></p>
 <hr />
-<p>flags - search filters:</p>
+<p></br>
+<strong>flags</strong> - search filters:</p>
 <ul>
 <li>
-<p>fast - the search stops on the first found object;</p>
+<p><code>fast</code> - the search stops on the first found object;</p>
 </li>
 <li>
-<p>near - search for the nearest object to the character;</p>
+<p><code>near</code> - search for the nearest object to the character;</p>
 </li>
 <li>
-<p>mobile - search only for alive creatures;</p>
+<p><code>mobile</code> - search only for alive creatures;</p>
 </li>
 <li>
-<p>item - search only inanimate objects;</p>
+<p><code>item</code> - search only inanimate objects;</p>
 </li>
 <li>
-<p>human - search only for humanoid creatures, types: 0x0190-0x0193, 0x03DB, 0x03DF and 0x03E2;</p>
+<p><code>human</code> - search only for humanoid creatures, types: 0x0190-0x0193, 0x03DB, 0x03DF and 0x03E2;</p>
 </li>
 <li>
-<p>live - search only for living creatures;</p>
+<p><code>live</code> - search only for living creatures;</p>
 </li>
 <li>
-<p>dead - search only for dead creatures, types: 0x0192 and 0x0193.</p>
+<p><code>dead</code> - search only for dead creatures, types: 0x0192 and 0x0193.</p>
 </li>
 <li>
-<p>injured - Searching for a friend with lowest HP (works only for FindFriend/FindEnemy).</p>
+<p><code>injured</code> - Searching for a friend with lowest HP (works only for FindFriend/FindEnemy).</p>
 </li>
 <li>
-<p>next - Searching for next object (works only for FindFriend/FindEnemy).</p>
+<p><code>next</code> - Searching for next object (works only for FindFriend/FindEnemy).</p>
 </li>
 <li>
-<p>ignorefriends - ignores friends(Introduced in OA 2.0.8.0).</p>
+<p><code>ignorefriends</code> - ignores friends(Introduced in OA 2.0.8.0).</p>
 </li>
 <li>
-<p>ignoreenemies - ignores enemies (Introduced in OA 2.0.8.0).</p>
+<p><code>ignoreenemies</code> - ignores enemies (Introduced in OA 2.0.8.0).</p>
 </li>
 </ul>
-<p>_When using human, live или dead - mobile flag is set automatically.</p>
-<p>_When using next - fast flag is set automatically.</p>
+<p><em>When using human, live or dead - mobile flag is set automatically.</em></p>
+<p><em>When using next - fast flag is set automatically.</em>
+</br></br></p>
 <hr />
-<p>notoriety - Wickedness of the desired character.</p>
+<p></br>
+<strong>notoriety</strong> - Wickedness of the desired character.</p>
 <ul>
 <li>
 <p>innocent/blue</p>
@@ -200,287 +204,217 @@
 <p>murderer/red</p>
 </li>
 <li>
-<p>invulnerable/yellow</p>
+<p>invulnerable/yellow
+</br></br></p>
 </li>
 </ul>
 <hr />
-<p>distance - The search distance.</p>
-<p>In addition to numerical values, it can take string constants: finddistance, usedistance, opencorpsedistance.</p>
+<p></br>
+<strong>distance</strong> - The search distance.</p>
+<p>In addition to numerical values, it can take string constants: finddistance, usedistance, opencorpsedistance.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UseType('graphic', ['color'=0xFFFF], ['container'=self], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.UseType</strong>('graphic', ['color'=0xFFFF], ['container'=self], [recurse=true]);</p>
 <p>Search for an object by type and color in the container.</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or list of types. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - The color or list of colors. 0xFFFF is ignored.</li>
-</ul>
+<p><code>color</code> - The color or list of colors. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>container - The container in which the search is performed.</li>
-</ul>
+<p><code>container</code> - The container in which the search is performed.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive search for sub-containers.</li>
-</ul>
+<p><code>recurse</code> - Recursive search for sub-containers.
+</br></br></p>
 </li>
 </ul>
 <hr />
-<ul>
-<li>void Orion.UseFromGround('graphic', ['color'=0xFFFF], ['distance'=useObjectsDistance], ['flags']);</li>
-</ul>
+<p></br>
+<em>void</em> <strong>Orion.UseFromGround</strong>('graphic', ['color'=0xFFFF], ['distance'=useObjectsDistance], ['flags']);</p>
 <p>Search for an object by type and color on the ground.</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or list of types. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - The color or list of colors. 0xFFFF is ignored.</li>
-</ul>
+<p><code>color</code> - The color or list of colors. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>distance - The search distance.</li>
-</ul>
+<p><code>distance</code> - The search distance.</p>
 </li>
 <li>
-<ul>
-<li>flags - Search filter flags.</li>
-</ul>
+<p><code>flags</code> - Search filter flags.
+</br></br></p>
 </li>
 </ul>
 <hr />
-<ul>
-<li>bool Orion.UseTypeList('listName', ['container'=self], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.UseTypeList</strong>('listName', ['container'=self], [recurse=true]);</p>
 <p>Search for an object from the find list in the container.</p>
 <ul>
 <li>
-<ul>
-<li>listName - The name of the find list.</li>
-</ul>
+<p><code>listName</code> - The name of the find list.</p>
 </li>
 <li>
-<ul>
-<li>container - The container in which the search is performed.</li>
-</ul>
+<p><code>container</code> - The container in which the search is performed.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive search for sub-containers.</li>
-</ul>
+<p><code>recurse</code> - Recursive search for sub-containers.</p>
 </li>
 </ul>
-<p>Result: true if the object was found and used.</p>
+<p>Result: true if the object was found and used.
+</br></br></p>
 <hr />
-<ul>
-<li>bool Orion.UseFromGroundList('listName', ['distance'=useObjectsDistance], ['flags']);</li>
-</ul>
+<p></br>
+<em>bool</em> <strong>Orion.UseFromGroundList</strong>('listName', ['distance'=useObjectsDistance], ['flags']);</p>
 <p>Search for an object on the find list on the ground.</p>
 <ul>
 <li>
-<ul>
-<li>listName - The name of the find list.</li>
-</ul>
+<p><code>listName</code> - The name of the find list.</p>
 </li>
 <li>
-<ul>
-<li>distance - The search distance.</li>
-</ul>
+<p><code>distance</code> - The search distance.</p>
 </li>
 <li>
-<ul>
-<li>flags - Search filter flags.</li>
-</ul>
+<p><code>flags</code> - Search filter flags.</p>
 </li>
 </ul>
-<p>Result: true if the object was found and used.</p>
+<p>Result: true if the object was found and used.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList Orion.FindType('graphic', ['color'=0xFFFF], ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>StringList</em> <strong>Orion.FindType</strong>('graphic', ['color'=0xFFFF], ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);</p>
 <p>Search for an object by type and color.</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or list of types. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - The color or list of colors. 0xFFFF is ignored.</li>
-</ul>
+<p><code>color</code> - The color or list of colors. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>container - The container in which the search is performed.</li>
-</ul>
+<p><code>container</code> - The container in which the search is performed.</p>
 </li>
 <li>
-<ul>
-<li>flags - Search filter flags.</li>
-</ul>
+<p><code>flags</code> - Search filter flags.</p>
 </li>
 <li>
-<ul>
-<li>distance - The search distance.</li>
-</ul>
+<p><code>distance</code> - The search distance.</p>
 </li>
 <li>
-<ul>
-<li>notoriety - Wickedness of the desired character.</li>
-</ul>
+<p><code>notoriety</code> - Wickedness of the desired character.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive search for sub-containers.</li>
-</ul>
+<p><code>recurse</code> - Recursive search for sub-containers.</p>
 </li>
 </ul>
-<p>Result: List of found serials.</p>
+<p>Result: List of found serials.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.Ignore('serial', [state=true]);</li>
-</ul>
-<p>Set / remove the ignore flag on the serial object.</p>
+<p></br>
+<em>void</em> <strong>Orion.Ignore</strong>('serial', [state=true]);</p>
+<p>Set / remove the ignore flag on the serial object.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.IgnoreReset();</li>
-</ul>
-<p>Remove the ignore flag from all objects.</p>
+<p></br>
+<em>void</em> <strong>Orion.IgnoreReset</strong>();</p>
+<p>Remove the ignore flag from all objects.
+</br></br></p>
 <hr />
-<ul>
-<li>GameObject Orion.FindObject('serial');</li>
-</ul>
-<p>Result: an object of type GameObject or null.</p>
+<p></br>
+<em>GameObject</em> <strong>Orion.FindObject</strong>('serial');</p>
+<p>Result: an object of type <em>GameObject</em> or null.
+</br></br></p>
 <hr />
-<ul>
-<li>int Orion.Count('graphic', ['color'=0xFFFF], ['container'=self], ['distance'=searchObjectsDistance], [recurse]);</li>
-</ul>
+<p></br>
+<em>int</em> <strong>Orion.Count</strong>('graphic', ['color'=0xFFFF], ['container'=self], ['distance'=searchObjectsDistance], [recurse]);</p>
 <p>Returns the total number of items (the number of items, not the number of objects found).</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or list of types. 0xFFFF is ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or list of types. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - The color or list of colors. 0xFFFF is ignored.</li>
-</ul>
+<p><code>color</code> - The color or list of colors. 0xFFFF is ignored.</p>
 </li>
 <li>
-<ul>
-<li>container - The container in which the search is performed.</li>
-</ul>
+<p><code>container</code> - The container in which the search is performed.</p>
 </li>
 <li>
-<ul>
-<li>distance - The search distance.</li>
-</ul>
+<p><code>distance</code> - The search distance.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive search for sub-containers.</li>
-</ul>
+<p><code>recurse</code> - Recursive search for sub-containers.</p>
 </li>
 </ul>
-<p>Result: the amount of items.</p>
+<p>Result: the amount of items.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.ResetIgnoreList();</li>
-</ul>
-<p>Reset the use of the ignore list.</p>
+<p></br>
+<em>void</em> <strong>Orion.ResetIgnoreList</strong>();</p>
+<p>Reset the use of the ignore list.
+</br></br></p>
 <hr />
-<ul>
-<li>void Orion.UseIgnoreList('listName');</li>
-</ul>
-<p>Use ignore list listName.</p>
+<p></br>
+<em>void</em> <strong>Orion.UseIgnoreList</strong>('listName');</p>
+<p>Use ignore list listName.
+</br></br></p>
 <hr />
-<ul>
-<li>StringList Orion.FindList('listName', ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);</li>
-</ul>
+<p></br>
+<em>StringList</em> <strong>Orion.FindList</strong>('listName', ['container'=backpack], ['flags'], ['distance'=searchObjectsDistance], ['notoriety'], [recurse=true]);</p>
 <p>Search for an object in the find list.</p>
 <ul>
 <li>
-<ul>
-<li>listName - The name of the find list.</li>
-</ul>
+<p><code>listName</code> - The name of the find list.</p>
 </li>
 <li>
-<ul>
-<li>container - The container in which the search is performed.</li>
-</ul>
+<p><code>container</code> - The container in which the search is performed.</p>
 </li>
 <li>
-<ul>
-<li>flags - Search filter flags.</li>
-</ul>
+<p><code>flags</code> - Search filter flags.</p>
 </li>
 <li>
-<ul>
-<li>distance - The search distance.</li>
-</ul>
+<p><code>distance</code> - The search distance.</p>
 </li>
 <li>
-<ul>
-<li>notoriety - Wickedness of the desired character.</li>
-</ul>
+<p><code>notoriety</code> - Wickedness of the desired character.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive search for sub-containers.</li>
-</ul>
+<p><code>recurse</code> - Recursive search for sub-containers.
+</br></br></p>
 </li>
 </ul>
 <hr />
-<ul>
-<li>GameObject Orion.ObjAtLayer('layerName', ['serial'=self]);</li>
-</ul>
-<p>Result: an object of type GameObject in the specified layer of the object 'serial' or null.</p>
+<p></br>
+<em>GameObject</em> <strong>Orion.ObjAtLayer</strong>('layerName', ['serial'=self]);</p>
+<p>Result: an object of type <em>GameObject</em> in the specified layer of the object 'serial' or null.
+</br></br></p>
 <hr />
-<ul>
-<li>String Orion.FindFriend(['flags'=fast], ['distance'=searchObjectsDistance]);</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.FindFriend</strong>(['flags'=fast], ['distance'=searchObjectsDistance]);</p>
 <p>Searching for a friend serial from friends list.</p>
 <ul>
 <li>
-<ul>
-<li>flags - Searching filter flags.</li>
-</ul>
+<p><code>flags</code> - Searching filter flags.</p>
 </li>
 <li>
-<ul>
-<li>distance - Searching distance.</li>
-</ul>
+<p><code>distance</code> - Searching distance.
+</br></br></p>
 </li>
 </ul>
 <hr />
-<ul>
-<li>String Orion.FindEnemy(['flags'=fast], ['distance'=searchObjectsDistance]);</li>
-</ul>
+<p></br>
+<em>String</em> <strong>Orion.FindEnemy</strong>(['flags'=fast], ['distance'=searchObjectsDistance]);</p>
 <p>Searching for an enemy serial from enemies list.</p>
 <ul>
 <li>
-<ul>
-<li>flags - Searching filter flags.</li>
-</ul>
+<p><code>flags</code> - Searching filter flags.</p>
 </li>
 <li>
-<ul>
-<li>distance - Searching distance.</li>
-</ul>
+<p><code>distance</code> - Searching distance.</p>
 </li>
 </ul>
 

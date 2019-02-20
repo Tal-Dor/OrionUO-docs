@@ -2,35 +2,33 @@
 
 ### Command Format
 
-NameSpace.name(requiredParameters, [optionalParameters=defaultValue]);
-
+**NameSpace**.**name**(_**requiredParameters**_, [_optionalParameters=defaultValue_]);
+</br></br>
 ***
-
-- void Orion.RequestContextMenu('serial');
+</br>
+_void_ **Orion.RequestContextMenu**('serial');
 
 Send a context menu request for given serial.
-
+</br></br>
 ***
-
-- void Orion.WaitContextMenu('serial', index);
+</br>
+_void_ **Orion.WaitContextMenu**('serial', index);
 
 Add context menu wait hook.
 
-- serial - serial of context menu object. If serial equals 0, serial check will be ignored.
+- `serial` - serial of context menu object. If serial equals 0, serial check will be ignored.
 
-- index - index of context menu choice, starting with 0.
-
+- `index` - index of context menu choice, starting with 0.
+</br></br>
 ***
-
-- void Orion.CancelContextMenu();
+</br>
+_void_ **Orion.CancelContextMenu**();
 
 Cancel all context menu hooks.
-
+</br></br>
 ***
-
-## Introduced in 2.0.15.0
-
-- bool Orion.WaitForContextMenu([delay=1000]);
+</br>
+_bool_ **Orion.WaitForContextMenu**([delay=1000]);
 
 Awaits context menu for 'delay' amount of time in ms.
 
