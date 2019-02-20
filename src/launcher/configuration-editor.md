@@ -1,5 +1,5 @@
 # Client Version Configuration
 
-- [Mini menu](ce-mini.md)
-- [Main](ce-main.md)
-- [Plugin](ce-plugin.md)
+- [CVC - Mini menu](ce-mini.md)
+- [CVC - Main](ce-main.md)
+- [CVC - Plugin](ce-plugin.md)

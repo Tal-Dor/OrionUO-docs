@@ -1,6 +1,6 @@
 # CVC - Mini
 
-![main](../../img/configuration-editor-mini.png)
+![main](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/configuration-editor-mini.png)
 
 1. Client version which'll be sent to your server.
 2. `Extended mode` expand window with advanced stuffs like encryption, protocol version, encryption keys, etc...

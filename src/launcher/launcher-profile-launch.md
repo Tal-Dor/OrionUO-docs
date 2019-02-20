@@ -1,6 +1,6 @@
 # Launcher - Profile - Launch
 
-![main](../../img/launcher-profile-launch.png)
+![main](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/launcher-profile-launch.png)
 
 1. `UO files path` directory where UO files are stored. Right mouse click to bring up a context menu where you can delete the path.
 

@@ -1,6 +1,6 @@
 # CVC - Plugin - Extended Mode
 
-![main](../../img/configuration-editor-plugin.png)
+![main](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/configuration-editor-plugin.png)
 
 1. List of enabled plug-ins.
 

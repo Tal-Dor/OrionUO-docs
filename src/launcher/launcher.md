@@ -1,7 +1,7 @@
 # Launcher
 
-- [Server Tab](tab-server.md)
-- [Proxy Tab](tab-proxy.md)
-- [Update Tab](tab-updates.md)
-- [Orion Features Tab](tab-orion-features.md)
-- [OA Features Tab](tab-oa-features.md)
+- [Profile Tab](launcher-profile.md)
+- [Proxy Tab](launcher-proxy.md)
+- [Updates Tab](tab-updates.md)
+- [Orion Features Tab](launcher-orion-features.md)
+- [OA Features Tab](launcher-oa-features.md)

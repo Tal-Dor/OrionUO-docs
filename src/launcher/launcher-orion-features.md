@@ -1,6 +1,6 @@
 # Launcher - Orion Features
 
-![oafeatures](../../img/launcher-orion-features.png)
+![oafeatures](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/launcher-orion-features.png)
 
 1. List of adjustable options for OrionUO `client`:
 

@@ -1,6 +1,6 @@
 # CVC - Main - Extended Mode
 
-![main](../../img/configuration-editor-main.png)
+![main](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/configuration-editor-main.png)
 
 1. Client version which'll be sent to your server. When you're typing a version number, configurator searches for matches and picks right encryption keys, stadart map sizes and verdata usage flag when there's a match. After you've entered your desirable client version, you can edit those values manually.
 

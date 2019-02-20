@@ -1,6 +1,6 @@
 # Launcher - OA Features
 
-![oafeatures](../../img/launcher-oa-features.png)
+![oafeatures](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/launcher-oa-features.png)
 
 1. List of adjustable options:
 

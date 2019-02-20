@@ -1,6 +1,6 @@
 # Launcher - Updates
 
-![main](../../img/launcher-updates.png)
+![main](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/launcher-updates.png)
 
 1. `Aviable updates` List of files available for updating.
 

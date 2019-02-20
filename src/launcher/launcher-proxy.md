@@ -1,6 +1,6 @@
 # Launcher - Proxy
 
-![main](../../img/launcher-proxy.png)
+![main](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/launcher-proxy.png)
 
 1. `Proxy servers list` Press `Delete` for remove current selected proxy server.
 

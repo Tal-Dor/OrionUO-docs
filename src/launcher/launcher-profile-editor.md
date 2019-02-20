@@ -1,6 +1,6 @@
 # Launcher - Profile - Editor
 
-![main](../../img/launcher-profile-editor.png)
+![main](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/launcher-profile-editor.png)
 
 1. `Name` Profile name (to display in the `Profiles` list).
 
