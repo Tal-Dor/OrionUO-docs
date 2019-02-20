@@ -1,11 +1,13 @@
 # Summary
 
 - [Launcher](launcher/launcher.md)
-	- [Server Tab](launcher/tab-server.md)
-	- [Proxy Tab](launcher/tab-proxy.md)
-	- [Update Tab](launcher/tab-updates.md)
-	- [Orion Features Tab](tab-orion-features.md)
-	- [OA Features Tab](launcher/tab-oa-features.md)
+	- [Profile](launcher/launcher-profile.md)
+		- [Launch](launcher/launcher-profile-launch.md)
+		- [Editor](launcher/launcher-profile-editor.md)
+	- [Proxy](launcher/launcher-proxy.md)
+	- [Updates](launcher/launcher-updates.md)
+	- [Orion Features](launcher/launcher-orion-features.md)
+	- [OA Features](launcher/launcher-oa-features.md)
 
 - [Client Version Configuration](launcher/configuration-editor.md)
 	- [Mini menu](launcher/ce-mini.md)

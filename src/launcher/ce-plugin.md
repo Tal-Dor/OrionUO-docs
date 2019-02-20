@@ -1,4 +1,4 @@
-# Plugin - Extended Mode
+# CVC - Plugin - Extended Mode
 
 ![main](../../img/configuration-editor-plugin.png)
 

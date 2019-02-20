@@ -1,4 +1,4 @@
-# Mini
+# CVC - Mini
 
 ![main](../../img/configuration-editor-mini.png)
 

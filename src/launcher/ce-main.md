@@ -1,4 +1,4 @@
-# Main - Extended Mode
+# CVC - Main - Extended Mode
 
 ![main](../../img/configuration-editor-main.png)
 
