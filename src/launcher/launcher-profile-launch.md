@@ -1,6 +1,6 @@
 # Launcher - Profile - Launch
 
-![main](/img/docs/launcher-profile-launch.png)
+![main](../../img/launcher-profile-launch.png)
 
 1. `UO files path` directory where UO files are stored. Right mouse click to bring up a context menu where you can delete the path.
 
