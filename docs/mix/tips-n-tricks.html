@@ -142,7 +142,7 @@
 <p>test1
 <img src="../../img/tips-n-tricks-replaces.png" alt="replaces1" /></p>
 <p>test2
-<img src="../img/tips-n-tricks-replaces.png" alt="replaces2" /></p>
+<img src="../img/tips-n-tricks-replaces.png?raw=true" alt="replaces2" /></p>
 <p>test3
 <img src="master/img/tips-n-tricks-replaces.png" alt="replaces3" /></p>
 <p>test4
@@ -157,6 +157,21 @@ file is named <strong>TextReplaces.xml</strong>
 Here is already edited file to download which contains all spells sorted in <strong>BENEFIT/NEUTRAL/HARMFUL</strong> sections like on this image
 </br></br></p>
 <p><strong>=&gt;</strong> <a href="https://github.com/Tal-Dor/OrionUO-docs/blob/master/stuffs/TextReplaces.xml" title="TextReplaces.xml - DOWNLOAD">TextReplaces.xml - DOWNLOAD</a> <strong>&lt;=</strong></p>
+<p></br></p>
+<hr />
+<a class="header" href="#treehack-switch" id="treehack-switch"><h3>TreeHack Switch</h3></a>
+<pre><code class="language-javascript">function TreeHack_Switch()
+{
+    if (Orion.OptionDrawStumps())
+    {
+        Orion.OptionDrawStumps(false);
+    }
+    else
+    {
+        Orion.OptionDrawStumps(true);
+    }
+}
+</code></pre>
 <p></br></p>
 <hr />
 <a class="header" href="#orion-assistant---in-game-commands" id="orion-assistant---in-game-commands"><h3>Orion Assistant - in-game Commands</h3></a>

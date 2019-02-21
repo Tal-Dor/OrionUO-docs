@@ -9,7 +9,7 @@ test1
 ![replaces1](../../img/tips-n-tricks-replaces.png)
 
 test2
-![replaces2](../img/tips-n-tricks-replaces.png)
+![replaces2](../img/tips-n-tricks-replaces.png?raw=true)
 
 test3
 ![replaces3](master/img/tips-n-tricks-replaces.png)
@@ -31,6 +31,24 @@ Here is already edited file to download which contains all spells sorted in **BE
 **=>** [TextReplaces.xml - DOWNLOAD][cd5adc27] **<=**
 
 [cd5adc27]: https://github.com/Tal-Dor/OrionUO-docs/blob/master/stuffs/TextReplaces.xml "TextReplaces.xml - DOWNLOAD"
+
+</br>
+***
+### TreeHack Switch
+
+```javascript
+function TreeHack_Switch()
+{
+	if (Orion.OptionDrawStumps())
+	{
+		Orion.OptionDrawStumps(false);
+	}
+	else
+	{
+		Orion.OptionDrawStumps(true);
+	}
+}
+```
 
 </br>
 ***
