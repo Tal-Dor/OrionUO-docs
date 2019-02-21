@@ -83,3 +83,5 @@
 	- [Client Macro](scripting/client-macro-object-class.md)
 
 ----
+
+[Tips & Tricks](mix/tips-n-tricks.md)

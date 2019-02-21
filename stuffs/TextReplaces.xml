@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data version="0">
+    <replace originaltext="is attacking you*" originalcolor="0xFFFF" replacedtext="***AGGRO***" replacedcolor="0x0443" type="0" mode="0" fullmatch="false"/>
+    <replace originaltext="Uus Jux " originalcolor="0xFFFF" replacedtext="&lt;- Clumsy -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Mani Ylem " originalcolor="0xFFFF" replacedtext="&lt;# Create Food #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Rel Wis " originalcolor="0xFFFF" replacedtext="&lt;- Feeblemind -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Mani " originalcolor="0xFFFF" replacedtext="&lt;+ Heal +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Por Ylem " originalcolor="0xFFFF" replacedtext="&lt;- Magic Arrow -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Lor " originalcolor="0xFFFF" replacedtext="&lt;+ Night Sight +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Flam Sanct " originalcolor="0xFFFF" replacedtext="&lt;+ Reactive Armor +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Des Mani " originalcolor="0xFFFF" replacedtext="&lt;- Weaken -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Ex Uus " originalcolor="0xFFFF" replacedtext="&lt;+ Agility +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Uus Wis " originalcolor="0xFFFF" replacedtext="&lt;+ Cunning +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Nox " originalcolor="0xFFFF" replacedtext="&lt;+ Cure +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Mani " originalcolor="0xFFFF" replacedtext="&lt;- Harm -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Jux " originalcolor="0xFFFF" replacedtext="&lt;# Magic Trap #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Jux " originalcolor="0xFFFF" replacedtext="&lt;# Magic Untrap #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Uus Sanct " originalcolor="0xFFFF" replacedtext="&lt;+ Protection +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Uus Mani " originalcolor="0xFFFF" replacedtext="&lt;+ Strength +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Rel Sanct " originalcolor="0xFFFF" replacedtext="&lt;+ Bless +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Flam " originalcolor="0xFFFF" replacedtext="&lt;- Fireball -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Por " originalcolor="0xFFFF" replacedtext="&lt;# Magic Lock #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Nox " originalcolor="0xFFFF" replacedtext="&lt;- Poison -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Ort Por Ylem " originalcolor="0xFFFF" replacedtext="&lt;# Telekinesis #&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Rel Por " originalcolor="0xFFFF" replacedtext="&lt;# Teleport #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Ex Por " originalcolor="0xFFFF" replacedtext="&lt;# Unlock #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Sanct Ylem " originalcolor="0xFFFF" replacedtext="&lt;# Wall of Stone #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas An Nox " originalcolor="0xFFFF" replacedtext="&lt;+ Arch Cure +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Uus Sanct " originalcolor="0xFFFF" replacedtext="&lt;+ Arch Protection +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Des Sanct " originalcolor="0xFFFF" replacedtext="&lt;- Curse -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Flam Grav " originalcolor="0xFFFF" replacedtext="&lt;- Fire Field -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Vas Mani " originalcolor="0xFFFF" replacedtext="&lt;+ Greater Heal +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Por Ort Grav " originalcolor="0xFFFF" replacedtext="&lt;- Lightning -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Ort Rel " originalcolor="0xFFFF" replacedtext="&lt;- Mana Drain -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Ort Por " originalcolor="0xFFFF" replacedtext="&lt;# Recall #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Jux Hur Ylem " originalcolor="0xFFFF" replacedtext="&lt;- Blade Spirit -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Grav " originalcolor="0xFFFF" replacedtext="&lt;# Dispel Field #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal In Ex " originalcolor="0xFFFF" replacedtext="&lt;# Incognito #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Jux Sanct " originalcolor="0xFFFF" replacedtext="&lt;+ Magic Reflection +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Por Corp Wis " originalcolor="0xFFFF" replacedtext="&lt;- Mind Blast -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Ex Por " originalcolor="0xFFFF" replacedtext="&lt;- Paralyze -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Nox Grav " originalcolor="0xFFFF" replacedtext="&lt;- Poison Field -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Xen " originalcolor="0xFFFF" replacedtext="&lt;# Summon Creature #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Ort " originalcolor="0xFFFF" replacedtext="&lt;# Dispel #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Corp Por " originalcolor="0xFFFF" replacedtext="&lt;- Energy Bolt -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Ort Flam " originalcolor="0xFFFF" replacedtext="&lt;- Explosion -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Lor Xen " originalcolor="0xFFFF" replacedtext="&lt;+ Invisibility +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Por Ylem " originalcolor="0xFFFF" replacedtext="&lt;# Mark #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Des Sanct " originalcolor="0xFFFF" replacedtext="&lt;- Mass Curse -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Ex Grav " originalcolor="0xFFFF" replacedtext="&lt;- Paralyze Field -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Wis Quas " originalcolor="0xFFFF" replacedtext="&lt;# Reveal #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Ort Grav " originalcolor="0xFFFF" replacedtext="&lt;- Chain Lightning -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Sanct Grav " originalcolor="0xFFFF" replacedtext="&lt;- Energy Field -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Vas Flam " originalcolor="0xFFFF" replacedtext="&lt;- Flame strike -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Rel Por " originalcolor="0xFFFF" replacedtext="&lt;# Gate Travel #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Ort Sanct " originalcolor="0xFFFF" replacedtext="&lt;- Mana Vampire -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas An Ort " originalcolor="0xFFFF" replacedtext="&lt;# Mass Dispel #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Flam Kal Des Ylem " originalcolor="0xFFFF" replacedtext="&lt;- Meteor Swarm -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Ylem Rel " originalcolor="0xFFFF" replacedtext="&lt;# Polymorph #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Vas Por " originalcolor="0xFFFF" replacedtext="&lt;- Earthquake -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Corp Por " originalcolor="0xFFFF" replacedtext="&lt;# Energy Vortex #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="An Corp " originalcolor="0xFFFF" replacedtext="&lt;+ Resurrection +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Vas Xen Hur " originalcolor="0xFFFF" replacedtext="&lt;# Air Elemental #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Vas Xen Corp " originalcolor="0xFFFF" replacedtext="&lt;# Summon Daemon #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Vas Xen Ylem " originalcolor="0xFFFF" replacedtext="&lt;# Earth Elemental #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Vas Xen Flam " originalcolor="0xFFFF" replacedtext="&lt;# Fire Elemental #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Vas Xen An Flam " originalcolor="0xFFFF" replacedtext="&lt;# Water Elemental #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Nox Mani" originalcolor="0xFFFF" replacedtext="&lt;# Summon Undead #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In An Mani Grav " originalcolor="0xFFFF" replacedtext="&lt;# Animate Dead #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Corp Sanct Ylem" originalcolor="0xFFFF" replacedtext="&lt;# Bone Armor #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="In Lor" originalcolor="0xFFFF" replacedtext="&lt;+ Light +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Flam Por" originalcolor="0xFFFF" replacedtext="&lt;- Fire Bolt -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Wis Nox" originalcolor="0xFFFF" replacedtext="&lt;- Hallucination -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Helca Uus Hur" originalcolor="0xFFFF" replacedtext="&lt;- Frost Bolt -&gt;" replacedcolor="0x22" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Jux Sanct" originalcolor="0xFFFF" replacedtext="&lt;# Mana Shield #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Vas Rel Sanct " originalcolor="0xFFFF" replacedtext="&lt;+ Mass Bless +&gt;" replacedcolor="0x44" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="Kal Meldo Xen " originalcolor="0xFFFF" replacedtext="&lt;# Summon Attendant #&gt;" replacedcolor="0x888" type="0" mode="0" fullmatch="true"/>
+    <replace originaltext="You are frozen and can not move." originalcolor="0xFFFF" replacedtext="***PARALYZED***" replacedcolor="0x0443" type="0" mode="0" fullmatch="true"/>
+</data>
