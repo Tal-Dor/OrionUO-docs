@@ -162,20 +162,14 @@
 <p>Start the function.</p>
 <ul>
 <li>
-<ul>
-<li>functionName - The name of the function to start.</li>
-</ul>
+<p><code>functionName</code> - The name of the function to start.</p>
 </li>
 <li>
-<ul>
-<li>oneScriptRunning - Check for a running instance of the function with the same name and prevent re-execution.</li>
-</ul>
+<p><code>oneScriptRunning</code> - Check for a running instance of the function with the same name and prevent re-execution.</p>
 </li>
 <li>
-<ul>
-<li>argumentsList - List of function parameters.
-</br></br></li>
-</ul>
+<p><code>argumentsList</code> - List of function parameters.
+</br></br></p>
 </li>
 </ul>
 <hr />
@@ -184,13 +178,13 @@
 <p>Terminate the script. The function name register is important !!!</p>
 <ul>
 <li>
-<ul>
-<li>functionName - The name of the function to be terminated. Ends all functions with that name. If 'all' is specified - exits all functions except those that were specified in functionsSave.</li>
-</ul>
+<p><code>functionName</code> - The name of the function to be terminated. Ends all functions with that name. If 'all' is specified - exits all functions except those that were specified in functionsSave.</p>
+</li>
+<li>
+<p><code>functionsSave</code> - Functions that do not need to be terminated are indicated by '|' ; For example,_ <strong>Orion.Terminate</strong>('all', 'Heal | Loot | CheckMana') - terminates all working functions except Heal, Loot, CheckMana.
+</br></br></p>
 </li>
 </ul>
-<p><em>- functionsSave - Functions that do not need to be terminated are indicated by '|' ; For example,</em> <strong>Orion.Terminate</strong>('all', 'Heal | Loot | CheckMana') - terminates all working functions except Heal, Loot, CheckMana.
-</br></br></p>
 <hr />
 <p></br>
 <em>bool</em> <strong>Orion.ScriptRunning</strong>('functionName');</p>
@@ -209,19 +203,13 @@
 Uses same logic as text searching in UO journal.</p>
 <ul>
 <li>
-<ul>
-<li>text - String with text to search within.</li>
-</ul>
+<p><code>text</code> - String with text to search within.</p>
 </li>
 <li>
-<ul>
-<li>pattern - String with pattern(s) to search for.</li>
-</ul>
+<p><code>pattern</code> - String with pattern(s) to search for.</p>
 </li>
 <li>
-<ul>
-<li>ignoreCase - true - Ignore case is true by default.</li>
-</ul>
+<p><code>ignoreCase</code> - true - Ignore case is true by default.</p>
 </li>
 </ul>
 <p>Returns true if there's a match.
@@ -232,19 +220,13 @@ Uses same logic as text searching in UO journal.</p>
 <p>This function will split 'text' string into a list of strings by separator character. Default is space character.</p>
 <ul>
 <li>
-<ul>
-<li>text - string of text to split.</li>
-</ul>
+<p><code>text</code> - string of text to split.</p>
 </li>
 <li>
-<ul>
-<li>separator - character used as a separator for text string.</li>
-</ul>
+<p><code>separator</code> - character used as a separator for text string.</p>
 </li>
 <li>
-<ul>
-<li>skipEmptyWord - true - skips empty words by default.</li>
-</ul>
+<p><code>skipEmptyWord</code> - true - skips empty words by default.</p>
 </li>
 </ul>
 <p>Returns a list of strings.

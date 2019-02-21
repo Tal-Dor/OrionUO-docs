@@ -8,15 +8,15 @@
 </br>
 **graphicOrFlags** - searching filter:
 
-- mine - searching for cave tiles;
+- `mine` - searching for cave tiles;
 
-- tree - searching for trees;
+- `tree` - searching for trees;
 
-- water - searching for water tiles;
+- `water` - searching for water tiles;
 
-- land - searching for only land tiles;
+- `land` - searching for only land tiles;
 
-- any - searching of any type of tile (static tiles have higher priority over landscape).
+- `any` - searching of any type of tile (static tiles have higher priority over landscape).
 </br></br>
 ***
 </br>
@@ -38,15 +38,15 @@ _void_ **Orion.WaitTargetType**('graphic', ['color'=0xFFFF], ['container'=self],
 
 Set the target trap for object, found by searching container.
 
-- - graphic - Type or type list for search. 0xFFFF ignored.
+- `graphic` - Type or type list for search. 0xFFFF ignored.
 
-- - color - Colour or Colour list for search. 0xFFFF ignored.
+- `color` - Colour or Colour list for search. 0xFFFF ignored.
 
-- - container - Searched Container.
+- `container` - Searched Container.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 
-- - recurse - Recursive Search in subcontainers.
+- `recurse` - Recursive Search in subcontainers.
 </br></br>
 ***
 </br>
@@ -54,13 +54,13 @@ _void_ **Orion.WaitTargetGround**('graphic', ['color'=0xFFFF], ['distance'=searc
 
 Set the target trap for object found by search on the ground.
 
-- - graphic - Type or type list for search. 0xFFFF ignored.
+- `graphic` - Type or type list for search. 0xFFFF ignored.
 
-- - color - Colour or Colour list for search. 0xFFFF ignored.
+- `color` - Colour or Colour list for search. 0xFFFF ignored.
 
-- - distance - Search Distance.
+- `distance` - Search Distance.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 </br></br>
 ***
 </br>
@@ -68,13 +68,13 @@ _void_ **Orion.WaitTargetTypeList**('findListName', ['container'=self], ['flags'
 
 Set the target trap for object, found by searching container.
 
-- - findListName - Search list name.
+- `findListName` - Search list name.
 
-- - container - Container being searched.
+- `container` - Container being searched.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 
-- - recurse - Recursive Search in subcontainers.
+- `recurse` - Recursive Search in subcontainers.
 </br></br>
 ***
 </br>
@@ -82,11 +82,11 @@ _void_ **Orion.WaitTargetGroundList**('findListName', ['distance'=searchObjectsD
 
 Set the target trap for object found by searching the ground.
 
-- - findListName - Search list name.
+- `findListName` - Search list name.
 
-- - distance - Search Distance.
+- `distance` - Search Distance.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 </br></br>
 ***
 </br>
@@ -94,13 +94,13 @@ _void_ **Orion.WaitTargetTile**('graphic', [x, y, z]);
 
 Set the target trap on the ground.
 
-graphic - type of the tile, might be lasttile
+- `graphic` - type of the tile, might be lasttile
 
-x - World X coordinate
+- `x` - World X coordinate
 
-y - World Y coordinate
+- `y` - World Y coordinate
 
-z - World Z coordinate
+- `z` - World Z coordinate
 </br></br>
 ***
 </br>
@@ -108,13 +108,13 @@ _void_ **Orion.WaitTargetTileRelative**('graphic', [x, y, z]);
 
 Set the target trap on the ground, against Character.
 
-graphic - type of the tile, might be lasttile
+- `graphic` - type of the tile, might be lasttile
 
-x - X coordinate bias in the world
+- `x` - X coordinate bias in the world
 
-y - Y coordinate bias in the world
+- `y` - Y coordinate bias in the world
 
-z - Z coordinate bias in the world
+- `z` - Z coordinate bias in the world
 </br></br>
 ***
 </br>
@@ -134,15 +134,15 @@ _void_ **Orion.TargetType**('graphic', ['color'=0xFFFF], ['container'=self], ['f
 
 Point the target on the object found by searching container.
 
-- - graphic - Type or type list for search. 0xFFFF ignored.
+- `graphic` - Type or type list for search. 0xFFFF ignored.
 
-- - color - Colour or Colour list for search. 0xFFFF ignored.
+- `color` - Colour or Colour list for search. 0xFFFF ignored.
 
-- - container - Searched Container.
+- `container` - Searched Container.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 
-- - recurse - Recursive Search in subcontainers.
+- `recurse` - Recursive Search in subcontainers.
 </br></br>
 ***
 </br>
@@ -150,13 +150,13 @@ _void_ **Orion.TargetGround**('graphic', ['color'=0xFFFF], ['distance'=searchObj
 
 Point the target on the object found by searching the ground.
 
-- - graphic - Type or type list for search. 0xFFFF ignored.
+- `graphic` - Type or type list for search. 0xFFFF ignored.
 
-- - color - Colour or Colour list for search. 0xFFFF ignored.
+- `color` - Colour or Colour list for search. 0xFFFF ignored.
 
-- - distance - Search Distance.
+- `distance` - Search Distance.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 </br></br>
 ***
 </br>
@@ -164,13 +164,13 @@ _void_ **Orion.TargetTypeList**('findListName', ['container'=self], ['flags'], [
 
 Point the target on the object found by serching container.
 
-- - findListName - Search list name.
+- `findListName` - Search list name.
 
-- - container - Container being searched.
+- `container` - Container being searched.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 
-- - recurse - Recursive Search in subcontainers.
+- `recurse` - Recursive Search in subcontainers.
 </br></br>
 ***
 </br>
@@ -178,11 +178,11 @@ _void_ **Orion.TargetGroundList**('findListName', ['distance'=searchObjectsDista
 
 Point the target on the object found by searching the ground.
 
-- - findListName - Search list name.
+- `findListName` - Search list name.
 
-- - distance - Search Distance.
+- `distance` - Search Distance.
 
-- - flags - Flag Search Filters.
+- `flags` - Flag Search Filters.
 </br></br>
 ***
 </br>
@@ -190,13 +190,13 @@ _void_ **Orion.TargetTile**('graphic', [x, y, z]);
 
 Point target on a ground.
 
-graphic - type of the tile, might be lasttile
+- `graphic` - type of the tile, might be lasttile
 
-x - World X coordinate
+- `x` - World X coordinate
 
-y - World Y coordinate
+- `y` - World Y coordinate
 
-z - World Z coordinate
+- `z` - World Z coordinate
 </br></br>
 ***
 </br>
@@ -204,13 +204,13 @@ _void_ **Orion.TargetTileRelative**('graphic', [x, y, z]);
 
 Point target on a ground against Character.
 
-graphic - type of the tile, might be lasttile
+- `graphic` - type of the tile, might be lasttile
 
-x - X coordinate bias in the world
+- `x` - X coordinate bias in the world
 
-y - Y coordinate bias in the world
+- `y` - Y coordinate bias in the world
 
-z - Z coordinate bias in the world
+- `z` - Z coordinate bias in the world
 </br></br>
 ***
 </br>
@@ -218,11 +218,11 @@ _bool_ **Orion.ValidateTargetTile**('graphicOrFlags', x, y);
 
 This function checks if targeted tile is valid for targeting.
 
-- - graphicOrFlags - tile type by graphic id or flags.
+- `graphicOrFlags` - tile type by graphic id or flags.
 
-- - x - X coordinate on the map.
+- `x` - X coordinate on the map.
 
-- - y - Y coordinate on the map.
+- `y` - Y coordinate on the map.
 
 Returns true if tile is valid for targeting.
 </br></br>
@@ -232,11 +232,11 @@ _bool_ **Orion.ValidateTargetTileRelative**('graphicOrFlags', x, y);
 
 This function checks if targeted tile( relative to character position on the map ) is valid for targeting.
 
-- - graphicOrFlags - tile type by graphic id or flags.
+- `graphicOrFlags` - tile type by graphic id or flags.
 
-- - x - X offset on the map.
+- `x` - X offset on the map.
 
-- - y - Y offset on the map.
+- `y` - Y offset on the map.
 
 Returns true if tile is valid for targeting.
 </br></br>

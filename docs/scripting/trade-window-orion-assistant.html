@@ -149,7 +149,9 @@
 <p></br>
 <em>String</em> <strong>Orion.TradeContainer</strong>('index', 'container');</p>
 <p>Get the container serial of the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using the serial index 0x12345678).</p>
-<p>container - Window identifier, right ('right' or '1') or left ('left' or '0').</p>
+<ul>
+<li><code>container</code> - Window identifier, right ('right' or '1') or left ('left' or '0').</li>
+</ul>
 <p>Result: serial of the container.
 </br></br></p>
 <hr />
@@ -168,15 +170,19 @@
 <p></br>
 <em>bool</em> <strong>Orion.TradeCheckState</strong>('index', 'container');</p>
 <p>Obtain the status (confirmation) of the transaction in the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using serial number index 0x12345678).</p>
-<p>container - Window identifier, right ('right' or '1') or left ('left' or '0').</p>
+<ul>
+<li><code>container</code> - Window identifier, right ('right' or '1') or left ('left' or '0').</li>
+</ul>
 <p>Result: the status of the checkbox is true / false.
 </br></br></p>
 <hr />
 <p></br>
 <em>void</em> <strong>Orion.TradeCheck</strong>('index', state);</p>
 <p>Change the transaction confirmation status in the trade window with the index 'index' (from 0 to TradeCount () - 1) (or using serial number index 0x12345678).</p>
-<p>state - new state, true (tick) or false (uncheck).
-</br></br></p>
+<ul>
+<li><code>state</code> - new state, true (tick) or false (uncheck).
+</br></br></li>
+</ul>
 <hr />
 <p></br>
 <em>void</em> <strong>Orion.TradeClose</strong>('index');</p>

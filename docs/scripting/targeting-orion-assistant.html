@@ -145,19 +145,19 @@
 <strong>graphicOrFlags</strong> - searching filter:</p>
 <ul>
 <li>
-<p>mine - searching for cave tiles;</p>
+<p><code>mine</code> - searching for cave tiles;</p>
 </li>
 <li>
-<p>tree - searching for trees;</p>
+<p><code>tree</code> - searching for trees;</p>
 </li>
 <li>
-<p>water - searching for water tiles;</p>
+<p><code>water</code> - searching for water tiles;</p>
 </li>
 <li>
-<p>land - searching for only land tiles;</p>
+<p><code>land</code> - searching for only land tiles;</p>
 </li>
 <li>
-<p>any - searching of any type of tile (static tiles have higher priority over landscape).
+<p><code>any</code> - searching of any type of tile (static tiles have higher priority over landscape).
 </br></br></p>
 </li>
 </ul>
@@ -178,30 +178,20 @@
 <p>Set the target trap for object, found by searching container.</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or type list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>color</code> - Colour or Colour list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>container - Searched Container.</li>
-</ul>
+<p><code>container</code> - Searched Container.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.</li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive Search in subcontainers.
-</br></br></li>
-</ul>
+<p><code>recurse</code> - Recursive Search in subcontainers.
+</br></br></p>
 </li>
 </ul>
 <hr />
@@ -210,25 +200,17 @@
 <p>Set the target trap for object found by search on the ground.</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or type list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>color</code> - Colour or Colour list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>distance - Search Distance.</li>
-</ul>
+<p><code>distance</code> - Search Distance.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.
-</br></br></li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.
+</br></br></p>
 </li>
 </ul>
 <hr />
@@ -237,25 +219,17 @@
 <p>Set the target trap for object, found by searching container.</p>
 <ul>
 <li>
-<ul>
-<li>findListName - Search list name.</li>
-</ul>
+<p><code>findListName</code> - Search list name.</p>
 </li>
 <li>
-<ul>
-<li>container - Container being searched.</li>
-</ul>
+<p><code>container</code> - Container being searched.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.</li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive Search in subcontainers.
-</br></br></li>
-</ul>
+<p><code>recurse</code> - Recursive Search in subcontainers.
+</br></br></p>
 </li>
 </ul>
 <hr />
@@ -264,40 +238,54 @@
 <p>Set the target trap for object found by searching the ground.</p>
 <ul>
 <li>
-<ul>
-<li>findListName - Search list name.</li>
-</ul>
+<p><code>findListName</code> - Search list name.</p>
 </li>
 <li>
-<ul>
-<li>distance - Search Distance.</li>
-</ul>
+<p><code>distance</code> - Search Distance.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.
-</br></br></li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.
+</br></br></p>
 </li>
 </ul>
 <hr />
 <p></br>
 <em>void</em> <strong>Orion.WaitTargetTile</strong>('graphic', [x, y, z]);</p>
 <p>Set the target trap on the ground.</p>
-<p>graphic - type of the tile, might be lasttile</p>
-<p>x - World X coordinate</p>
-<p>y - World Y coordinate</p>
-<p>z - World Z coordinate
+<ul>
+<li>
+<p><code>graphic</code> - type of the tile, might be lasttile</p>
+</li>
+<li>
+<p><code>x</code> - World X coordinate</p>
+</li>
+<li>
+<p><code>y</code> - World Y coordinate</p>
+</li>
+<li>
+<p><code>z</code> - World Z coordinate
 </br></br></p>
+</li>
+</ul>
 <hr />
 <p></br>
 <em>void</em> <strong>Orion.WaitTargetTileRelative</strong>('graphic', [x, y, z]);</p>
 <p>Set the target trap on the ground, against Character.</p>
-<p>graphic - type of the tile, might be lasttile</p>
-<p>x - X coordinate bias in the world</p>
-<p>y - Y coordinate bias in the world</p>
-<p>z - Z coordinate bias in the world
+<ul>
+<li>
+<p><code>graphic</code> - type of the tile, might be lasttile</p>
+</li>
+<li>
+<p><code>x</code> - X coordinate bias in the world</p>
+</li>
+<li>
+<p><code>y</code> - Y coordinate bias in the world</p>
+</li>
+<li>
+<p><code>z</code> - Z coordinate bias in the world
 </br></br></p>
+</li>
+</ul>
 <hr />
 <p></br>
 <em>void</em> <strong>Orion.CancelWaitTarget</strong>();</p>
@@ -314,30 +302,20 @@
 <p>Point the target on the object found by searching container.</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or type list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>color</code> - Colour or Colour list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>container - Searched Container.</li>
-</ul>
+<p><code>container</code> - Searched Container.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.</li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive Search in subcontainers.
-</br></br></li>
-</ul>
+<p><code>recurse</code> - Recursive Search in subcontainers.
+</br></br></p>
 </li>
 </ul>
 <hr />
@@ -346,25 +324,17 @@
 <p>Point the target on the object found by searching the ground.</p>
 <ul>
 <li>
-<ul>
-<li>graphic - Type or type list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>graphic</code> - Type or type list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>color - Colour or Colour list for search. 0xFFFF ignored.</li>
-</ul>
+<p><code>color</code> - Colour or Colour list for search. 0xFFFF ignored.</p>
 </li>
 <li>
-<ul>
-<li>distance - Search Distance.</li>
-</ul>
+<p><code>distance</code> - Search Distance.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.
-</br></br></li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.
+</br></br></p>
 </li>
 </ul>
 <hr />
@@ -373,25 +343,17 @@
 <p>Point the target on the object found by serching container.</p>
 <ul>
 <li>
-<ul>
-<li>findListName - Search list name.</li>
-</ul>
+<p><code>findListName</code> - Search list name.</p>
 </li>
 <li>
-<ul>
-<li>container - Container being searched.</li>
-</ul>
+<p><code>container</code> - Container being searched.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.</li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.</p>
 </li>
 <li>
-<ul>
-<li>recurse - Recursive Search in subcontainers.
-</br></br></li>
-</ul>
+<p><code>recurse</code> - Recursive Search in subcontainers.
+</br></br></p>
 </li>
 </ul>
 <hr />
@@ -400,59 +362,67 @@
 <p>Point the target on the object found by searching the ground.</p>
 <ul>
 <li>
-<ul>
-<li>findListName - Search list name.</li>
-</ul>
+<p><code>findListName</code> - Search list name.</p>
 </li>
 <li>
-<ul>
-<li>distance - Search Distance.</li>
-</ul>
+<p><code>distance</code> - Search Distance.</p>
 </li>
 <li>
-<ul>
-<li>flags - Flag Search Filters.
-</br></br></li>
-</ul>
+<p><code>flags</code> - Flag Search Filters.
+</br></br></p>
 </li>
 </ul>
 <hr />
 <p></br>
 <em>void</em> <strong>Orion.TargetTile</strong>('graphic', [x, y, z]);</p>
 <p>Point target on a ground.</p>
-<p>graphic - type of the tile, might be lasttile</p>
-<p>x - World X coordinate</p>
-<p>y - World Y coordinate</p>
-<p>z - World Z coordinate
+<ul>
+<li>
+<p><code>graphic</code> - type of the tile, might be lasttile</p>
+</li>
+<li>
+<p><code>x</code> - World X coordinate</p>
+</li>
+<li>
+<p><code>y</code> - World Y coordinate</p>
+</li>
+<li>
+<p><code>z</code> - World Z coordinate
 </br></br></p>
+</li>
+</ul>
 <hr />
 <p></br>
 <em>void</em> <strong>Orion.TargetTileRelative</strong>('graphic', [x, y, z]);</p>
 <p>Point target on a ground against Character.</p>
-<p>graphic - type of the tile, might be lasttile</p>
-<p>x - X coordinate bias in the world</p>
-<p>y - Y coordinate bias in the world</p>
-<p>z - Z coordinate bias in the world
+<ul>
+<li>
+<p><code>graphic</code> - type of the tile, might be lasttile</p>
+</li>
+<li>
+<p><code>x</code> - X coordinate bias in the world</p>
+</li>
+<li>
+<p><code>y</code> - Y coordinate bias in the world</p>
+</li>
+<li>
+<p><code>z</code> - Z coordinate bias in the world
 </br></br></p>
+</li>
+</ul>
 <hr />
 <p></br>
 <em>bool</em> <strong>Orion.ValidateTargetTile</strong>('graphicOrFlags', x, y);</p>
 <p>This function checks if targeted tile is valid for targeting.</p>
 <ul>
 <li>
-<ul>
-<li>graphicOrFlags - tile type by graphic id or flags.</li>
-</ul>
+<p><code>graphicOrFlags</code> - tile type by graphic id or flags.</p>
 </li>
 <li>
-<ul>
-<li>x - X coordinate on the map.</li>
-</ul>
+<p><code>x</code> - X coordinate on the map.</p>
 </li>
 <li>
-<ul>
-<li>y - Y coordinate on the map.</li>
-</ul>
+<p><code>y</code> - Y coordinate on the map.</p>
 </li>
 </ul>
 <p>Returns true if tile is valid for targeting.
@@ -463,19 +433,13 @@
 <p>This function checks if targeted tile( relative to character position on the map ) is valid for targeting.</p>
 <ul>
 <li>
-<ul>
-<li>graphicOrFlags - tile type by graphic id or flags.</li>
-</ul>
+<p><code>graphicOrFlags</code> - tile type by graphic id or flags.</p>
 </li>
 <li>
-<ul>
-<li>x - X offset on the map.</li>
-</ul>
+<p><code>x</code> - X offset on the map.</p>
 </li>
 <li>
-<ul>
-<li>y - Y offset on the map.</li>
-</ul>
+<p><code>y</code> - Y offset on the map.</p>
 </li>
 </ul>
 <p>Returns true if tile is valid for targeting.

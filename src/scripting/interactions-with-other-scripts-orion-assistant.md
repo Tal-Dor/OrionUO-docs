@@ -30,11 +30,11 @@ _void_ **Orion.Exec**('functionName', [oneScriptRunning=false], [argumentsList])
 
 Start the function.
 
-- - functionName - The name of the function to start.
+- `functionName` - The name of the function to start.
 
-- - oneScriptRunning - Check for a running instance of the function with the same name and prevent re-execution.
+- `oneScriptRunning` - Check for a running instance of the function with the same name and prevent re-execution.
 
-- - argumentsList - List of function parameters.
+- `argumentsList` - List of function parameters.
 </br></br>
 ***
 </br>
@@ -42,9 +42,9 @@ _void_ **Orion.Terminate**('functionName', ['functionsSave']);
 
 Terminate the script. The function name register is important !!!
 
-- - functionName - The name of the function to be terminated. Ends all functions with that name. If 'all' is specified - exits all functions except those that were specified in functionsSave.
+- `functionName` - The name of the function to be terminated. Ends all functions with that name. If 'all' is specified - exits all functions except those that were specified in functionsSave.
 
-_- functionsSave - Functions that do not need to be terminated are indicated by '|' ; For example,_ **Orion.Terminate**('all', 'Heal | Loot | CheckMana') - terminates all working functions except Heal, Loot, CheckMana.
+- `functionsSave` - Functions that do not need to be terminated are indicated by '|' ; For example,_ **Orion.Terminate**('all', 'Heal | Loot | CheckMana') - terminates all working functions except Heal, Loot, CheckMana.
 </br></br>
 ***
 </br>
@@ -67,11 +67,11 @@ _bool_ **Orion.Contains**(text, pattern, [ignoreCase=false]);
 This function will check for a text pattern or a collection of patters ('patternOne|patternTwo|patternThree') within 'text' string.
 Uses same logic as text searching in UO journal.
 
-- - text - String with text to search within.
+- `text` - String with text to search within.
 
-- - pattern - String with pattern(s) to search for.
+- `pattern` - String with pattern(s) to search for.
 
-- - ignoreCase - true - Ignore case is true by default.
+- `ignoreCase` - true - Ignore case is true by default.
 
 Returns true if there's a match.
 </br></br>
@@ -81,11 +81,11 @@ _StringList_ **Orion.Split**(text, [separator=' '], [skipEmptyWord=true]);
 
 This function will split 'text' string into a list of strings by separator character. Default is space character.
 
-- - text - string of text to split.
+- `text` - string of text to split.
 
-- - separator - character used as a separator for text string.
+- `separator` - character used as a separator for text string.
 
-- - skipEmptyWord - true - skips empty words by default.
+- `skipEmptyWord` - true - skips empty words by default.
 
 Returns a list of strings.
 </br></br>

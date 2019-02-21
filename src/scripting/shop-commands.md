@@ -16,11 +16,11 @@ If shops buy list has appeared but there are no matches for buying, this process
 
 If shops buy list doesn't appear, it awaits 'shopDelay' amount of time in ms and blocks user input.
 
-- shopListName - name of the shop list with goods to buy.
+- `shopListName` - name of the shop list with goods to buy.
 
-- vendorName - name of vendor.
+- `vendorName` - name of vendor.
 
-- shopDelay - buying operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to buy and 'Shop delay for 1 stack' value.
+- `shopDelay` - buying operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to buy and 'Shop delay for 1 stack' value.
 </br></br>
 ***
 </br>
@@ -34,11 +34,11 @@ If shops sell list has appeared but there are no matches for selling, this proce
 
 If shops sell list doesn't appear, it awaits 'shopDelay' amount of time in ms and blocks user input.
 
-- shopListName - name of the shop list with goods to sell.
+- `shopListName` - name of the shop list with goods to sell.
 
-- vendorName - name of vendor.
+- `vendorName` - name of vendor.
 
-- shopDelay - selling operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to sell and 'Shop delay for 1 stack' value.
+- `shopDelay` - selling operation delay. Will be measured automatically if passed as 0 or as default based on amount of goods to sell and 'Shop delay for 1 stack' value.
 </br></br>
 ***
 </br>
