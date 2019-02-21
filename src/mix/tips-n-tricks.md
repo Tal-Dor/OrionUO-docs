@@ -5,6 +5,18 @@
 
 ![replaces](https://raw.githubusercontent.com/Tal-Dor/OrionUO-docs/master/img/tips-n-tricks-replaces.png)
 
+test1
+![replaces1](../../img/tips-n-tricks-replaces.png)
+
+test2
+![replaces2](../img/tips-n-tricks-replaces.png)
+
+test3
+![replaces3](master/img/tips-n-tricks-replaces.png)
+
+test4
+![replaces4](../master/img/tips-n-tricks-replaces.png)
+
 You can for example change all **Words of Power** with this feature [OA - Replaces](../assistant/filters-replaces-tab.md) to actual name of spell with some extra symbols and it's color like it's shown on image above.
 
 If you want to download/import/export your replace settings it's located in your OrionUO folder
