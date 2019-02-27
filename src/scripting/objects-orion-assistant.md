@@ -120,7 +120,7 @@ Bandageself.
 </br></br>
 ***
 </br>
-_String_ **ClientLastTarget**();
+_String_ **Orion.ClientLastTarget**();
 
 Get the state of the global client variable LastTarget.
 
@@ -128,13 +128,13 @@ Result: The _String_ with the serial.
 </br></br>
 ***
 </br>
-_void_ **ClientLastTarget**(serial);
+_void_ **Orion.ClientLastTarget**(serial);
 
 Set the state of the client global variable LastTarget to the serial.
 </br></br>
 ***
 </br>
-_String_ **ClientLastAttack**();
+_String_ **Orion.ClientLastAttack**();
 
 Get the state of the global client variable LastAttack
 
@@ -142,13 +142,13 @@ Result: The _String_ with the serial.
 </br></br>
 ***
 </br>
-_void_ **ClientLastAttack**(serial);
+_void_ **Orion.ClientLastAttack**(serial);
 
 Set the state of the global client variable LastAttack to the serial.
 </br></br>
 ***
 </br>
-_String_ **TargetSystemSerial**();
+_String_ **Orion.TargetSystemSerial**();
 
 Get the state of the global client variable TargetSystemSerial (from new target system).
 
@@ -156,7 +156,7 @@ Result: The String with the serial.
 </br></br>
 ***
 </br>
-_void_ **TargetSystemSerial**(serial);
+_void_ **Orion.TargetSystemSerial**(serial);
 
 Set the state of the global client variable TargetSystemSerial (from new target system) to the serial.
 </br></br>
