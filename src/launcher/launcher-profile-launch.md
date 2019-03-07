@@ -14,7 +14,7 @@
 
 6. `Check updates` Automatic check for program updates.
 
-7. [Configure client version](configuration-editor.md) - Orion client configuration settings. If the `Client.cuo` file is absent -> text of button will be red.
+7. [Configure client version](client-version-configuration.md) - Orion client configuration settings. If the `Client.cuo` file is absent -> text of button will be red.
 
 8. `Profiles` Press `Delete` for remove current selected profile. Press `Ctrl` to prevent the appearence of a message with a question. Double click on `server name` to edit. Double click on `profile name` to launch.
     - `A.` Server name.
