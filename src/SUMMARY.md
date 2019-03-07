@@ -32,7 +32,7 @@
 		- [Ignore](assistant/lists-ignore.md)
 		- [Friends](assistant/lists-friends.md)
 		- [Enemies](assistant/lists-enemies.md)
-	- [Hotkeys](assistant/assistant-hotkeys.md)
+	- [Hotkeys](assistant/hotkeys.md)
       - [Animal and Vendor Control](assistant/hotkeys-animal-and-vendor-control.md)
       - [House Control](assistant/hotkeys-house-control.md)
       - [Ship Control](assistant/hotkeys-ship-control.md)
